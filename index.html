@@ -104,6 +104,11 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 .zoom{position:absolute;right:12px;top:54px;display:flex;flex-direction:column;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px var(--shade);background:var(--card);border:1px solid var(--line)}
 .zoom button{width:38px;height:38px;font-size:20px;line-height:1;color:var(--ink)}
 #tiles{position:absolute;inset:0;overflow:hidden;opacity:0;pointer-events:none;filter:saturate(.82) sepia(.14) contrast(.98)}
+#tiles{transition:filter .6s}
+:root[data-s="0"] #tiles{filter:saturate(.85) sepia(.22) hue-rotate(-14deg) brightness(1.02)}
+:root[data-s="1"] #tiles{filter:saturate(.9) sepia(.12) hue-rotate(14deg)}
+:root[data-s="2"] #tiles{filter:saturate(.85) sepia(.34) brightness(1.01)}
+:root[data-s="3"] #tiles{filter:grayscale(.3) saturate(.8) brightness(1.04) hue-rotate(185deg) sepia(.1)}
 #tiles img{position:absolute;max-width:none;user-select:none;-webkit-user-drag:none;display:block}
 .osm{position:absolute;right:12px;top:176px;font-size:10px;color:#444;background:rgba(255,255,255,.78);padding:2px 7px;border-radius:8px;display:none;pointer-events:none}
 .zoom button+button{border-top:1px solid var(--line)}
@@ -2330,7 +2335,7 @@ boxes.push(pick);var on=q.on;
 lab+='<g transform="translate('+pick.l.toFixed(1)+' '+pick.t.toFixed(1)+')"><rect width="'+w.toFixed(1)+'" height="'+h+'" rx="10.5" fill="'+(on?'var(--ink)':'var(--paper)')+'" opacity="'+(on?1:.94)+'" stroke="var(--line)"/><text x="'+(w/2).toFixed(1)+'" y="14.8" text-anchor="middle" font-size="11.5" font-weight="600" fill="'+(on?'var(--paper)':q.cold?'var(--muted)':'var(--ink)')+'" font-family="var(--f-body)">'+t+'</text></g>';
 hits.push(q.cluster?{x:pick.l+w/2,y:pick.t+h/2,r:0,rect:pick,c:q.cluster}:{x:pick.l+w/2,y:pick.t+h/2,r:0,rect:pick,p:it.p})});
 window.__hits=hits;
-pinsG.innerHTML=(zoomed?'':cityLabels(s))+(vb.w<=140?'':islandLabels(s))+out+'<g transform="translate('+b.x.toFixed(2)+' '+b.y.toFixed(2)+') scale('+s.toFixed(4)+')">'+lab+'</g>'+meMark(b,s);syncTiles(b,s)}
+pinsG.innerHTML=(zoomed?'':cityLabels(s))+routeLines(s)+(vb.w<=140?'':islandLabels(s))+out+'<g transform="translate('+b.x.toFixed(2)+' '+b.y.toFixed(2)+') scale('+s.toFixed(4)+')">'+lab+'</g>'+meMark(b,s);syncTiles(b,s)}
 var defd={};function ensureDef(i){if(!defd[i]){defd[i]=1;$('pdefs').insertAdjacentHTML('beforeend','<image id="pt'+i+'" href="'+thumb(i)+'" x="-17" y="-17" width="34" height="34" preserveAspectRatio="xMidYMid slice" clip-path="url(#pclip)"/>')}}
 var raf=0;function rr(){if(!raf)raf=requestAnimationFrame(function(){raf=0;render()})}
 var flyTok=0;function stopFly(){flyTok++}
@@ -2406,6 +2411,12 @@ $('listBody').innerHTML=h||'<div class="empty">검색 결과가 없어요.</div>
 $('q').addEventListener('input',renderList);
 /* 위치·거리·일출일몰·코스 */
 var ME=null,nearOn=false;
+/* 지도 위 선: 내 위치→선택 명소, 저장한 코스 */
+function routeLines(s){var h='',w=(Math.max(1.6,Math.min(3,vb.w/60))*s).toFixed(2),d=(8*s).toFixed(1)+' '+(6*s).toFixed(1);
+var c=(ST.course&&ST.course.length?ST.course:ST.saved||[]).filter(function(i){return has(ST.saved,i)});
+if(c.length>1){var pts=c.map(function(i){return X(P[i].ll[0]).toFixed(1)+','+Y(P[i].ll[1]).toFixed(1)}).join(' ');h+='<polyline points="'+pts+'" fill="none" stroke="var(--acc)" stroke-width="'+w+'" stroke-dasharray="'+d+'" stroke-linecap="round" stroke-linejoin="round" opacity=".7" pointer-events="none"/>'}
+if(trk&&ME&&sel>=0&&P[sel]){h+='<line x1="'+X(ME[0]).toFixed(1)+'" y1="'+Y(ME[1]).toFixed(1)+'" x2="'+X(P[sel].ll[0]).toFixed(1)+'" y2="'+Y(P[sel].ll[1]).toFixed(1)+'" stroke="#2f7cf6" stroke-width="'+w+'" stroke-dasharray="'+d+'" stroke-linecap="round" opacity=".85" pointer-events="none"/>'}
+return h}
 /* 확대하면 실제 지도(OpenStreetMap)로 바뀐다 */
 var TM={},TK=33120;
 function tPos(t,b,s){var n=Math.pow(2,t.z),tw=TK/n,ox=304.9/360*n,oy=n/2*(1-MY(38.85)/Math.PI);
