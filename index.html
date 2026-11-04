@@ -2413,8 +2413,6 @@ $('q').addEventListener('input',renderList);
 var ME=null,nearOn=false;
 /* 지도 위 선: 내 위치→선택 명소, 저장한 코스 */
 function routeLines(s){var h='',w=(Math.max(1.6,Math.min(3,vb.w/60))*s).toFixed(2),d=(8*s).toFixed(1)+' '+(6*s).toFixed(1);
-var c=(ST.course&&ST.course.length?ST.course:ST.saved||[]).filter(function(i){return has(ST.saved,i)});
-if(c.length>1){var pts=c.map(function(i){return X(P[i].ll[0]).toFixed(1)+','+Y(P[i].ll[1]).toFixed(1)}).join(' ');h+='<polyline points="'+pts+'" fill="none" stroke="var(--acc)" stroke-width="'+w+'" stroke-dasharray="'+d+'" stroke-linecap="round" stroke-linejoin="round" opacity=".7" pointer-events="none"/>'}
 if(trk&&ME&&sel>=0&&P[sel]){h+='<line x1="'+X(ME[0]).toFixed(1)+'" y1="'+Y(ME[1]).toFixed(1)+'" x2="'+X(P[sel].ll[0]).toFixed(1)+'" y2="'+Y(P[sel].ll[1]).toFixed(1)+'" stroke="#2f7cf6" stroke-width="'+w+'" stroke-dasharray="'+d+'" stroke-linecap="round" opacity=".85" pointer-events="none"/>'}
 return h}
 /* 확대하면 실제 지도(OpenStreetMap)로 바뀐다 */
