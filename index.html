@@ -232,7 +232,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 .dt .back{left:14px}
 .dt .heart{right:14px}
 .dt .heart[aria-pressed="true"] svg{fill:var(--acc);stroke:var(--acc)}
-.dt .gbtn{position:absolute;right:14px;bottom:12px;z-index:3;font-size:11.5px;font-weight:500;background:color-mix(in srgb,var(--paper) 88%,transparent);border-radius:999px;padding:4px 12px;box-shadow:0 2px 8px var(--shade)}
+.dt .gbtn{position:absolute;right:14px;bottom:30px;z-index:3;font-size:11.5px;font-weight:500;background:color-mix(in srgb,var(--paper) 88%,transparent);border-radius:999px;padding:4px 12px;box-shadow:0 2px 8px var(--shade)}
 .dt .gbtn[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 .dt .body{padding:16px 18px calc(96px + var(--sab));display:flex;flex-direction:column;gap:16px;margin-top:-14px;background:var(--paper);border-radius:22px 22px 0 0;position:relative;z-index:2}
 .dt .meta{font-size:12px;color:var(--muted);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
@@ -364,6 +364,40 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 .ss{animation:ss 10s linear infinite}
 .dm{animation:dm var(--d) ease-out infinite;animation-delay:var(--l)}
 .sweep{animation:swp 11s ease-in-out infinite}
+.tabs{grid-template-columns:repeat(5,1fr)!important}.tabs button{font-size:10.5px!important}
+.rvw{width:100%;height:44px;border-radius:14px;background:var(--acc);color:var(--on-acc,#fff);font-weight:700;font-size:14px;margin:8px 0 6px}
+.rvs{margin-top:6px;padding-top:14px;border-top:1px solid var(--line)}.rvt{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2px}.rvt small{color:var(--muted);font-size:12px}
+.rv{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;margin:8px 0}
+.rvh{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.rvh small{margin-left:auto;color:var(--muted);font-size:11px}.rvh b{font-size:13.5px}
+.av{width:26px;height:26px;border-radius:50%;background:color-mix(in srgb,var(--acc) 16%,var(--card));color:var(--acc);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px}
+.ex,.mn{font-style:normal;font-size:10px;padding:1px 6px;border-radius:999px;background:var(--line);color:var(--muted)}.mn{background:var(--acc);color:var(--on-acc,#fff)}
+.stars{font-size:11px;letter-spacing:-1px;color:var(--line)}.stars .on{color:#F2A526}
+.rv p{margin:7px 0 4px;font-size:13.5px;line-height:1.55;word-break:keep-all}
+.tg{display:flex;flex-wrap:wrap;gap:5px;margin:4px 0}.tg span{font-size:11px;padding:2px 8px;border-radius:999px;background:color-mix(in srgb,var(--acc) 10%,var(--card));color:var(--acc)}
+.pl{font-size:11.5px;color:var(--muted);text-decoration:underline;margin-top:5px}
+.ra{display:flex;gap:6px;margin-top:6px}.ra button{height:30px;padding:0 11px;border-radius:999px;background:var(--paper);border:1px solid var(--line);font-size:12px;color:var(--ink)}.ra button[aria-pressed="true"]{border-color:var(--acc);color:var(--acc)}
+.cmb{margin-top:8px;padding-top:8px;border-top:1px dashed var(--line)}.cmi{font-size:12.5px;line-height:1.5;margin-bottom:5px}.cmi small{color:var(--muted);margin-left:4px}
+.cmf{display:flex;gap:6px}.cmf input{flex:1;height:34px;border:1px solid var(--line);border-radius:10px;padding:0 10px;font-size:13px;background:var(--paper);color:var(--ink);min-width:0}.cmf button{height:34px;padding:0 12px;border-radius:10px;background:var(--ink);color:var(--paper);font-size:12.5px}
+.rcf{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;margin:6px 0 8px;display:flex;flex-direction:column;gap:10px}
+.fl{display:flex;flex-direction:column;gap:5px;font-size:12px;color:var(--muted)}.fl input,.fl select,.fl textarea{border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:14px;background:var(--paper);color:var(--ink);font-family:inherit;width:100%}
+.stp{display:flex;gap:2px}.stp button{font-size:26px;color:var(--line);line-height:1;padding:0 2px}.stp .on{color:#F2A526}
+.rcf .fc{display:flex;flex-wrap:wrap;gap:6px}.rcf .fc button{height:30px;padding:0 11px;border-radius:999px;border:1px solid var(--line);background:var(--paper);font-size:12px;color:var(--ink)}.rcf .fc button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.rcb{display:flex;gap:8px}.rcb button{flex:1;height:40px;border-radius:12px;border:1px solid var(--line);background:var(--paper);font-size:14px;color:var(--ink)}.rcb .pri{flex:2;background:var(--acc);border-color:var(--acc);color:var(--on-acc,#fff);font-weight:700}
+.msn{display:flex;align-items:center;gap:12px;background:color-mix(in srgb,var(--acc) 9%,var(--card));border:1.5px dashed var(--acc);border-radius:18px;padding:12px 14px;margin:2px 0 4px}
+.msn .me,.tdm .me{font-size:30px;width:46px;height:46px;border-radius:14px;background:var(--card);display:flex;align-items:center;justify-content:center;flex:none}
+.msn small,.tdm small{display:block;font-size:11px;color:var(--muted)}.msn b,.tdm b{font-size:14px;line-height:1.35;display:block}.msn>div{flex:1;min-width:0}
+.msn button{height:36px;padding:0 14px;border-radius:999px;background:var(--acc);color:var(--on-acc,#fff);font-weight:700;font-size:13px;flex:none}.msn.done button{background:var(--ink)}
+.lvc{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px;margin:4px 0 10px}
+.lv{font-size:38px;width:62px;height:62px;border-radius:50%;background:color-mix(in srgb,var(--acc) 12%,var(--paper));display:flex;align-items:center;justify-content:center;flex:none}
+.lvc b{font-family:var(--f-display);font-size:18px;display:block}.lvc small{font-size:11.5px;color:var(--muted)}.lvc>div{flex:1;min-width:0}
+.pbar{height:8px;border-radius:99px;background:var(--line);margin:6px 0 4px;overflow:hidden}.pbar i{display:block;height:100%;background:var(--acc);border-radius:99px;transition:width .5s}
+.tdm{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:color-mix(in srgb,var(--acc) 9%,var(--card));border:1.5px dashed var(--acc);border-radius:18px;padding:12px 14px;margin-bottom:4px}
+.tdm>div{flex:1;min-width:0}.tdm em{font-style:normal;font-size:12.5px;color:var(--acc);font-weight:700;flex:none}.tdm.done{opacity:.75}
+.bdg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.bd1{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 6px;text-align:center;filter:grayscale(1);opacity:.5}
+.bd1.on{filter:none;opacity:1;border-color:var(--acc)}.bd1 span{font-size:26px;display:block}.bd1 b{font-size:12.5px;display:block;margin-top:2px}.bd1 small{font-size:10.5px;color:var(--muted)}
+.tkn{font-size:12.5px;color:var(--muted);margin:2px 4px 4px;line-height:1.5}.tkf{display:flex;gap:6px;margin:6px 0}.tkf button{height:32px;padding:0 13px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:12.5px;color:var(--ink)}.tkf button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.rcres{display:flex;flex-direction:column;gap:5px;max-height:230px;overflow:auto}.rcres button{display:flex;justify-content:space-between;align-items:center;gap:8px;text-align:left;padding:9px 12px;border-radius:12px;border:1px solid var(--line);background:var(--paper);font-size:13.5px;color:var(--ink)}.rcres button small{color:var(--muted);font-size:11.5px;flex:none}.rcres button[aria-pressed="true"]{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 10%,var(--paper))}.psel{font-size:12.5px;color:var(--acc);padding:2px 2px 4px}
+.srchb{display:flex;align-items:center;gap:8px;height:46px;border:2px solid var(--acc);border-radius:999px;background:var(--card);padding:0 14px}.srchb svg{width:20px;height:20px;fill:none;stroke:var(--acc);stroke-width:2;stroke-linecap:round;flex:none}.srchb input{flex:1;border:0!important;background:transparent!important;padding:0!important;outline:0;min-width:0;font-size:15px}.rcres{border:1px solid var(--line);border-radius:14px;background:var(--paper);gap:0!important;padding:0;max-height:260px}.pkh{position:sticky;top:0;background:color-mix(in srgb,var(--acc) 8%,var(--paper));font-size:11.5px;color:var(--muted);padding:8px 12px;border-bottom:1px solid var(--line);z-index:1}.pkh b{color:var(--acc)}.rcres button.pk{border:0!important;border-radius:0!important;border-bottom:1px solid var(--line)!important;background:transparent!important;padding:11px 12px!important;justify-content:flex-start!important}.pk .rd{width:16px;height:16px;border-radius:50%;border:2px solid var(--line);flex:none}.pk span{flex:1}.pk[aria-pressed="true"]{background:color-mix(in srgb,var(--acc) 10%,var(--paper))!important}.pk[aria-pressed="true"] .rd{border-color:var(--acc);background:radial-gradient(var(--acc) 45%,transparent 50%)}.msd{display:block;margin:2px auto 8px;font-size:11.5px;color:var(--muted);text-decoration:underline}.fbb{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:12px 14px;margin:4px 0 10px}.fbb>div{flex:1;min-width:0}.fbb b{font-size:14px;display:block}.fbb small{font-size:11.5px;color:var(--muted);line-height:1.4;display:block}.fbb .cl{font-size:26px}.fbb button{height:34px;padding:0 13px;border-radius:999px;background:var(--acc);color:var(--on-acc,#fff);font-size:12.5px;font-weight:700;flex:none}.fbb.on button{background:var(--paper);color:var(--ink);border:1px solid var(--line)}.cl2{font-style:normal;font-size:11px}
 </style>
 
 <div class="shell">
@@ -374,11 +408,13 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
   </div>
   <p>사계절 가장 아름다운 한 순간을 놓치지 않도록, 지금 가야 할 곳을 지도에서 바로 찾는 앱입니다.</p>
   <div class="cmp">
-   <b>지도</b><span>전국 60곳(독도·울릉도 포함)을 지도에서 확인하고, 확대하면 실제 지도로 바뀌며, 내 위치 버튼으로 실시간 위치를 봅니다</span>
+   <b>지도</b><span>경기도 21곳을 지도에서 확인하고, 확대하면 실제 지도로 바뀌며, 내 위치 버튼으로 실시간 위치를 봅니다</span>
    <b>주변·시간</b><span>내 주변순 정렬, 일출·일몰과 황금빛 시간, 거리와 이동시간을 알려줍니다</span>
    <b>가이드</b><span>어디서, 어느 방향으로, 몇 배율로 찍을지 촬영 팁을 알려줍니다</span>
    <b>필터</b><span>테마, 시간대, 이동 수단, 내 위치에서 거리, 지역으로 명소를 걸러 봅니다</span>
-   <b>기록·코스</b><span>다녀온 곳은 스탬프로 남기고, 저장한 곳은 나만의 코스로 순서를 짭니다</span>
+   <b>기록·저장</b><span>다녀온 곳은 시·군 스탬프로 남기고, 마음에 드는 곳은 하트로 저장해 모아 봅니다</span>
+   <b>미션·뱃지</b><span>명소마다 귀여운 미션이 있고, 성공하면 점수와 뱃지, 등급이 올라갑니다</span>
+   <b>소통</b><span>다녀온 곳에 별점과 후기를 남기고, 공감과 댓글로 이야기를 나눕니다</span>
    <b>테마</b><span>선택한 달의 계절에 맞춰 색과 분위기가 바뀝니다</span>
   </div>
   <div class="swc" id="sw" role="group" aria-label="계절 미리보기"></div>
@@ -391,7 +427,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
   <div class="splash" id="splash" role="status" aria-label="찰나를 불러오는 중">
    <div class="fx" id="fx2" aria-hidden="true"></div>
    <svg class="lg" viewBox="0 0 100 100" aria-hidden="true"><g class="rot"><ellipse class="sp" style="--d:.15s" cx="50" cy="27" rx="14" ry="24" fill="#FF6FA5"/><ellipse class="sp" style="--d:.3s" cx="73" cy="50" rx="24" ry="14" fill="#12CDA0"/><ellipse class="sp" style="--d:.45s" cx="50" cy="73" rx="14" ry="24" fill="#FF9330"/><ellipse class="sp" style="--d:.6s" cx="27" cy="50" rx="24" ry="14" fill="#6B7CFF"/></g><circle class="cd" cx="50" cy="50" r="7.5" fill="var(--ink)"/></svg>
-   <h1>찰나</h1><p class="sub">대한민국 사계절 사진 명소</p>
+   <h1>찰나</h1><p class="sub">경기도 사계절 사진 명소</p>
    <div class="ld"><i></i><span id="spT"></span></div>
   </div>
   <header class="hd" id="hd">
@@ -406,7 +442,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
   <div class="views">
    <section class="view on" id="v-map" aria-label="지도">
     <div class="mapwrap" id="map">
-     <div id="tiles" aria-hidden="true"></div><svg id="msvg" role="img" aria-label="대한민국 사진 명소 지도"><defs id="pdefs"><clipPath id="pclip"><circle r="17"/></clipPath></defs><g id="base"></g><g id="pins"></g></svg>
+     <div id="tiles" aria-hidden="true"></div><svg id="msvg" role="img" aria-label="경기도 사진 명소 지도"><defs id="pdefs"><clipPath id="pclip"><circle r="17"/></clipPath></defs><g id="base"></g><g id="pins"></g></svg>
      <div class="fx" id="fx" aria-hidden="true"></div>
      <div class="chips mc" id="chips" role="group" aria-label="지역"></div>
      <div class="legend mc" aria-hidden="true"><span><i style="background:var(--acc);box-shadow:0 0 0 3px color-mix(in srgb,var(--acc) 28%,transparent)"></i>지금 절정</span><span><i style="background:var(--card);border:2.5px solid var(--acc)"></i>제철·연중</span><span><i style="background:var(--muted);opacity:.4"></i>비시즌</span></div>
@@ -428,6 +464,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
     </div>
    </section>
    <section class="view" id="v-stamp" aria-label="스탬프북"><div class="scr" id="stampScr"></div></section>
+   <section class="view" id="v-talk" aria-label="소통"><div class="scr" id="talkScr"></div></section>
    <section class="view" id="v-saved" aria-label="저장한 곳"><div class="scr" id="savedScr"></div></section>
   </div>
 
@@ -435,6 +472,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
    <button role="tab" data-v="map" aria-selected="true"><svg viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0113 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>지도</button>
    <button role="tab" data-v="list" aria-selected="false"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M4 10h16M9 3.5v3M15 3.5v3"/></svg>이달의 순간</button>
    <button role="tab" data-v="stamp" aria-selected="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="4.2"/><path d="M5 20h14M8.2 15.2L7 20M15.8 15.2L17 20"/></svg>스탬프</button>
+   <button role="tab" data-v="talk" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M5 5h14a2 2 0 012 2v8a2 2 0 01-2 2h-7l-4 3.5V17H5a2 2 0 01-2-2V7a2 2 0 012-2z"/></svg>소통</button>
    <button role="tab" data-v="saved" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg>저장</button>
   </nav>
 
@@ -881,7 +919,7 @@ window.ILL=function(p){var u=window.USR&&USR[p.n];return u?u.a:ILL2(p,true)};(fu
 /* ===== 명소 일러스트 v3 — 보내주신 사진을 참고해 51곳 모두 새로 그림 ===== */
 (function(){var S=window.SCENES=window.SCENES||{};
 /* 마무리: 은은한 종이 질감 */
-function fin($){$.add('<defs><filter id="grn" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .4 0 0 0 0 .35 0 0 0 .6 0"/></filter></defs><rect width="400" height="300" filter="url(#grn)" opacity=".13"/>')}
+function fin($){$.add('<defs><filter id="grn" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .4 0 0 0 0 .35 0 0 0 .6 0"/></filter><linearGradient id="fdp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF1D6" stop-opacity=".26"/><stop offset=".45" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".72" stop-color="#1E2A44" stop-opacity=".08"/><stop offset="1" stop-color="#141C33" stop-opacity=".34"/></linearGradient><radialGradient id="fgl" cx=".72" cy=".3" r=".7"><stop offset="0" stop-color="#FFE7B8" stop-opacity=".5"/><stop offset="1" stop-color="#FFE7B8" stop-opacity="0"/></radialGradient><linearGradient id="fhz" x1="0" y1="0" x2="0" y2="1"><stop offset=".3" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#EAF1FA" stop-opacity=".09"/><stop offset=".62" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><rect width="400" height="300" fill="url(#fhz)"/><rect width="400" height="300" fill="url(#fgl)" style="mix-blend-mode:soft-light"/><rect width="400" height="300" fill="url(#fdp)" style="mix-blend-mode:soft-light"/><rect width="400" height="300" filter="url(#grn)" opacity=".11"/>')}
 /* 공통 그리기 도구 */
 function K($){var cid=0,q=$.q,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,T=$.tint,f1=function(v){return (+v).toFixed(1)};
 /* 잎 모양(밑동 0,0 → 끝 0,-1): 달걀형 잎, 은행잎, 단풍잎 */
@@ -946,11 +984,27 @@ for(i=1;i<w/4.5;i++){var xx=x+i*4.5;o+=L('M'+f1(xx)+' '+f1(y+1)+' L'+f1(xx+(xx-x
 o+=R(f1(x+w*.18),y-3,f1(w*.64),4,T(c,-.45))+P('M'+f1(x+w*.18)+' '+(y-3)+' l-3 -3 l3 1Z M'+f1(x+w*.82)+' '+(y-3)+' l3 -3 l-3 1Z',T(c,-.45))+L('M'+(x-9)+' '+f1(y+h-.6)+' Q'+f1(x+w/2)+' '+f1(y+h*.68-.6)+' '+(x+w+9)+' '+f1(y+h-.6),'#EDE6DA',1.3,'stroke-dasharray="1.4 2.6"');
 if(snow)o+=P('M'+f1(x+w*.2)+' '+(y-3)+' L'+f1(x+w*.8)+' '+(y-3)+' Q'+f1(x+w*.86)+' '+f1(y+h*.45)+' '+(x+w+5)+' '+f1(y+h*.78)+' Q'+f1(x+w/2)+' '+f1(y+h*.3)+' '+(x-5)+' '+f1(y+h*.78)+' Q'+f1(x+w*.14)+' '+f1(y+h*.45)+' '+f1(x+w*.2)+' '+(y-3)+'Z','#F6F9FC','opacity=".94"');return o},
 /* 사람: 그림자·팔·다리·머리 (발끝 기준 y) */
-man:function(x,y,s,top,bot,hair){s=s||1;top=top||'#D33F3F';bot=bot||'#2B2B3A';var o=E(x,f1(y+.5*s),f1(9*s),f1(2.2*s),'#000','opacity=".2"');
-o+=R(f1(x-3.6*s),f1(y-13*s),f1(3*s),f1(13*s),bot)+R(f1(x+.6*s),f1(y-13*s),f1(3*s),f1(13*s),T(bot,-.18));
-o+=P('M'+f1(x-5.5*s)+' '+f1(y-12*s)+' L'+f1(x-4.6*s)+' '+f1(y-27*s)+' Q'+x+' '+f1(y-30*s)+' '+f1(x+4.6*s)+' '+f1(y-27*s)+' L'+f1(x+5.5*s)+' '+f1(y-12*s)+'Z',top)+P('M'+f1(x+1.5*s)+' '+f1(y-28.5*s)+' L'+f1(x+4.6*s)+' '+f1(y-27*s)+' L'+f1(x+5.5*s)+' '+f1(y-12*s)+' L'+f1(x+2*s)+' '+f1(y-12*s)+'Z','#000','opacity=".14"');
-o+=L('M'+f1(x-4.8*s)+' '+f1(y-26*s)+' L'+f1(x-6.6*s)+' '+f1(y-16*s),top,f1(2.2*s))+L('M'+f1(x+4.8*s)+' '+f1(y-26*s)+' L'+f1(x+6.6*s)+' '+f1(y-16*s),T(top,-.15),f1(2.2*s));
-o+=C(x,f1(y-33*s),f1(4.6*s),'#F1C7A0')+P('M'+f1(x-4.9*s)+' '+f1(y-33*s)+' Q'+f1(x-5*s)+' '+f1(y-39.6*s)+' '+x+' '+f1(y-39*s)+' Q'+f1(x+5*s)+' '+f1(y-39.6*s)+' '+f1(x+4.9*s)+' '+f1(y-33*s)+' Q'+x+' '+f1(y-36*s)+' '+f1(x-4.9*s)+' '+f1(y-33*s)+'Z',hair||'#2B1B1B');return o},
+man:function(x,y,s,top,bot,hair){s=s||1;top=top||'#D33F3F';bot=bot||'#2B2B3A';hair=hair||'#2B1B1B';var skin='#F1C7A0',sk2='#D9A77E',rr=[parseInt(top.substr(1,2),16),parseInt(top.substr(3,2),16),parseInt(top.substr(5,2),16)],fem=rr[0]>190&&rr[2]>rr[1]&&rr[0]-rr[1]>35;
+var X=function(v){return f1(x+v*s)},Y=function(v){return f1(y+v*s)};
+var o=E(f1(x+3*s),Y(.6),f1(11*s),f1(2.2*s),'#000','opacity=".22"');
+/* 다리 */
+o+=P('M'+X(-4.4)+' '+Y(-15)+' L'+X(-.4)+' '+Y(-15)+' L'+X(-.8)+' '+Y(-2)+' L'+X(-4)+' '+Y(-2)+'Z',bot)+P('M'+X(.4)+' '+Y(-15)+' L'+X(4.4)+' '+Y(-15)+' L'+X(4)+' '+Y(-2)+' L'+X(.8)+' '+Y(-2)+'Z',T(bot,-.2));
+o+=E(X(-2.6),Y(-.9),f1(3.3*s),f1(1.5*s),'#2A2A2E')+E(X(2.8),Y(-.9),f1(3.3*s),f1(1.5*s),'#1C1C20');
+/* 팔(뒤) */
+o+=P('M'+X(4.2)+' '+Y(-29)+' Q'+X(7.4)+' '+Y(-22)+' '+X(6.4)+' '+Y(-15.5)+' L'+X(4.6)+' '+Y(-15.8)+' Q'+X(5)+' '+Y(-22)+' '+X(3.4)+' '+Y(-27)+'Z',T(top,-.22))+C(X(5.6),Y(-14.4),f1(1.5*s),sk2);
+/* 몸통 */
+o+=P('M'+X(-5.2)+' '+Y(-28)+' Q'+X(-5.8)+' '+Y(-21)+' '+X(-5)+' '+Y(-13.4)+' L'+X(5)+' '+Y(-13.4)+' Q'+X(5.6)+' '+Y(-21)+' '+X(5.2)+' '+Y(-28)+' Q'+X(2)+' '+Y(-31)+' '+X(-5.2)+' '+Y(-28)+'Z',G(T(top,.14),T(top,-.14)));
+o+=P('M'+X(1.8)+' '+Y(-29.8)+' Q'+X(4.6)+' '+Y(-29)+' '+X(5.2)+' '+Y(-28)+' Q'+X(5.6)+' '+Y(-21)+' '+X(5)+' '+Y(-13.4)+' L'+X(2.2)+' '+Y(-13.4)+'Z','#000','opacity=".13"');
+o+=R(X(-5),Y(-14.6),f1(10*s),f1(1.3*s),T(top,-.3),'opacity=".5"');
+/* 목·머리 */
+o+=R(X(-1.4),Y(-31.6),f1(2.8*s),f1(3.4*s),sk2);
+if(fem)o+=P('M'+X(-4.8)+' '+Y(-36)+' Q'+X(-6.2)+' '+Y(-25)+' '+X(-4)+' '+Y(-21)+' L'+X(-2)+' '+Y(-24)+'Z',hair);
+o+=E(X(-4.2),Y(-35.2),f1(.9*s),f1(1.3*s),skin)+E(X(0),Y(-35.4),f1(4.3*s),f1(4.8*s),skin)+E(X(2),Y(-34),f1(2.3*s),f1(3.2*s),'#fff','opacity=".07"');
+o+=P('M'+X(-4.7)+' '+Y(-35)+' Q'+X(-5.2)+' '+Y(-41.2)+' '+X(0)+' '+Y(-40.6)+' Q'+X(5.2)+' '+Y(-41.2)+' '+X(4.7)+' '+Y(-35)+' Q'+X(3.8)+' '+Y(-37.6)+' '+X(1)+' '+Y(-38)+' Q'+X(-2.4)+' '+Y(-37.6)+' '+X(-4.7)+' '+Y(-35)+'Z',hair)+P('M'+X(-3)+' '+Y(-40.2)+' Q'+X(0)+' '+Y(-41.6)+' '+X(2.6)+' '+Y(-40.3)+' Q'+X(0)+' '+Y(-40)+' '+X(-3)+' '+Y(-40.2)+'Z','#fff','opacity=".16"');
+o+=C(X(2.6),Y(-33.6),f1(.5*s),'#E88A7A','opacity=".5"');
+/* 팔(앞) */
+o+=P('M'+X(-4.2)+' '+Y(-29)+' Q'+X(-7.6)+' '+Y(-22)+' '+X(-6.2)+' '+Y(-15)+' L'+X(-4.4)+' '+Y(-15.4)+' Q'+X(-5)+' '+Y(-22)+' '+X(-3.2)+' '+Y(-27)+'Z',top)+C(X(-5.4),Y(-13.9),f1(1.5*s),skin);
+return o},
 /* 물결이 있는 수면 */
 water:function(x0,y0,w,h,c1,c2,n){var o=R(x0,y0,w,h,G(c1,c2)),i;for(i=0;i<(n||18);i++){var yy=y0+3+q()*(h-5),ww=5+(yy-y0)/h*26;o+=L('M'+f1(x0+q()*(w-ww))+' '+f1(yy)+' q'+f1(ww/2)+' -2 '+f1(ww)+' 0',T(c1,.45),.9,'opacity=".55"')}return o},
 /* 상자형 건물: 명암·창문·옥상 */
@@ -2656,27 +2710,838 @@ a(k.man(112,278,1.35,'#F2F2F2','#2B3A5A')+k.man(138,284,1.15,'#E36A8A','#2B3A5A'
 a('<g transform="translate(332 272)">'+C(-12,0,9,'none','stroke="#2A2A32" stroke-width="2"')+C(12,0,9,'none','stroke="#2A2A32" stroke-width="2"')+L('M-12 0 L-2 -12 L12 0 M-2 -12 L-6 -16','#C8362F',2)+'</g>');
 $.birds()});
 })();
+/* 퀄리티 보강 3차 */
+(function(){var def=window.__defScene;function f(v){return +(+v).toFixed(1)}
+function pt(side,z,v){var x=side<0?200-200/z:200+200/z,yt=150-130/z,yb=150+150/z;return f(x)+','+f(yt+(yb-yt)*v)}
+function zz(z0,z1,u){return z0+(z1-z0)*u}
+/* 군산 경암동 철길마을: 좁은 철길 양옆의 낡은 가게와 간판 */
+def('군산 경암동 철길마을',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i,j;
+function wq(s,z0,z1,v0,v1,c,ex){return P('M'+pt(s,z0,v0)+' L'+pt(s,z1,v0)+' L'+pt(s,z1,v1)+' L'+pt(s,z0,v1)+'Z',c,ex)}
+$.sky('#6E9ED8','#F6C890','#FFE3B0');a(C(200,148,60,'#FFE9B0','opacity=".55"')+C(200,148,26,'#FFF4D0','opacity=".8"'));
+a(P('M120 150 L135 118 L152 150Z','#B8A89A','opacity=".6"')+P('M250 150 L262 126 L282 150Z','#B8A89A','opacity=".6"'));
+/* 바닥: 자갈 + 철길 */
+a(R(0,150,400,150,G('#9A9084','#6A6258')));
+for(i=0;i<60;i++){var gz=1+q()*10,gx=200+(q()*2-1)*1.2*200/gz;a(E(f(gx),f(150+150/gz),f(2.5/gz+.6),f(1.2/gz+.3),'#5A5248','opacity=".5"'))}
+for(i=0;i<22;i++){var z=Math.pow(1.17,i)*.95,y=150+150/z,w=118/z;a(R(f(200-w),f(y),f(w*2),f(Math.max(1.2,7/z)),i%5==2?'#C84A3A':'#5A4636'))}
+a(L('M100 300 L198 156 M300 300 L202 156','#7A6A5E',3.2)+L('M104 296 L198 158 M296 296 L202 158','#C8BAA8',1.1,'opacity=".7"'));
+/* 양옆 가게 */
+var LC=['#C9A27A','#8FB0A8','#D98A6A','#A89070','#B8C0A0','#C8A890'],RC=['#E0B48A','#B88A78','#9AB0C8','#D8B070','#A8B8A0','#D4A8A0'],ZS=[1,1.55,2.2,3.1,4.4,6.4,10];
+var AW=['#E85A4A','#3E9A5A','#F2C23A','#3E6AC8','#E88AB8','#F29A3A'];
+for(j=0;j<2;j++){var s=j?1:-1,CC=j?RC:LC;for(i=0;i<6;i++){var z0=ZS[i],z1=ZS[i+1];
+a(wq(s,z0,z1,0,1,CC[i])+wq(s,z0,z1,-.1,0,'#4A3A34')+wq(s,z0,z1,.94,1,'#000','opacity=".18"'));
+a(wq(s,zz(z0,z1,.12),zz(z0,z1,.88),.1,.24,AW[(i+j*3)%6])+wq(s,zz(z0,z1,.16),zz(z0,z1,.84),.13,.2,'#FFF','opacity=".25"'));
+a(wq(s,zz(z0,z1,.58),zz(z0,z1,.9),.34,.62,'#3A4A5E')+wq(s,zz(z0,z1,.6),zz(z0,z1,.88),.36,.6,G('#FFE2A0','#E8A050')));
+a(wq(s,zz(z0,z1,.12),zz(z0,z1,.42),.4,1,'#4A2E22')+wq(s,zz(z0,z1,.16),zz(z0,z1,.38),.46,.96,'#F2D8A8','opacity=".35"'));
+a(wq(s,zz(z0,z1,.08),zz(z0,z1,.5),.34,.4,AW[(i+j+2)%6]));
+a(wq(s,z0,zz(z0,z1,.05),0,1,'#000','opacity=".15"'))}}
+/* 인도 */
+a(P('M0 300 L0 270 L'+pt(-1,10,1)+' L'+pt(-1,1,1)+'Z','#7E766C','opacity=".0"'));
+/* 만국기/전구줄 */
+for(j=0;j<3;j++){var za=[1.5,2.6,4.2][j],pa=pt(-1,za,.1).split(','),pb=pt(1,za,.1).split(',');var x1=+pa[0],y1=+pa[1],x2=+pb[0],y2=+pb[1],my=(y1+y2)/2+14/za+6;
+a('<path d="M'+x1+' '+y1+' Q200 '+f(my+14/za)+' '+x2+' '+y2+'" fill="none" stroke="#3A2A20" stroke-width="1"/>');
+for(i=1;i<14;i++){var t=i/14,px=x1+(x2-x1)*t,py=(1-t)*(1-t)*y1+2*t*(1-t)*(my+14/za)+t*t*y2;a(P('M'+f(px-4/za*.9)+' '+f(py)+' L'+f(px+4/za*.9)+' '+f(py)+' L'+f(px)+' '+f(py+9/za)+'Z',AW[i%6]))}}
+/* 사람 */
+a(k.man(150,284,1.7,'#F2F2F2','#2B3A5A','#2A1E1A')+k.man(176,278,1.5,'#F2F2F2','#2B3A5A','#2A1E1A')+k.man(246,284,1.6,'#E36A8A','#4A4A5A'));
+a(k.man(204,184,.55,'#3E6AC8','#2B2B3A')+k.man(214,184,.5,'#F2A23A','#2B2B3A'));
+/* 자전거 */
+a('<g transform="translate(60 282)">'+C(-10,0,8,'none','stroke="#2A2A32" stroke-width="1.8"')+C(10,0,8,'none','stroke="#2A2A32" stroke-width="1.8"')+L('M-10 0 L-1 -11 L10 0 M-1 -11 L-4 -15','#2E6AA8',2)+'</g>');
+$.birds()});
+/* 개항장: 붉은 벽돌 근대 건축, 패루, 홍등 */
+def('개항장(개항로)',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i,j;
+$.sky('#6AA8E4','#BEDCF2','#FFE6C0');$.cloud(60,44,1.1,.6);$.cloud(300,60,.9,.5);
+a(R(0,136,400,30,G('#4A86B8','#2E6A98')));
+for(i=0;i<5;i++)a(L('M'+(20+i*70)+' '+(142+i*5)+' h'+(26+i*3),'#fff',1,'opacity=".4"'));
+/* 항구 크레인 */
+a(R(318,70,5,70,'#C8C0B8')+R(356,70,5,70,'#C8C0B8')+R(312,66,56,6,'#E8553A')+L('M320 72 L400 90','#8A8A8A',2)+R(296,118,34,14,'#2E5A8A')+R(300,104,26,14,'#C8402E'));
+a(P('M240 136 L290 136 L284 126 L246 126Z','#5A5A62')+R(256,112,20,14,'#EDEDED'));
+/* 건물: 좌측 붉은 벽돌 */
+function arch(x,y,w,h,c){return '<path d="M'+x+' '+(y+h)+' V'+(y+w/2)+' A'+w/2+' '+w/2+' 0 0 1 '+(x+w)+' '+(y+w/2)+' V'+(y+h)+'Z" fill="'+c+'"/>'}
+a(R(0,60,126,170,G('#B8553E','#7E3424')));
+for(i=0;i<9;i++)a(L('M0 '+(72+i*18)+' H126','#6E2A1E',.8,'opacity=".35"'));
+a(R(-2,56,130,8,'#E8D8B8')+R(-2,118,130,5,'#E8D8B8')+R(-2,176,130,5,'#E8D8B8'));
+for(j=0;j<3;j++)for(i=0;i<3;i++){var wx=12+i*38,wy=72+j*58;a(arch(wx-2,wy-2,26,38,'#E8D8B8')+arch(wx,wy,22,34,j==2?'#3A2A22':G('#FFE2A0','#7A5A44')))}
+a(P('M-2 56 L126 56 L126 46 L-2 46Z','#4A5A62')+R(0,46,126,3,'#2E3A40'));
+/* 우측 근대 은행 건물 */
+a(R(274,92,130,140,G('#EAD9B0','#B8A47A')));
+a(P('M268 92 L404 92 L404 70 L330 52 L268 70Z',G('#4E8A74','#2A5A4A')));
+a(L('M268 92 H404','#E8D8B8',3));
+for(i=0;i<4;i++)a(R(284+i*28,104,12,92,G('#F6EEDC','#C8B890'))+R(282+i*28,100,16,5,'#F6EEDC')+R(282+i*28,194,16,5,'#F6EEDC'));
+a(R(284,200,112,32,'#3A3028')+R(300,208,20,24,'#FFE2A0','opacity=".7"')+R(350,208,20,24,'#FFE2A0','opacity=".7"'));
+a(P('M322 70 L330 52 L338 70Z','#E8D8B8')+C(330,60,4,'#3A5A4A'));
+/* 패루(차이나타운) */
+a(R(140,100,120,10,'#C8352A')+R(136,108,128,8,G('#E8B23A','#B8801E')));
+a(P('M130 100 Q150 98 160 82 L240 82 Q250 98 270 100 Q250 108 200 108 Q150 108 130 100Z',G('#3E9A6A','#1E5A40')));
+a(P('M146 82 Q170 76 178 62 L222 62 Q230 76 254 82 Q230 88 200 88 Q170 88 146 82Z',G('#3E9A6A','#1E5A40')));
+a(L('M178 62 H222','#E8D8B8',2.4));
+a(R(176,88,48,16,'#E8B23A')+'<text x="200" y="100" font-size="11" fill="#7A1E14" text-anchor="middle" font-family="serif" font-weight="700">中華街</text>');
+for(i=0;i<4;i++){var px=[140,178,222,260][i];a(R(px-5,108,10,126,G('#D43A2E','#8A1E14'))+R(px-8,224,16,10,'#8A8A90'))}
+a(R(140,150,120,5,'#E8B23A','opacity=".8"'));
+/* 홍등 줄 */
+a('<path d="M126 124 Q160 150 200 140 Q240 150 274 124" fill="none" stroke="#3A2A20" stroke-width="1"/>');
+for(i=0;i<9;i++){var t=i/8,lx=126+t*148,ly=124+Math.sin(t*3.14)*20+(t>.5?(t-.5)*0:0);a(E(f(lx),f(ly+8),5,6.5,G('#F2503A','#B8281A'))+E(f(lx),f(ly+8),11,13,'#FF8A5A','opacity=".25"')+R(f(lx-2),f(ly+14),4,2,'#E8B23A'))}
+/* 길 */
+a(R(0,232,400,68,G('#7A7A82','#4A4A52')));
+for(i=0;i<16;i++)a(L('M'+(i*26-10)+' 232 L'+(i*26-60+i*8)+' 300','#5E5E66',.8,'opacity=".4"'));
+a(L('M0 244 H400','#B8B8BE',1,'opacity=".6"')+L('M0 249 H400','#B8B8BE',1,'opacity=".6"'));
+a(R(0,226,400,8,'#A8A29A'));
+/* 가로등 */
+for(j=0;j<2;j++){var gx=j?132:268;a(R(gx-1.5,176,3,56,'#2E2E34')+E(gx,176,8,4,'#FFE9A8')+E(gx,176,18,10,'#FFD27A','opacity=".25"')+L('M'+gx+' 190 q8 -6 12 -2','#2E2E34',1.5))}
+a(k.man(170,278,1.45,'#F2D060','#2B3A5A')+k.man(196,284,1.3,'#E36A8A','#4A4A5A')+k.man(232,276,1.4,'#3E6AC8','#2B2B3A')+k.man(60,284,1.35,'#8AC4A0','#3A3A4A'));
+$.birds()});
+/* 성수동 골목: 붉은 벽돌 공장 카페와 네온 */
+def('성수동 골목',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i,j;
+function wq(s,z0,z1,v0,v1,c,ex){return P('M'+pt(s,z0,v0)+' L'+pt(s,z1,v0)+' L'+pt(s,z1,v1)+' L'+pt(s,z0,v1)+'Z',c,ex)}
+$.sky('#3E5A9A','#F0A088','#FFD8A0');
+a(R(190,60,18,100,G('#B8A89A','#7A6E64'))+R(187,56,24,6,'#8A7E72'));a(E(200,40,14,8,'#FFFFFF','opacity=".35"')+E(208,24,18,9,'#FFFFFF','opacity=".25"'));
+a(R(224,86,26,66,G('#9AB4D0','#4A6A98'))+R(150,100,24,50,G('#9AB4D0','#4A6A98')));
+a(R(0,150,400,150,G('#6A6A74','#3A3A44')));
+/* 횡단보도 */
+for(i=-4;i<=4;i++){var wx=i*.24-.1;a(P('M'+f(200+wx*200/2.9)+' '+f(150+150/2.9)+' L'+f(200+(wx+.14)*200/2.9)+' '+f(150+150/2.9)+' L'+f(200+(wx+.14)*200/3.5)+' '+f(150+150/3.5)+' L'+f(200+wx*200/3.5)+' '+f(150+150/3.5)+'Z','#E8E8EC','opacity=".85"'))}
+var LCs=['#A8503A','#8A8A92','#92462E','#D8D0C4','#B05A40'],RCs=['#2E3238','#B86040','#E4D8C0','#8A8A92','#A8503A'],ZS=[1,2.3,3.8,5.6,8,12];
+for(j=0;j<2;j++){var s=j?1:-1,CC=j?RCs:LCs;for(i=0;i<5;i++){var z0=ZS[i],z1=ZS[i+1];
+a(wq(s,z0,z1,0,1,CC[i])+wq(s,z0,z1,-.06,0,'#2A2A30')+wq(s,z0,z1,.92,1,'#000','opacity=".2"'));
+if(CC[i]=='#A8503A'||CC[i]=='#92462E'||CC[i]=='#B86040')for(var b=0;b<7;b++)a(wq(s,z0,z1,b/7,b/7+.008,'#000','opacity=".18"'));
+/* 철제 창 */
+a(wq(s,zz(z0,z1,.15),zz(z0,z1,.85),.22,.7,'#16181C')+wq(s,zz(z0,z1,.18),zz(z0,z1,.82),.26,.66,G('#FFE2A8','#E8A860')));
+for(var m=1;m<4;m++)a(wq(s,zz(z0,z1,.15+.7*m/4-.02),zz(z0,z1,.15+.7*m/4+.02),.22,.7,'#16181C'));
+a(wq(s,zz(z0,z1,.15),zz(z0,z1,.85),.44,.46,'#16181C'));
+a(wq(s,zz(z0,z1,.3),zz(z0,z1,.7),.76,1,'#2A2A30')+wq(s,zz(z0,z1,.34),zz(z0,z1,.66),.8,1,'#4A4A52'))}}
+/* 네온 간판 */
+a(wq(-1,2.5,3.5,.05,.17,'#16181C')+wq(-1,2.55,3.45,.07,.15,'#FF5AA8','opacity=".9"')+wq(-1,2.4,3.6,.02,.2,'#FF5AA8','opacity=".18"'));
+a(wq(1,1.2,1.9,.08,.2,'#16181C')+wq(1,1.25,1.85,.1,.18,'#5AD8FF','opacity=".9"'));
+/* 담쟁이 */
+for(i=0;i<16;i++){var pz=2.4+q()*1.3,pp=pt(1,pz,.1+q()*.5).split(',');a(k.leaf(+pp[0],+pp[1],f(3+3/pz),['#5E9A3A','#7AB04A','#4A8A34'][i%3]))}
+/* 전구 줄 */
+for(j=0;j<2;j++){var za=[1.7,3.2][j],pa=pt(-1,za,.08).split(','),pb=pt(1,za,.08).split(',');a('<path d="M'+pa[0]+' '+pa[1]+' Q200 '+f(+pa[1]+20/za)+' '+pb[0]+' '+pb[1]+'" fill="none" stroke="#2A2220" stroke-width="1"/>');
+for(i=1;i<12;i++){var t=i/12,px=+pa[0]+(+pb[0]-+pa[0])*t,py=(1-t)*(1-t)*+pa[1]+2*t*(1-t)*(+pa[1]+20/za)+t*t*+pb[1];a(C(f(px),f(py+3),2.2,'#FFE08A')+C(f(px),f(py+3),6,'#FFD27A','opacity=".35"'))}}
+/* 입간판, 자전거, 화분 */
+a(P('M60 272 L74 272 L71 246 L63 246Z','#2A2A30')+R(63,248,8,10,'#F2E2C0'));
+a('<g transform="translate(330 280)">'+C(-11,0,9,'none','stroke="#2A2A32" stroke-width="2"')+C(11,0,9,'none','stroke="#2A2A32" stroke-width="2"')+L('M-11 0 L-2 -12 L11 0 M-2 -12 L-6 -17','#E8553A',2)+'</g>');
+a(k.man(150,284,1.5,'#F2F2F2','#2B3A5A')+k.man(176,280,1.35,'#E36A8A','#3A3A4A')+k.man(236,282,1.4,'#2E6AA8','#2B2B3A')+k.man(272,288,1.3,'#F2A23A','#3A3A4A'));
+a(R(184,266,5,6,'#F2E2C0')+R(183,264,7,3,'#7A4A2A'));
+$.birds()});
+/* 태화강 국가정원: 십리대숲 */
+def('태화강 국가정원',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i,j;
+a(R(0,0,400,300,G('#F4F8D0','#9ECB7C')));a(E(200,110,120,100,'#FFFBD8','opacity=".55"'));
+function bam(x,w,y0,y1,c1,c2,op,ring){var o=R(f(x-w/2),y0,f(w),y1-y0,G(c1,c2),op?'opacity="'+op+'"':'');for(var yy=y0+10+(x%20);yy<y1;yy+=ring){o+=R(f(x-w/2-.4),f(yy),f(w+.8),f(Math.max(1,w*.14)),c2,'opacity=".75"')}return o}
+function lv(x,y,s,c){var o='';for(var n=0;n<7;n++){var ang=-3.4+n*.55;o+=P('M'+f(x)+' '+f(y)+' Q'+f(x+Math.cos(ang)*s*.6)+' '+f(y+Math.sin(ang)*s*.6-4)+' '+f(x+Math.cos(ang)*s)+' '+f(y+Math.sin(ang)*s+3)+' Q'+f(x+Math.cos(ang)*s*.55)+' '+f(y+Math.sin(ang)*s*.55+4)+' '+f(x)+' '+f(y)+'Z',c,'opacity=".8"')}return o}
+/* 원경 */
+for(i=0;i<30;i++){var bx=i*14+(i%3)*3;a(bam(bx,3.4,0,196,'#C8E4A8','#9CC47A',.75,18))}
+/* 빛줄기 */
+for(i=0;i<5;i++)a(P('M'+(130+i*34)+' 0 L'+(150+i*30)+' 0 L'+(190+i*10)+' 230 L'+(180+i*10)+' 230Z','#FFFBD0','opacity=".14"'));
+/* 길 */
+a(P('M120 300 L280 300 L212 176 L188 176Z',G('#E4D4A8','#B8A478')));
+a(P('M188 176 L212 176 L207 160 L193 160Z','#FFFBD8','opacity=".8"'));
+for(i=0;i<9;i++){var t=i/9,yy=300-t*124;a(L('M'+f(120+t*68)+' '+f(yy)+' L'+f(280-t*68)+' '+f(yy),'#A8946A',.8,'opacity=".25"'))}
+/* 중경 */
+for(i=0;i<14;i++){var mx=i<7?(8+i*21)+q()*6:(260+(i-7)*21)+q()*6;a(bam(mx,7+q()*2,-20,214,'#8CBE6A','#5E9444',.92,24))}
+/* 근경 대나무 */
+var NX=[22,62,104,296,340,382],NW=[22,16,12,12,16,24];
+for(i=0;i<6;i++)a(bam(NX[i],NW[i],-20,300,'#5E9A46','#2E6A34',1,34+(i%3)*4));
+for(i=0;i<6;i++)a(lv(NX[i]+(i<3?8:-8),22+i*14,42+NW[i],['#4E8A3C','#6AAA48','#3E7A34'][i%3]));
+for(i=0;i<8;i++)a(lv(40+i*44+(q()*20|0),6+q()*20,34,['#7AB656','#5E9A44'][i%2]));
+/* 꽃양귀비 */
+for(i=0;i<46;i++){var side=i%2,fx=side?(290+q()*110):(q()*108),fy=252+q()*46;a(L('M'+f(fx)+' '+f(fy+8)+' V'+f(fy),'#4A8A34',1)+C(f(fx),f(fy),f(2.4+q()*1.6),['#E8402E','#F26A4A','#FF8A5A'][i%3])+C(f(fx),f(fy),.8,'#2A1E1A'))}
+/* 안내등, 사람 */
+for(i=0;i<4;i++){var t=(i+.6)/4.6,ly=300-t*118,lxL=124+t*66;a(R(f(lxL-1),f(ly-26*(1-t*.6)),2,f(26*(1-t*.6)),'#4A4A42')+C(f(lxL),f(ly-27*(1-t*.6)),f(3.4*(1-t*.5)),'#FFE9A8')+C(f(lxL),f(ly-27*(1-t*.6)),f(9*(1-t*.5)),'#FFD27A','opacity=".3"'))}
+a(k.man(176,282,1.55,'#F2A0B8','#2B3A5A')+k.man(206,276,1.4,'#3E6AC8','#2B2B3A')+k.man(196,214,.6,'#F2F2F2','#2B2B3A'));
+$.birds()});
+/* 양양 서피비치: 파도와 서퍼, 보드 */
+def('양양 서피비치',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i,j;
+$.sky('#52AEEF','#CBEBFA');$.cloud(70,40,1.2,.7);$.cloud(300,56,1,.6);$.cloud(200,24,.7,.5);
+a(R(0,104,400,100,G('#1C86CE','#58D2E0')));
+for(i=0;i<5;i++){var y0=112+i*17;var d='M0 '+y0;for(var x=0;x<=400;x+=20)d+=' Q'+(x+10)+' '+f(y0-4-i*.8+(((x/20)%2)?3:-3))+' '+(x+20)+' '+y0;a(L(d,'#FFFFFF',1+i*.5,'opacity="'+(.25+i*.1)+'"'))}
+/* 큰 파도 */
+a(P('M40 206 Q60 150 130 128 Q190 108 230 130 Q252 146 250 170 Q244 184 232 196 L260 206Z',G('#32B4D8','#0F6FB8'))+P('M130 128 Q190 108 230 130 Q244 138 248 152 Q216 140 190 146 Q160 150 130 128Z','#E8FAFF','opacity=".9"'));
+a(L('M132 130 Q190 108 230 130 Q246 140 250 156','#FFFFFF',3)+L('M60 190 Q110 150 160 150','#9EE4F2',2,'opacity=".7"'));
+for(i=0;i<20;i++)a(C(f(200+q()*60),f(124+q()*40),f(.8+q()*1.6),'#FFFFFF','opacity=".85"'));
+/* 서퍼 */
+a(P('M150 142 Q190 134 224 140 Q196 150 150 142Z','#FFB02E')+L('M154 142 Q190 140 220 141','#E8402E',1.2));
+a(L('M176 138 L172 124','#1E2430',5)+L('M196 138 L204 124','#1E2430',5)+P('M168 124 Q180 108 204 118 L206 128 L170 130Z','#1E2430')+L('M182 112 L162 104','#1E2430',4)+L('M196 114 L222 108','#1E2430',4)+C(186,102,6,'#E8B890')+P('M180 98 Q186 92 194 98 L194 100 L180 100Z','#2A1E1A'));
+for(i=0;i<10;i++)a(C(f(150+q()*80),f(136+q()*10),f(.8+q()*1.2),'#FFFFFF','opacity=".8"'));
+/* 모래사장 */
+a(P('M0 204 Q100 192 210 200 T400 196 L400 300 L0 300Z',G('#F2E0B0','#D8C08A')));
+a(P('M0 204 Q100 192 210 200 T400 196 L400 206 Q300 212 200 208 T0 214Z','#E6D49E','opacity=".8"'));
+a(L('M0 207 Q100 196 210 203 T400 199','#FFFFFF',2,'opacity=".8"'));
+/* 보드 꽂이 */
+var BC=['#E8402E','#F6D23A','#2EA8E8','#3EB86A','#F26AA8','#8A5AC8'];
+for(i=0;i<6;i++){var bx=[30,56,82,320,346,372][i],bh=62+(i%3)*8;a(E(bx,274-bh/2,9,bh/2,BC[i])+L('M'+bx+' '+f(274-bh)+' V274','#FFFFFF',1.4,'opacity=".8"')+E(bx+3,270,6,2,'#B8A070','opacity=".8"'))}
+/* 푯말, 깃발 */
+a(R(206,252,3,34,'#6A4A2A')+R(188,240,40,14,'#F2E2C0')+'<text x="208" y="251" font-size="9" fill="#2A5A8A" text-anchor="middle" font-family="sans-serif" font-weight="800">SURFYY</text>');
+for(i=0;i<3;i++){var fx=140+i*24;a(L('M'+fx+' 290 V232','#8A8A8A',1.4)+P('M'+fx+' 234 Q'+(fx+16)+' 230 '+(fx+12)+' 256 Q'+(fx+4)+' 250 '+fx+' 252Z',['#F26AA8','#F6D23A','#2EA8E8'][i]))}
+a(k.man(110,286,1.6,'#1E2430','#1E2430')+k.man(264,284,1.5,'#F26AA8','#F6F6F6'));
+a(E(124,266,6,26,'#2EA8E8','transform="rotate(12 124 266)"')+E(270,272,6,24,'#F6D23A','transform="rotate(-10 270 272)"'));
+$.birds()});
+/* 보성 대한다원: 이랑진 차밭과 삼나무 */
+def('보성 대한다원',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i,j;
+$.sky('#B8D8D0','#F2F6E0');a(C(86,50,40,'#FFFBE0','opacity=".5"')+C(86,50,16,'#FFFFFF','opacity=".8"'));
+a(P('M0 120 Q60 84 130 108 Q210 70 290 104 Q350 80 400 100 L400 170 L0 170Z',G('#8EB4A0','#6E9A84'),'opacity=".7"'));
+function cv(j,x){return 124+j*22+Math.sin(x/58+j*1.3)*(9+j*1.2)-Math.cos(x/130+j)*6}
+var GC=[['#7AA860','#5E8E4C'],['#6EA058','#4E8644'],['#62984E','#437C3C'],['#559044','#3A7234'],['#4A8640','#2E6A30'],['#3E7A38','#265E2A'],['#34702E','#1E5024']];
+for(j=0;j<7;j++){var d='M-10 300 L-10 '+f(cv(j,-10));for(var x=0;x<=410;x+=10)d+=' L'+x+' '+f(cv(j,x));d+=' L410 300Z';a(P(d,G(GC[j][0],GC[j][1])));
+for(var r=0;r<3;r++){var rd='M-10 '+f(cv(j,-10)+7+r*6);for(x=0;x<=410;x+=10)rd+=' L'+x+' '+f(cv(j,x)+7+r*6);a(L(rd,'#1E4A22',1.2,'opacity=".35"'));for(x=0;x<400;x+=11)a(E(x+q()*4,f(cv(j,x)+5+r*6),f(5+j*.5),f(2.6+j*.3),[GC[j][0],'#8ABE62','#4E8A40'][(x/11+r)%3|0],'opacity=".75"'))}}
+/* 흙길 */
+a(P('M168 300 L232 300 L206 150 L194 150Z',G('#D8C69A','#B09A6E'),'opacity=".92"'));
+for(i=0;i<9;i++){var t=i/9,yy=300-t*150;a(L('M'+f(168+t*26)+' '+f(yy)+' L'+f(232-t*26)+' '+f(yy),'#8A7650',1,'opacity=".5"'))}
+/* 삼나무 */
+function ced(x,y,h,w,c){var o=R(f(x-1.2),f(y-h*.1),2.4,f(h*.14),'#4A3A2A'),n=9;for(var s=0;s<n;s++){var t=s/n,yy=y-h*.1-t*h*.9,ww=w*(1-t*.82);o+=P('M'+f(x-ww)+' '+f(yy)+' L'+f(x)+' '+f(yy-h*.2)+' L'+f(x+ww)+' '+f(yy)+' Q'+f(x)+' '+f(yy-3)+' '+f(x-ww)+' '+f(yy)+'Z',s%2?c:T2(c))}return o}
+function T2(c){return $.tint(c,-.18)}
+for(i=0;i<9;i++)a(ced(f(8+i*13+(i%2)*4),f(190+(i%3)*6),f(130+q()*50),f(12+q()*4),['#1E4A34','#2A5A3C','#18402C'][i%3]));
+for(i=0;i<9;i++)a(ced(f(300+i*12+(i%2)*4),f(190+(i%3)*6),f(120+q()*50),f(12+q()*4),['#1E4A34','#2A5A3C','#18402C'][i%3]));
+a(R(0,156,400,34,G('#FFFFFF','#FFFFFF'),'opacity=".0"')+E(200,176,150,10,'#FFFFFF','opacity=".16"'));
+a(k.man(196,262,1.6,'#F2F2F2','#2B3A5A')+k.man(214,270,1.4,'#E36A8A','#4A4A5A')+E(196,247,9,3,'#E8D090'));
+$.birds()});
+})();
+/* 경기도 명소 신규 장면 1 */
+(function(){var def=window.__defScene;function f(v){return +(+v).toFixed(1)}
+function ridge($,y,amp,ph,c1,c2,op){var d='M0 300 L0 '+f(y+Math.sin(ph)*amp);for(var x=0;x<=400;x+=16)d+=' L'+x+' '+f(y+Math.sin(x/70+ph)*amp+Math.sin(x/29+ph*2)*amp*.4);d+=' L400 300Z';return $.P(d,$.G(c1,c2),op?'opacity="'+op+'"':'')}
+function reed($,x,y,h,c,w){return $.L('M'+f(x)+' '+f(y)+' Q'+f(x+(w||3))+' '+f(y-h*.6)+' '+f(x+(w||3)*2)+' '+f(y-h),c,1.1)}
+/* 파주 마장호수 출렁다리 */
+def('파주 마장호수 출렁다리',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#6AAEEE','#CDE9F6','#F4F1DC');$.cloud(80,40,1.1,.6);$.cloud(310,58,.9,.5);
+a(ridge($,104,16,.6,'#A8B88A','#7E946A',.9));a(ridge($,126,14,2.1,'#C8742E','#8E4A22'));
+for(i=0;i<26;i++)a(k.leaf(f(q()*400),f(120+q()*40),f(7+q()*6),['#E8802A','#F2B03A','#C84A24','#6E9A4A'][i%4]));
+a(R(0,150,400,150,G('#4EA8C4','#1F6A8E')));
+for(i=0;i<14;i++)a(R(f(q()*380),f(160+q()*130),f(14+q()*38),1.4,'#FFFFFF','opacity=".35"'));
+a(ridge($,150,5,1,'#C8742E','#8E4A22','.28'));
+/* 탑과 주탑 */
+a(R(70,70,9,130,'#E8E8EC')+R(318,70,9,130,'#E8E8EC')+R(66,70,17,5,'#C8C8CE')+R(314,70,17,5,'#C8C8CE'));
+a('<path d="M-10 178 Q74 64 74 70 Q200 190 322 70 Q330 64 410 178" fill="none" stroke="#F6F6F8" stroke-width="2.6"/>');
+for(i=0;i<22;i++){var hx=-4+i*19,t=hx<74?(hx+10)/84:hx<322?(hx-74)/248:(hx-322)/88,hy=hx<74?178-108*Math.sin(t*Math.PI/2):hx<322?70+120*Math.sin(t*Math.PI)*.92:70+108*Math.sin(t*Math.PI/2)*.0+(178-70)*t;if(hx>74&&hx<322)hy=70+(Math.pow(2*t-1,2)*0+1)*0+ (1-Math.pow(2*t-1,2))*0;a(L('M'+hx+' '+f(hy)+' V190','#E8E8EE',.8,'opacity=".6"'))}
+a(R(-10,188,420,7,G('#8A6A48','#5A4630'))+R(-10,182,420,2,'#F6F6F8')+R(-10,194,420,3,'#000','opacity=".2"'));
+for(i=0;i<30;i++)a(L('M'+(i*14)+' 188 V195','#3A2A1E',.8,'opacity=".5"'));
+/* 사람들 */
+a(k.man(140,184,1.05,'#E8553A','#2B3A5A')+k.man(168,184,1.0,'#3E8AD8','#2B2B3A')+k.man(250,184,1.1,'#F2D23A','#4A4A5A')+k.man(278,184,1.0,'#F2A0B8','#3A3A4A'));
+/* 데크 */
+a(P('M0 300 L0 252 Q120 240 220 252 Q300 262 400 246 L400 300Z',G('#8A6A48','#4E3A28')));
+for(i=0;i<9;i++)a(L('M'+(i*48-10)+' 256 L'+(i*58-30)+' 300','#3A2A1E',1,'opacity=".5"'));
+a(k.man(80,276,1.5,'#F2F2F2','#2B3A5A')+k.man(112,282,1.3,'#E36A8A','#3A3A4A'));
+$.birds()});
+/* 포천 산정호수 */
+def('포천 산정호수',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#5C8ED0','#F2C8A8','#FFE6B8');a(C(300,92,24,'#FFF0C8','opacity=".9"')+C(300,92,50,'#FFE6B8','opacity=".3"'));$.cloud(80,46,1,.5);
+a(ridge($,86,20,.4,'#8A94A8','#5E6A84','.9'));a(ridge($,112,16,1.8,'#B8642E','#7A3E22'));
+for(i=0;i<22;i++)a(k.leaf(f(q()*400),f(108+q()*26),f(8+q()*6),['#E8802A','#F2B03A','#C84A24','#D8A030'][i%4]));
+a(R(0,140,400,160,G('#7AA0C0','#3A5E88')));
+a('<g opacity=".38"><g transform="translate(0 280) scale(1 -1)">'+ridge($,140,16,1.8,'#B8642E','#7A3E22')+'</g></g>');
+a(E(300,170,30,5,'#FFE6B8','opacity=".45"')+E(300,188,16,3,'#FFE6B8','opacity=".35"'));
+for(i=0;i<12;i++)a(R(f(q()*380),f(150+q()*60),f(14+q()*34),1.3,'#FFFFFF','opacity=".4"'));
+a(E(200,142,260,9,'#FFFFFF','opacity=".25"'));
+/* 억새 */
+a(P('M0 300 L0 230 Q100 214 200 228 Q300 240 400 222 L400 300Z',G('#B89A5A','#6E5A34')));
+for(i=0;i<150;i++){var rx=q()*410,ry=222+q()*70;a(reed($,rx,f(ry+14),f(28+q()*34),['#F0E0B8','#E8D4A0','#FFF4D8','#D8C088'][i%4],f((q()-.5)*8)))}
+/* 데크와 사람 */
+a(P('M236 300 L400 300 L400 250 Q330 252 262 270Z',G('#8A6A48','#4E3A28')));
+for(i=0;i<5;i++)a(L('M'+(262+i*34)+' 256 L'+(250+i*40)+' 300','#3A2A1E',1,'opacity=".5"'));
+a(k.man(300,282,1.5,'#F2F2F2','#2B3A5A')+k.man(332,286,1.3,'#E8553A','#3A3A4A'));
+$.birds()});
+/* 가평 남이섬 눈길 */
+def('가평 남이섬 눈길',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#B8C8DA','#E8E8F0','#FDF6EC');a(R(0,150,400,150,G('#F8FAFF','#D4DCEA')));
+a(P('M0 150 Q100 142 200 148 Q300 142 400 150 L400 160 L0 160Z','#E4EAF4'));
+function tr(x,y,h,w){var o=R(f(x-w*.07),f(y),f(w*.14),f(h*.22),'#4A3A32');for(var s=0;s<9;s++){var t=s/9,yy=y-t*h*.78,ww=w*(1-t*.78);o+=P('M'+f(x-ww)+' '+f(yy)+' L'+f(x)+' '+f(yy-h*.2)+' L'+f(x+ww)+' '+f(yy)+'Z',s%2?'#5E7A66':'#486654')+P('M'+f(x-ww*.8)+' '+f(yy-1)+' L'+f(x)+' '+f(yy-h*.2)+' L'+f(x+ww*.8)+' '+f(yy-1)+' Q'+f(x)+' '+f(yy-5)+' '+f(x-ww*.8)+' '+f(yy-1)+'Z','#FFFFFF','opacity=".9"')}return o}
+var zs=[8,5.4,3.8,2.8,2.1,1.6,1.3,1.1,1];
+for(i=0;i<9;i++){var z=zs[i],sc=1/z;a(tr(f(200-190*sc*1.1),f(150+130*sc*.7),f(230*sc+30),f(34*sc+10)));a(tr(f(200+190*sc*1.1),f(150+130*sc*.7),f(230*sc+30),f(34*sc+10)))}
+a(P('M160 300 L240 300 L206 152 L194 152Z',G('#FFFFFF','#E4EAF6'),'opacity=".95"'));
+for(i=0;i<8;i++){var yy=300-i*i*3.2-i*12;a(E(f(180+i*2),f(yy-6),f(3-i*.2),1.2,'#B8C4DA','opacity=".5"'))}
+a(k.man(182,278,1.5,'#E8553A','#2B3A5A')+k.man(212,282,1.35,'#F2F2F2','#3A3A4A'));
+a(E(200,110,60,26,'#FFFFFF','opacity=".4"'));
+$.fall('snow',['#fff'],46);$.birds()});
+/* 양주 나리공원 */
+def('양주 나리공원',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#5A7ACC','#F2A8B8','#FFE0B0');a(C(120,130,34,'#FFF0C8','opacity=".9"')+C(120,130,76,'#FFC8A8','opacity=".28"'));$.cloud(300,46,1.1,.45);$.cloud(60,60,.9,.4);
+a(ridge($,128,14,.8,'#7E7A9E','#5A567A','.9'));
+a(P('M0 300 L0 150 Q100 134 200 148 Q300 160 400 140 L400 300Z',G('#B8788E','#7A3E5E')));
+for(var r=0;r<7;r++){var y0=150+r*20;for(i=0;i<28;i++){var px=i*15+(r%2)*7+q()*4,py=y0+Math.sin(i*.7+r)*5;a(E(f(px),f(py+10),f(9+r*1.4),f(5+r*.7),['#F6A8C8','#F08AB4','#FFC8DC','#E87AA8'][(i+r)%4],'opacity=".9"'));a(E(f(px+2),f(py+6),f(6+r),f(3+r*.4),'#FFE6F0','opacity=".5"'))}}
+a(P('M150 300 L250 300 L212 168 L196 168Z',G('#E2C8A0','#B89870'),'opacity=".96"'));
+a(E(200,180,50,8,'#FFE6C8','opacity=".35"'));
+a(k.man(176,280,1.6,'#F8A8C0','#F2F2F2')+k.man(214,284,1.4,'#3E6AC8','#2B2B3A'));
+for(i=0;i<8;i++)a(C(f(30+q()*340),f(166+q()*20),1.4,'#FFF0C8','opacity=".7"'));
+$.fall('petal',['#FFC8DC'],10);$.birds()});
+/* 시흥 갯골생태공원 */
+def('시흥 갯골생태공원',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#4A4C9A','#E6728A','#FFC88A');a(C(300,150,30,'#FFE6B0','opacity=".95"')+C(300,150,70,'#FFB070','opacity=".35"'));$.cloud(80,56,1.2,.35);
+a(R(0,150,400,150,G('#C88A8A','#6A4A62')));
+a('<path d="M-10 300 Q80 240 150 212 Q220 190 300 170 L320 170 Q240 200 190 230 Q110 270 60 300Z" fill="#F2A878" opacity=".75"/>');
+a('<path d="M120 300 Q200 262 280 226 Q330 202 400 190 L400 210 Q330 226 290 250 Q240 276 180 300Z" fill="#E88A70" opacity=".6"/>');
+for(i=0;i<260;i++){var px=q()*400,py=156+q()*144,ins=(py-156)/144;if((px>140&&px<250&&py>210&&py<300&&Math.abs(px-(205+(py-210)*.1))<30))continue;a(E(f(px),f(py),f(2+ins*5),f(1.2+ins*2.2),['#D8303A','#E8503A','#B8203A','#F26A4A'][i%4],'opacity=".88"'))}
+a(R(76,142,24,20,'#2A2438')+P('M70 142 L88 124 L106 142Z','#1E1A2C')+R(180,138,34,24,'#2A2438')+P('M174 138 L197 118 L220 138Z','#1E1A2C'));
+a(R(330,120,2.4,40,'#2A2438')+L('M331 120 L322 100 M331 120 L342 100 M331 120 L331 98','#2A2438',1.6));
+a(R(0,238,400,5,'#6A4A3A')+R(0,243,400,2,'#000','opacity=".25"'));for(i=0;i<20;i++)a(R(i*21,243,3,18,'#4A3228'));
+a(k.man(120,238,1.3,'#1E1A28','#1E1A28')+k.man(148,238,1.2,'#2A2438','#2A2438'));
+for(i=0;i<7;i++){var gx=60+q()*280,gy=60+q()*50;a(L('M'+f(gx)+' '+f(gy)+' q4 -4 8 0 q4 -4 8 0','#2A2038',1.4))}
+});
+/* 화성 제부도 모세길 */
+def('화성 제부도 모세길',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#5A5AA8','#F08A7A','#FFD08A');a(C(210,138,28,'#FFF0C0','opacity=".95"')+C(210,138,66,'#FFB878','opacity=".35"'));$.cloud(70,50,1.2,.4);$.cloud(310,70,1,.35);
+a(R(0,140,400,160,G('#F4B890','#8A6A74')));
+a(P('M0 300 L0 220 Q120 190 210 180 Q300 190 400 220 L400 300Z',G('#8A7A84','#5A4A5E')));
+for(i=0;i<9;i++)a(E(f(q()*400),f(200+q()*90),f(30+q()*40),f(4+q()*5),'#FFD8B0','opacity=".25"'));
+a(E(210,146,140,6,'#FFE6B8','opacity=".5"'));
+a(P('M160 300 L240 300 L214 176 L206 176Z',G('#4A4A56','#2E2E3A')));
+a(L('M200 300 L210 176','#E8E8EE',1.2,'stroke-dasharray="10 8" opacity=".6"'));
+for(i=0;i<5;i++){var t=i/5,ly=300-t*110,lx=160+t*44;a(R(f(lx-2),f(ly-30*(1-t*.5)),2.4,f(30*(1-t*.5)),'#3A3A42')+C(f(lx),f(ly-31*(1-t*.5)),f(3*(1-t*.5)),'#FFE9A8')+C(f(lx),f(ly-31*(1-t*.5)),f(9*(1-t*.5)),'#FFD27A','opacity=".3"'))}
+a(P('M70 170 Q110 150 140 168 L140 176 L70 176Z','#3A3050')+k.pineS(100,176,28,'#2A2840')+k.pineS(118,176,20,'#2A2840'));
+a(P('M300 164 L330 164 L324 176 L306 176Z','#4A3A50')+L('M314 164 V150','#4A3A50',1.4)+P('M314 150 L330 160 L314 160Z','#E8553A'));
+a(k.man(180,282,1.6,'#1E1A28','#1E1A28')+k.man(214,286,1.5,'#E8553A','#2A2438'));
+for(i=0;i<8;i++){var gx=60+q()*280,gy=50+q()*50;a(L('M'+f(gx)+' '+f(gy)+' q4 -4 8 0 q4 -4 8 0','#3A2A40',1.4))}
+});
+/* 여주 강천섬 은행나무길 */
+def('여주 강천섬 은행나무길',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#8AB8E8','#E8F2F8','#FFF4D0');
+a(P('M0 150 L400 150 L400 170 L0 170Z','#9AB8C8','opacity=".8"'));
+a(R(0,150,400,150,G('#E8C858','#B8902E')));
+a(P('M250 300 L400 300 L400 190 L260 156Z',G('#8AB8D8','#4E88B0'),'opacity=".0"'));
+var zs=[6,4.2,3.1,2.4,1.9,1.55,1.3,1.1];
+for(var s=0;s<2;s++)zs.forEach(function(z,j){var sc=1/z,x=s?200+210*sc:200-210*sc,y=156+140*sc*.8,r=44*sc+12;a(k.trunk(f(x),f(y-r*.6),f(r*1.5),f(5*sc+3),'#5A4630'));for(var n=0;n<9;n++)a(k.leaf(f(x+(q()-.5)*r*2),f(y-r*1.8+(q()-.5)*r*1.2),f(r*.55+q()*r*.25),['#FBE06A','#F5C23C','#F2B820','#E8A818'][n%4]))});
+a(P('M140 300 L260 300 L212 160 L192 160Z',G('#F4DA70','#D8A838'),'opacity=".96"'));
+for(i=0;i<60;i++)a(E(f(120+q()*160),f(190+q()*110),f(3+q()*3),f(1.6+q()),['#FBE06A','#F5C23C','#E8A818'][i%3],'opacity=".85"'));
+a(E(200,164,28,10,'#FFFFFF','opacity=".4"'));
+a(k.man(178,280,1.6,'#E36A8A','#2B3A5A')+k.man(216,286,1.4,'#3E6AC8','#3A3A4A'));
+$.fall('leaf',['#FBE06A','#F5C23C'],14);$.birds()});
+/* 이천 백사 산수유마을 */
+def('이천 백사 산수유마을',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#8EC4F0','#DCEEF8','#FFF8E4');$.cloud(90,40,1.1,.6);$.cloud(300,64,.9,.5);
+a(ridge($,100,14,.7,'#B8D0A0','#8AAE78','.9'));a(ridge($,128,12,2.4,'#A8C890','#6E9A5A'));
+a(R(0,160,400,140,G('#98BC74','#5E8A48')));
+/* 기와집 */
+a(R(262,150,110,52,'#F2E6CC')+R(262,196,110,6,'#8A7A66'));
+a(P('M250 154 Q290 140 316 124 Q342 140 384 154 L384 164 L250 164Z',G('#5C6672','#2E343C'))+L('M316 124 L316 150','#8A8A92',1));
+a(R(290,172,18,30,'#6A4A34')+R(330,170,20,18,'#F8E8B0','opacity=".8"'));
+/* 돌담 */
+a(P('M0 300 L0 206 L400 206 L400 300Z',G('#A89A86','#6E6254')));
+for(var r=0;r<3;r++)for(i=0;i<18;i++){a(E(f(i*24+(r%2)*12+8),f(220+r*26),f(11+q()*3),f(8+q()*2),['#B8AA94','#968A78','#C4B8A4'][(i+r)%3],'opacity=".95"'))}
+a(R(0,200,400,10,G('#8A7A66','#6A5E4E')));
+/* 길 */
+a(P('M120 300 L300 300 L226 206 L190 206Z',G('#D4C4A0','#9A8A66')));
+/* 산수유 꽃가지 */
+function br(x,y,len,ang,d){var ex=x+Math.cos(ang)*len,ey=y+Math.sin(ang)*len,o=L('M'+f(x)+' '+f(y)+' Q'+f((x+ex)/2)+' '+f((y+ey)/2-10)+' '+f(ex)+' '+f(ey),'#5A4630',3);for(var n=0;n<d;n++){var t=n/d,px=x+(ex-x)*t+(q()-.5)*16,py=y+(ey-y)*t-Math.sin(t*3)*8+(q()-.5)*16;o+=C(f(px),f(py),f(3+q()*2.4),['#F6D21E','#FBE24A','#F2B820'][n%3],'opacity=".95"')+C(f(px+3),f(py-2),2,'#FFF0A0','opacity=".8"')}return o}
+a(br(-10,40,200,.28,60)+br(-10,12,170,.4,50)+br(410,30,190,Math.PI-.28,60)+br(410,6,160,Math.PI-.4,50));
+a(br(-10,96,150,.2,40)+br(410,96,140,Math.PI-.18,40));
+a(k.man(172,282,1.55,'#F2A0B8','#2B3A5A')+k.man(212,288,1.4,'#F6F6F6','#3A3A4A'));
+$.fall('petal',['#FBE24A','#F6D21E'],10);$.birds()});
+/* 구리 한강시민공원 */
+def('구리 한강시민공원',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#6EB0F0','#D8EEFA','#FFF8E0');$.cloud(90,44,1.1,.6);$.cloud(300,66,.9,.5);
+a(ridge($,100,12,1.2,'#9AB8CC','#6E92AE','.85'));
+for(i=0;i<9;i++)a(R(f(30+i*38),f(104+q()*14),f(14+q()*12),f(40),['#AEBCC8','#C4CED8','#98A8B8'][i%3],'opacity=".85"'));
+a(R(0,140,400,70,G('#58A8D8','#2E78B0')));
+for(i=0;i<10;i++)a(R(f(q()*380),f(146+q()*54),f(14+q()*34),1.3,'#FFFFFF','opacity=".4"'));
+a(R(0,136,400,5,'#E8E8EE')+R(0,142,400,2,'#000','opacity=".16"'));
+for(i=0;i<8;i++)a(R(f(30+i*50),141,3,16,'#C8C8D0'));
+a(R(0,210,400,90,G('#7EB05A','#4E8A3A')));
+/* 유채 + 코스모스 */
+for(var r=0;r<8;r++){var y0=212+r*12;for(i=0;i<30;i++){var px=i*14+(r%2)*6+q()*5,s=1+r*.18;a(L('M'+f(px)+' '+f(y0+8)+' V'+f(y0),'#4A8A34',1))
+a(C(f(px-1.2*s),f(y0-1),f(1.6*s),'#F6D21E')+C(f(px+1.2*s),f(y0-1),f(1.6*s),'#FBE24A')+C(f(px),f(y0-2.6*s),f(1.5*s),'#F6D21E'))}}
+for(i=0;i<46;i++){var cx=(i<23?20+q()*160:230+q()*160),cy=240+q()*54;a(L('M'+f(cx)+' '+f(cy+10)+' V'+f(cy),'#4A8A34',1)+k.fl(f(cx),f(cy),f(4+q()*2.4),['#F28AB8','#E8528A','#FFD2E4','#F8A8CC'][i%4],'#F6D23A'))}
+a(P('M140 300 L260 300 L228 214 L212 214Z',G('#E2D0A8','#B8A47A'),'opacity=".94"'));
+a('<g transform="translate(300 262)">'+C(-11,0,9,'none','stroke="#2A2A32" stroke-width="2"')+C(11,0,9,'none','stroke="#2A2A32" stroke-width="2"')+L('M-11 0 L-2 -12 L11 0 M-2 -12 L-6 -16','#2E8AC8',2)+'</g>');
+a(k.man(176,282,1.6,'#F2F2F2','#2B3A5A')+k.man(212,288,1.4,'#E36A8A','#3A3A4A'));
+$.birds()});
+/* 포천 한탄강 하늘다리 */
+def('포천 한탄강 하늘다리',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#7AB4E8','#DCEEF6','#FFF6E0');$.cloud(200,40,1.2,.55);
+a(R(0,0,400,300,'#6A7684','opacity="0"'));
+a(P('M0 300 L0 60 Q40 70 70 100 L110 140 L130 200 L160 300Z',G('#5E5A5C','#2E2A30'))+P('M400 300 L400 54 Q360 70 330 100 L290 150 L270 210 L244 300Z',G('#5E5A5C','#2E2A30')));
+for(i=0;i<22;i++){var cx=10+i*5.5,cy=70+i*8;a(L('M'+f(cx)+' '+f(cy)+' L'+f(cx+4)+' '+f(cy+66),'#242028',1.4,'opacity=".6"'));a(L('M'+f(392-i*5.5)+' '+f(64+i*8)+' L'+f(388-i*5.5)+' '+f(130+i*8),'#242028',1.4,'opacity=".6"'))}
+a(P('M0 60 Q40 70 70 100 L70 70 Q40 50 0 44Z','#C8742E')+P('M400 54 Q360 70 330 100 L330 70 Q360 48 400 40Z','#B8501E'));
+for(i=0;i<14;i++){a(k.leaf(f(q()*64),f(54+q()*26),f(8+q()*5),['#E8802A','#C84A24','#F2B03A'][i%3]));a(k.leaf(f(340+q()*60),f(48+q()*26),f(8+q()*5),['#E8802A','#C84A24','#F2B03A'][i%3]))}
+a(P('M130 300 L160 220 L240 220 L270 300Z',G('#3E9A8E','#1E5E60')));
+for(i=0;i<8;i++)a(R(f(150+q()*70),f(230+q()*60),f(16+q()*30),1.3,'#BEEEE4','opacity=".4"'));
+a(E(200,210,70,12,'#FFFFFF','opacity=".25"'));
+/* 하늘다리 */
+a(R(40,124,320,6,G('#B8BCC8','#7A7E8C'))+R(40,130,320,3,'#000','opacity=".2"'));
+a(L('M40 108 H360','#D8DCE6',2.2)+L('M40 118 H360','#D8DCE6',1.2));
+for(i=0;i<27;i++)a(L('M'+(46+i*12)+' 108 V124','#C8CCD6',1));
+a(L('M70 124 L110 140 M330 124 L290 148','#8A8E9A',2.4));
+a(k.man(150,124,1.15,'#E8553A','#2B3A5A')+k.man(176,124,1.05,'#3E8AD8','#2B2B3A')+k.man(250,124,1.1,'#F2D23A','#4A4A5A')+k.man(272,124,1.0,'#F2A0B8','#3A3A4A'));
+$.birds()});
+})();
+/* 경기도 명소 신규 장면 2 */
+(function(){var def=window.__defScene;function f(v){return +(+v).toFixed(1)}
+function ridge($,y,amp,ph,c1,c2,op){var d='M0 300 L0 '+f(y+Math.sin(ph)*amp);for(var x=0;x<=400;x+=16)d+=' L'+x+' '+f(y+Math.sin(x/70+ph)*amp+Math.sin(x/29+ph*2)*amp*.4);d+=' L400 300Z';return $.P(d,$.G(c1,c2),op?'opacity="'+op+'"':'')}
+/* 용인 에버랜드 튤립정원 */
+def('용인 에버랜드 튤립정원',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#6EB4F2','#D8EEFA','#FFF4E0');$.cloud(80,40,1.1,.6);$.cloud(310,56,1,.5);
+a(ridge($,96,12,.5,'#A8C8A0','#7AA676','.9'));
+/* 동화풍 성 */
+a(R(150,70,100,70,G('#F6E8D8','#D8C4B0')));
+[[160,52,22,48],[216,48,26,52],[188,36,24,64]].forEach(function(t){a(R(t[0],t[1]+16,t[2],t[3],G('#FAEEDC','#D8C4B0'))+P('M'+(t[0]-4)+' '+(t[1]+16)+' L'+(t[0]+t[2]/2)+' '+(t[1]-14)+' L'+(t[0]+t[2]+4)+' '+(t[1]+16)+'Z',['#4E8AD8','#E8553A','#8A5AC8'][t[0]%3]))});
+for(i=0;i<5;i++)a(R(f(160+i*18),104,8,14,'#6A8AC8','opacity=".7"'));
+a(R(186,116,28,24,'#6A4A34'));
+/* 롤러코스터 레일 */
+a('<path d="M-10 120 Q40 40 90 118 Q130 170 170 110 M240 110 Q290 40 340 112 Q380 150 410 90" fill="none" stroke="#E8553A" stroke-width="3"/>');
+for(i=0;i<9;i++)a(L('M'+(10+i*10)+' '+f(120-Math.sin(i*.35)*40)+' v18','#C8C8D0',1));
+/* 풍선 */
+[[60,70,'#F2503A'],[96,52,'#F6D23A'],[330,64,'#3E8AD8'],[360,90,'#F28AB8']].forEach(function(b){a(E(b[0],b[1],7,9,b[2])+L('M'+b[0]+' '+(b[1]+9)+' q-2 14 2 26','#6A6A72',.8))});
+a(R(0,140,400,160,G('#8CC468','#4E8E3E')));
+/* 튤립 밭 */
+var TC=['#F2303A','#F6D23A','#F28AB8','#8A5AC8','#FF8A2E','#FFFFFF'];
+for(var r=0;r<9;r++){var y0=150+r*17,sc=.6+r*.2;for(i=0;i<40;i++){var px=i*(10+r*.5)+(r%2)*5-5+q()*2,col=TC[(Math.floor(i/6)+r)%6];a(L('M'+f(px)+' '+f(y0+8*sc)+' V'+f(y0),'#3E8A34',f(1.2*sc)));a('<path d="M'+f(px-3*sc)+' '+f(y0-1)+' Q'+f(px-3.4*sc)+' '+f(y0-8*sc)+' '+f(px)+' '+f(y0-9*sc)+' Q'+f(px+3.4*sc)+' '+f(y0-8*sc)+' '+f(px+3*sc)+' '+f(y0-1)+' Q'+f(px)+' '+f(y0+2)+' '+f(px-3*sc)+' '+f(y0-1)+'Z" fill="'+col+'"/>')}}
+a(P('M150 300 L250 300 L216 190 L184 190Z',G('#E8D8B8','#BCA880'),'opacity=".95"'));
+a(E(200,196,26,6,'#FFFFFF','opacity=".4"'));
+a(k.man(176,282,1.6,'#F2A0B8','#F6F6F6')+k.man(214,288,1.4,'#3E8AD8','#2B2B3A'));
+$.fall('petal',['#F28AB8','#F6D23A'],8);$.birds()});
+/* 파주 임진각 바람의언덕 */
+def('파주 임진각 바람의언덕',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#4A68B8','#F09A82','#FFD890');a(C(290,138,30,'#FFF0C0','opacity=".95"')+C(290,138,70,'#FFC088','opacity=".35"'));$.cloud(80,50,1.2,.4);$.cloud(330,40,.8,.3);
+a(ridge($,120,12,.9,'#8A6E9A','#5A4A7A','.9'));
+a(L('M30 108 Q200 130 400 90','#2A2A3A',1.3)+R(196,108,16,14,'#C84A3A')+L('M204 108 V100','#2A2A3A',1.2));
+a(P('M0 300 L0 150 Q100 134 200 146 Q300 158 400 138 L400 300Z',G('#9A8E52','#5E5A32')));
+for(i=0;i<80;i++)a(L('M'+f(q()*400)+' '+f(170+q()*130)+' q2 -10 5 -20','#D8C888',1,'opacity=".5"'));
+function pw(x,y,s,c){var o=L('M'+f(x)+' '+f(y+22*s)+' V'+f(y),'#E8E8EE',f(1.3*s));for(var j=0;j<4;j++){var an=j*Math.PI/2+.5;o+=P('M'+f(x)+' '+f(y)+' L'+f(x+Math.cos(an)*9*s)+' '+f(y+Math.sin(an)*9*s)+' L'+f(x+Math.cos(an+.9)*9*s)+' '+f(y+Math.sin(an+.9)*9*s)+'Z',c[j%c.length])}return o+C(f(x),f(y),f(1.4*s),'#2A2A3A')}
+var PC=[['#F2503A','#F6D23A'],['#3E8AD8','#8AD0F0'],['#F28AB8','#FFFFFF'],['#3EB86A','#F6D23A']];
+for(i=0;i<90;i++){var t=q(),py=156+t*130,px=q()*400;if(px>150&&px<250&&py>210)continue;a(pw(px,py-20*t,f(.4+t*1.1),PC[i%4]))}
+a(P('M140 300 L260 300 L218 176 L204 176Z',G('#E2CBA2','#A8906A'),'opacity=".9"'));
+a(k.man(176,282,1.6,'#F28AB8','#F6F6F6')+k.man(214,288,1.4,'#2E6AA8','#2B2B3A'));
+for(i=0;i<6;i++){var gx=50+q()*300,gy=50+q()*40;a(L('M'+f(gx)+' '+f(gy)+' q4 -4 8 0 q4 -4 8 0','#3A2A40',1.4))}
+});
+/* 포천 허브아일랜드 빛축제 */
+def('포천 허브아일랜드 빛축제',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#0E1230','#2A2A5E','#4A3A72');
+for(i=0;i<40;i++)a(C(f(q()*400),f(q()*110),f(.5+q()*1),'#FFFFFF','opacity="'+(.4+q()*.5).toFixed(2)+'"'));
+a(R(0,150,400,150,G('#2E3A66','#12163A')));
+a(E(200,176,170,26,'#FFD890','opacity=".22"'));
+var CS=['#FFD27A','#FF6AA8','#6AD0FF','#B58AFF','#7AF0A8'];
+for(i=0;i<14;i++){var z=1+i*.5,sc=1/z,w=170*sc+10,top=150-100*sc,bot=150+110*sc,col=CS[i%5];
+a('<path d="M'+f(200-w)+' '+f(bot)+' L'+f(200-w)+' '+f(top+w*.6)+' Q'+f(200-w)+' '+f(top)+' 200 '+f(top)+' Q'+f(200+w)+' '+f(top)+' '+f(200+w)+' '+f(top+w*.6)+' L'+f(200+w)+' '+f(bot)+'" fill="none" stroke="'+col+'" stroke-width="'+f(5*sc+1.4)+'" opacity="'+f(.95-i*.04)+'"/>');
+a('<path d="M'+f(200-w)+' '+f(bot)+' L'+f(200-w)+' '+f(top+w*.6)+' Q'+f(200-w)+' '+f(top)+' 200 '+f(top)+' Q'+f(200+w)+' '+f(top)+' '+f(200+w)+' '+f(top+w*.6)+' L'+f(200+w)+' '+f(bot)+'" fill="none" stroke="'+col+'" stroke-width="'+f(14*sc+3)+'" opacity=".13"/>');
+a(E(200,f(bot),f(w*.8),f(5*sc+1),col,'opacity=".18"'))}
+for(i=0;i<60;i++)a(C(f(60+q()*280),f(40+q()*110),f(.8+q()*1.4),CS[i%5],'opacity=".85"'));
+a(P('M-10 300 L-10 250 Q60 240 130 262 L200 300Z','#EEF2FF','opacity=".12"'));
+a(E(200,236,60,16,'#FFD890','opacity=".25"'));
+a(k.man(176,284,1.55,'#16182A','#16182A')+k.man(214,288,1.4,'#2A2A4A','#2A2A4A'));
+for(i=0;i<5;i++)a(E(f(120+i*40),f(262+(i%2)*8),9,2,'#FFD890','opacity=".18"'));
+$.fall('snow',['#fff'],26)});
+/* 안성 팜랜드 호밀밭 */
+def('안성 팜랜드 호밀밭',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#5AA6F0','#CFE8F8','#FFFBE8');$.cloud(80,46,1.4,.8);$.cloud(250,34,1.1,.7);$.cloud(340,78,.9,.6);
+a(ridge($,110,12,.4,'#A8D0A0','#78AC70','.9'));
+/* 헛간 */
+a(R(290,98,60,40,'#C8402E')+P('M284 100 L320 74 L356 100Z','#7E2418')+R(310,114,20,24,'#F6E8D0')+L('M310 114 L330 138 M330 114 L310 138','#7E2418',1.2));
+a(R(60,100,4,36,'#E8E8EE')+L('M62 100 L40 86 M62 100 L84 86 M62 100 L62 76','#E8E8EE',2.4));
+for(var r=0;r<9;r++){var y0=138+r*17,sc=.5+r*.22;var d='M-10 300 L-10 '+f(y0);for(var x=0;x<=410;x+=10)d+=' L'+x+' '+f(y0+Math.sin(x/38+r*1.3)*(3+r*.7));d+=' L410 300Z';a(P(d,G(['#C8E478','#9ACC52','#78B440','#5E9E34','#4E8A2E','#3E7A28','#34702A','#2C6424','#245A20'][r],['#98C84E','#6AA83A','#4E9230','#3E7E2A','#306E24','#285E20','#20521C','#1A4A18','#164214'][r])));
+for(i=0;i<46;i++){var px=i*9+q()*6,py=y0+Math.sin(px/38+r*1.3)*(3+r*.7)+2;a(L('M'+f(px)+' '+f(py+10*sc)+' Q'+f(px+2)+' '+f(py)+' '+f(px+5)+' '+f(py-8*sc),['#D8F098','#B8DC70','#E8F8B0'][i%3],f(1*sc),'opacity=".7"'))}}
+a(P('M156 300 L244 300 L214 160 L200 160Z',G('#E8D8B0','#B8A47A'),'opacity=".95"'));
+for(i=0;i<5;i++){var sx=40+q()*70,sy=170+q()*30;a(E(f(sx),f(sy),6,4,'#F6F6F6')+C(f(sx-6),f(sy-1),2.4,'#2A2A32'))}
+a(k.man(176,280,1.6,'#F6D23A','#2B3A5A')+k.man(214,286,1.4,'#E36A8A','#3A3A4A'));
+$.birds()});
+/* 광명동굴 */
+def('광명동굴',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+a(R(0,0,400,300,G('#1A1410','#3A2A1C')));
+a(E(200,140,200,130,'#FFB848','opacity=".14"')+E(200,150,110,80,'#FFD890','opacity=".2"'));
+for(i=0;i<16;i++){var z=1+i*.55,sc=1/z,w=190*sc+8,top=150-120*sc,bot=150+130*sc;
+a('<path d="M'+f(200-w)+' '+f(bot)+' L'+f(200-w)+' '+f(top+w*.7)+' Q'+f(200-w)+' '+f(top)+' 200 '+f(top)+' Q'+f(200+w)+' '+f(top)+' '+f(200+w)+' '+f(top+w*.7)+' L'+f(200+w)+' '+f(bot)+'" fill="none" stroke="'+(i%2?'#6A4A2A':'#8A6232')+'" stroke-width="'+f(9*sc+1.6)+'" opacity="'+f(.95-i*.03)+'"/>');
+a('<path d="M'+f(200-w*.97)+' '+f(bot)+' L'+f(200-w*.97)+' '+f(top+w*.68)+' Q'+f(200-w*.97)+' '+f(top+3)+' 200 '+f(top+3)+' Q'+f(200+w*.97)+' '+f(top+3)+' '+f(200+w*.97)+' '+f(top+w*.68)+' L'+f(200+w*.97)+' '+f(bot)+'" fill="none" stroke="#FFC860" stroke-width="'+f(2.4*sc+.5)+'" opacity=".7"/>');
+a(C(f(200-w*.9),f(bot-16*sc),f(3*sc+1),'#FFE9A8')+C(f(200+w*.9),f(bot-16*sc),f(3*sc+1),'#FFE9A8'))}
+a(P('M0 300 L0 262 Q60 240 140 252 L190 300Z','#2A1E14')+P('M400 300 L400 258 Q340 238 260 254 L210 300Z','#2A1E14'));
+a(E(200,262,60,12,'#FFC860','opacity=".35"')+E(200,272,40,6,'#FFE9A8','opacity=".25"'));
+for(i=0;i<22;i++){var sx=q()<.5?q()*120:280+q()*120;a(P('M'+f(sx)+' 0 L'+f(sx+5)+' 0 L'+f(sx+2.5)+' '+f(14+q()*34)+'Z','#4A3626'))}
+a(k.man(180,282,1.6,'#16100A','#16100A')+k.man(212,286,1.45,'#2A1E14','#2A1E14'));
+for(i=0;i<20;i++)a(C(f(60+q()*280),f(40+q()*160),f(.6+q()*1),'#FFE9A8','opacity=".75"'))});
+/* 포천 아트밸리 */
+def('포천 아트밸리',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#78B8F0','#D8EEFA','#FFF6E0');$.cloud(200,26,1.2,.6);
+a(P('M0 0 L0 300 L70 300 L96 200 L84 120 L100 70 L90 0Z',G('#B8B4AE','#6E6A66'))+P('M400 0 L400 300 L330 300 L304 210 L318 130 L300 80 L312 0Z',G('#C8C4BE','#7A7672')));
+for(i=0;i<16;i++){a(L('M'+f(q()*90)+' '+f(q()*200)+' l'+f(q()*10-5)+' '+f(30+q()*60),'#5A5652',1.2,'opacity=".5"'));a(L('M'+f(310+q()*90)+' '+f(q()*200)+' l'+f(q()*10-5)+' '+f(30+q()*60),'#5A5652',1.2,'opacity=".5"'))}
+for(i=0;i<9;i++){a(k.leaf(f(q()*80),f(q()*12),f(10+q()*6),['#5E9A44','#7AB04A','#E8802A'][i%3]));a(k.leaf(f(320+q()*80),f(q()*12),f(10+q()*6),['#5E9A44','#7AB04A','#E8802A'][i%3]))}
+a(P('M84 130 Q200 120 316 140 L330 300 L70 300Z',G('#2CC4B0','#0A7A78')));
+a(P('M84 130 Q200 120 316 140 L316 150 Q200 140 84 142Z','#9AF0E2','opacity=".5"'));
+a('<g opacity=".4"><g transform="translate(0 280) scale(1 -1)">'+P('M70 140 L96 60 L100 140Z','#6E6A66')+P('M330 140 L304 70 L312 140Z','#7A7672')+'</g></g>');
+for(i=0;i<14;i++)a(R(f(100+q()*180),f(160+q()*130),f(14+q()*34),1.3,'#E8FFFA','opacity=".4"'));
+/* 모노레일 */
+a(L('M96 98 Q200 76 304 98','#4A4A52',3)+R(186,84,34,12,'#E8553A')+R(188,86,8,6,'#CDEAF6')+R(200,86,8,6,'#CDEAF6')+R(212,86,6,6,'#CDEAF6'));
+a(P('M120 300 L280 300 L262 262 L138 262Z',G('#8A6A48','#4E3A28')));
+for(i=0;i<6;i++)a(L('M'+(146+i*20)+' 264 L'+(130+i*28)+' 300','#3A2A1E',1,'opacity=".5"'));
+a(k.man(180,284,1.5,'#E8553A','#2B3A5A')+k.man(214,288,1.4,'#F6F6F6','#3A3A4A'));
+$.birds()});
+})();
+/* 경기도 명소 보정 */
+(function(){var def=window.__defScene;function f(v){return +(+v).toFixed(1)}
+function ridge($,y,amp,ph,c1,c2,op){var d='M0 300 L0 '+f(y+Math.sin(ph)*amp);for(var x=0;x<=400;x+=16)d+=' L'+x+' '+f(y+Math.sin(x/70+ph)*amp+Math.sin(x/29+ph*2)*amp*.4);d+=' L400 300Z';return $.P(d,$.G(c1,c2),op?'opacity="'+op+'"':'')}
+/* 양평 두물머리: 사람은 강둑 위에 */
+def('양평 두물머리',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#7C8FB4','#E8C8C0','#FFE8C8');a(C(286,134,26,'#FFF0C8','opacity=".95"')+C(286,134,62,'#FFD8B0','opacity=".35"'));$.cloud(80,46,1.1,.45);$.cloud(320,30,.8,.4);
+a(ridge($,118,14,.5,'#9AA6BE','#6E7C9C','.9'));a(ridge($,138,10,1.9,'#B4BECE','#8A98B4','.9'));
+a(R(0,150,400,110,G('#C8D2DE','#8EA0B8')));
+for(i=0;i<7;i++)a(E(f(40+q()*320),f(160+q()*80),f(60+q()*70),f(5+q()*5),'#FFFFFF','opacity=".4"'));
+a(E(286,166,50,4,'#FFE8C8','opacity=".5"'));
+/* 황포돛배 */
+function boat(x,y,s){return P('M'+f(x-30*s)+' '+f(y)+' Q'+f(x)+' '+f(y+12*s)+' '+f(x+30*s)+' '+f(y)+' L'+f(x+24*s)+' '+f(y-5*s)+' L'+f(x-24*s)+' '+f(y-5*s)+'Z','#4A3228')+R(f(x-1),f(y-52*s),2,f(48*s),'#4A3228')+P('M'+f(x+2)+' '+f(y-50*s)+' L'+f(x+26*s)+' '+f(y-44*s)+' L'+f(x+26*s)+' '+f(y-12*s)+' L'+f(x+2)+' '+f(y-8*s)+'Z',G('#E8B450','#B8822E'))+L('M'+f(x+2)+' '+f(y-34*s)+' L'+f(x+26*s)+' '+f(y-30*s),'#8A5A24',.8)+E(f(x),f(y+8*s),f(34*s),f(3*s),'#FFFFFF','opacity=".35"')}
+a(boat(206,196,1.15)+boat(320,176,.7));
+/* 강둑과 느티나무 */
+a(P('M0 300 L0 218 Q80 206 170 232 Q250 252 330 250 Q380 250 400 244 L400 300Z',G('#7E9460','#4A5E3C')));
+a(P('M0 300 L0 254 Q120 246 240 262 Q330 272 400 262 L400 300Z',G('#8AA068','#566A44')));
+a(k.trunk(62,150,92,13,'#5A4630'));
+for(i=0;i<26;i++)a(k.leaf(f(62+(q()-.5)*140),f(112+(q()-.5)*76+Math.abs(q()-.5)*14),f(15+q()*10),['#8AB04A','#6E9A3A','#A8C45A','#C8B040'][i%4]));
+for(i=0;i<40;i++)a(L('M'+f(q()*400)+' '+f(250+q()*50)+' q2 -8 4 -14','#6E8A4E',1,'opacity=".6"'));
+a(P('M250 300 L400 300 L400 266 Q330 262 280 278Z','#A89878','opacity=".6"'));
+a(k.man(150,274,1.55,'#F2F2F2','#2B3A5A')+k.man(184,280,1.35,'#E36A8A','#3A3A4A'));
+$.birds()});
+/* 화담숲: 단풍 계곡, 나무 데크, 모노레일 */
+def('화담숲',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#A8CCE8','#E4EEF0','#FFF2D8');
+a(ridge($,90,14,.4,'#C8A890','#A47860','.8'));a(ridge($,112,16,1.7,'#C85A2E','#8A3A22'));
+var AC=['#E8402A','#F28A2A','#C8301E','#F2B03A','#D8501E','#8AA84A'];
+for(i=0;i<40;i++)a(k.leaf(f(q()*400),f(104+q()*50),f(9+q()*7),AC[i%6]));
+a(R(0,150,400,150,G('#6E5A34','#2E2618')));
+/* 모노레일 */
+a(R(0,128,400,4,'#8A8A92'));for(i=0;i<8;i++)a(R(f(20+i*52),132,4,26,'#6A6A72'));
+a(R(214,112,52,16,'#E8553A')+R(214,112,52,4,'#FFFFFF')+R(220,117,10,7,'#CDEAF6')+R(234,117,10,7,'#CDEAF6')+R(248,117,10,7,'#CDEAF6')+L('M222 128 V132 M258 128 V132','#4A4A52',2));
+/* 가까운 단풍 */
+[[22,170,46],[372,178,50],[110,160,34]].forEach(function(t){a(k.trunk(t[0],t[1],f(t[2]*1.7),5,'#4A3428'));for(var n=0;n<14;n++)a(k.leaf(f(t[0]+(q()-.5)*t[2]*2.2),f(t[1]-t[2]*.3+(q()-.5)*t[2]*1.1),f(10+q()*8),AC[n%6]))});
+/* 계곡물 */
+a(P('M300 300 Q330 240 260 210 Q210 190 260 160 L286 160 Q238 196 296 226 Q360 250 350 300Z',G('#A8D0D8','#5A8E9E'),'opacity=".95"'));
+for(i=0;i<8;i++)a(R(f(270+q()*60),f(230+q()*60),f(10+q()*20),1.2,'#FFFFFF','opacity=".6"'));
+/* 데크 길 */
+a(P('M0 300 L0 236 Q110 226 200 244 Q260 258 330 300Z',G('#B8885A','#7A5632')));
+for(i=0;i<14;i++)a(L('M'+f(i*24-12)+' 300 Q'+f(i*13+50)+' 262 '+f(i*20+60)+' 236','#4E3420',1,'opacity=".45"'));
+a(L('M0 236 Q110 226 200 244 Q260 258 330 300','#E8D4B0',3));
+a(k.man(92,262,1.6,'#E36A8A','#2B3A5A')+k.man(128,268,1.4,'#3E6AC8','#3A3A4A'));
+$.fall('leaf',['#E8402A','#F28A2A'],12);$.birds()});
+/* 파주 마장호수 출렁다리: 케이블 계산 수정 */
+def('파주 마장호수 출렁다리',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#6AAEEE','#CDE9F6','#F4F1DC');$.cloud(80,40,1.1,.6);$.cloud(310,58,.9,.5);
+a(ridge($,104,16,.6,'#A8B88A','#7E946A',.9));a(ridge($,126,14,2.1,'#C8742E','#8E4A22'));
+for(i=0;i<26;i++)a(k.leaf(f(q()*400),f(120+q()*40),f(7+q()*6),['#E8802A','#F2B03A','#C84A24','#6E9A4A'][i%4]));
+a(R(0,152,400,148,G('#4EA8C4','#1F6A8E')));
+for(i=0;i<14;i++)a(R(f(q()*380),f(160+q()*130),f(14+q()*38),1.4,'#FFFFFF','opacity=".35"'));
+a('<g opacity=".28"><g transform="translate(0 304) scale(1 -1)">'+ridge($,126,14,2.1,'#C8742E','#8E4A22')+'</g></g>');
+var DY=190;
+for(i=0;i<=24;i++){var hx=i*16.7,cy;if(hx<74)cy=170-100*hx/74;else if(hx>324)cy=70+100*(hx-324)/76;else{var t=(hx-74)/250;cy=70+320*t-320*t*t}if(cy<DY-4)a(L('M'+f(hx)+' '+f(cy)+' V'+DY,'#F0F0F4',.9,'opacity=".75"'))}
+a('<path d="M0 170 L74 70 Q199 230 324 70 L400 170" fill="none" stroke="#F8F8FA" stroke-width="2.8" stroke-linejoin="round"/>');
+a(R(70,70,9,138,G('#F2F2F6','#C4C4CC'))+R(320,70,9,138,G('#F2F2F6','#C4C4CC'))+R(66,66,17,5,'#D0D0D8')+R(316,66,17,5,'#D0D0D8'));
+a(R(-10,DY,420,7,G('#8A6A48','#5A4630'))+R(-10,DY-6,420,2,'#F6F6F8')+R(-10,DY+7,420,3,'#000','opacity=".2"'));
+for(i=0;i<30;i++)a(L('M'+(i*14)+' '+DY+' V'+(DY+7),'#3A2A1E',.8,'opacity=".5"'));
+a(k.man(140,DY,1.05,'#E8553A','#2B3A5A')+k.man(168,DY,1.0,'#3E8AD8','#2B2B3A')+k.man(250,DY,1.1,'#F2D23A','#4A4A5A')+k.man(278,DY,1.0,'#F2A0B8','#3A3A4A'));
+a(P('M0 300 L0 252 Q120 240 220 252 Q300 262 400 246 L400 300Z',G('#8A6A48','#4E3A28')));
+for(i=0;i<9;i++)a(L('M'+(i*48-10)+' 256 L'+(i*58-30)+' 300','#3A2A1E',1,'opacity=".5"'));
+a(k.man(80,276,1.5,'#F2F2F2','#2B3A5A')+k.man(112,282,1.3,'#E36A8A','#3A3A4A'));
+$.birds()});
+/* 포천 한탄강 하늘다리: 다리가 양쪽 절벽에 연결 */
+def('포천 한탄강 하늘다리',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#7AB4E8','#DCEEF6','#FFF6E0');$.cloud(210,40,1.2,.55);$.cloud(70,70,.8,.4);
+a(ridge($,100,10,.6,'#B8A890','#8A7A62','.85'));
+var AC=['#E8802A','#C84A24','#F2B03A','#8AA84A'];
+for(i=0;i<30;i++)a(k.leaf(f(q()*400),f(96+q()*30),f(8+q()*6),AC[i%4]));
+/* 협곡 */
+a(R(90,118,220,182,G('#9A9AA2','#46464E')));
+a(P('M0 300 L0 120 L98 120 L112 150 L128 200 L150 300Z',G('#6A666A','#2E2A30'))+P('M400 300 L400 120 L302 120 L288 150 L272 205 L250 300Z',G('#6A666A','#2E2A30')));
+a(R(150,196,100,104,G('#3E9A8E','#1E5E60')));
+for(i=0;i<14;i++)a(R(f(152+q()*70),f(210+q()*86),f(14+q()*26),1.3,'#BEEEE4','opacity=".4"'));
+for(i=0;i<20;i++){var x0=q()*96,y0=124+q()*150;a(L('M'+f(x0)+' '+f(y0)+' l'+f(4+q()*3)+' '+f(28+q()*30),'#1E1A22',1.4,'opacity=".55"'));var x1=304+q()*96,y1=124+q()*150;a(L('M'+f(x1)+' '+f(y1)+' l'+f(-4-q()*3)+' '+f(28+q()*30),'#1E1A22',1.4,'opacity=".55"'))}
+a(R(0,114,98,8,G('#7A9A52','#4E6E36'))+R(302,114,98,8,G('#7A9A52','#4E6E36')));
+for(i=0;i<10;i++){a(k.leaf(f(q()*90),f(108+q()*8),f(8+q()*5),AC[i%4]));a(k.leaf(f(306+q()*90),f(108+q()*8),f(8+q()*5),AC[i%4]))}
+a(E(200,196,70,10,'#FFFFFF','opacity=".25"'));
+/* 하늘다리 */
+a(R(84,114,232,5,G('#C4C8D4','#7A7E8C'))+R(84,119,232,3,'#000','opacity=".2"'));
+a(L('M84 98 H316','#E0E4EC',2.2)+L('M84 107 H316','#E0E4EC',1.2));
+for(i=0;i<20;i++)a(L('M'+f(88+i*12)+' 98 V114','#D0D4DE',1));
+a(R(82,92,5,28,'#9AA0AE')+R(313,92,5,28,'#9AA0AE'));
+a(L('M96 119 L200 134 L304 119','#8A8E9A',2));
+a(k.man(150,114,1.1,'#E8553A','#2B3A5A')+k.man(176,114,1.0,'#3E8AD8','#2B2B3A')+k.man(228,114,1.05,'#F2D23A','#4A4A5A')+k.man(252,114,.95,'#F2A0B8','#3A3A4A'));
+$.birds()});
+/* 포천 아트밸리: 천주호, 폭포, 데크 */
+def('포천 아트밸리',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i;
+$.sky('#78B8F0','#D8EEFA','#FFF6E0');$.cloud(200,30,1.2,.6);
+/* 뒷 절벽 */
+a(P('M0 70 L60 56 L140 64 L220 54 L320 62 L400 52 L400 176 L0 176Z',G('#C4C0BA','#8A8680')));
+for(i=0;i<26;i++)a(L('M'+f(q()*400)+' '+f(64+q()*40)+' l'+f(q()*6-3)+' '+f(24+q()*50),'#6A6660',1.2,'opacity=".45"'));
+for(i=0;i<16;i++)a(k.leaf(f(q()*400),f(54+q()*10),f(10+q()*6),['#5E9A44','#7AB04A','#E8802A'][i%3]));
+/* 모노레일 */
+a(L('M30 108 L300 100','#4A4A52',2.4)+R(150,96,34,11,'#E8553A')+R(153,98,7,5,'#CDEAF6')+R(163,98,7,5,'#CDEAF6')+R(173,98,7,5,'#CDEAF6')+L('M160 107 V111 M178 107 V111','#4A4A52',1.6));
+for(i=0;i<5;i++)a(R(f(40+i*60),108,3,20,'#6A6A72'));
+/* 폭포 */
+a(R(300,66,10,110,G('#F6FDFF','#BEE8EE'),'opacity=".85"')+R(314,80,6,96,'#F6FDFF','opacity=".7"'));
+a(E(310,176,22,6,'#FFFFFF','opacity=".8"'));
+/* 옆 절벽 */
+a(P('M0 0 L0 300 L60 300 L84 214 L74 150 L92 100 L84 0Z',G('#B8B4AE','#6E6A66'))+P('M400 0 L400 300 L340 300 L322 222 L334 160 L322 110 L330 0Z',G('#C8C4BE','#7A7672')));
+for(i=0;i<16;i++){a(L('M'+f(q()*80)+' '+f(q()*200)+' l'+f(q()*10-5)+' '+f(30+q()*60),'#5A5652',1.2,'opacity=".5"'));a(L('M'+f(330+q()*70)+' '+f(q()*200)+' l'+f(q()*10-5)+' '+f(30+q()*60),'#5A5652',1.2,'opacity=".5"'))}
+for(i=0;i<9;i++){a(k.leaf(f(q()*80),f(q()*12),f(10+q()*6),['#5E9A44','#7AB04A','#E8802A'][i%3]));a(k.leaf(f(326+q()*74),f(q()*12),f(10+q()*6),['#5E9A44','#7AB04A','#E8802A'][i%3]))}
+/* 호수 */
+a(P('M70 176 L330 176 L350 300 L52 300Z',G('#2CC4B0','#0A7A78')));
+a(P('M70 176 L330 176 L331 184 L70 184Z','#9AF0E2','opacity=".45"'));
+for(i=0;i<14;i++)a(R(f(90+q()*200),f(190+q()*100),f(14+q()*34),1.3,'#E8FFFA','opacity=".4"'));
+/* 데크 */
+a(P('M110 300 L290 300 L270 258 L130 258Z',G('#8A6A48','#4E3A28')));
+for(i=0;i<7;i++)a(L('M'+(142+i*19)+' 260 L'+(124+i*25)+' 300','#3A2A1E',1,'opacity=".5"'));
+a(L('M130 258 H270','#E8D4B0',2.4));
+a(k.man(180,284,1.5,'#E8553A','#2B3A5A')+k.man(214,288,1.4,'#F6F6F6','#3A3A4A'));
+$.birds()});
+/* 양평 세미원: 연못 위 나무 보도 */
+(function(){var old=window.SCENES['양평 세미원'];def('양평 세미원',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,L=$.L,G=$.G,i;old($);
+a(P('M-10 300 L-10 272 Q120 262 230 270 Q330 276 410 262 L410 300Z',G('#9A7A52','#5A4630')));
+for(i=0;i<10;i++)a(L('M'+(i*44-10)+' 276 L'+(i*50-30)+' 300','#3A2A1E',1,'opacity=".5"'));
+a(k.man(150,286,1.45,'#F2A0B8','#F6F6F6')+k.man(184,292,1.3,'#3E6AC8','#2B2B3A'))})})();
+})();
+/* 퀄리티 4차: 한탄강·에버랜드·두물머리·화담숲 재작업 */
+(function(){var def=window.__defScene;function f(v){return +(+v).toFixed(1)}
+function ridge($,y,amp,ph,c1,c2,op){var d='M0 300 L0 '+f(y+Math.sin(ph)*amp);for(var x=0;x<=400;x+=14)d+=' L'+x+' '+f(y+Math.sin(x/70+ph)*amp+Math.sin(x/29+ph*2)*amp*.4);d+=' L400 300Z';return $.P(d,$.G(c1,c2),op?'opacity="'+op+'"':'')}
+
+/* ── 포천 한탄강 하늘다리: 주상절리 협곡을 가로지르는 현수교 ── */
+def('포천 한탄강 하늘다리',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i,j;
+$.sky('#6FB0EA','#CFE6F4','#FFF1D2');$.cloud(250,38,1.2,.6);$.cloud(80,62,.8,.45);
+a(ridge($,128,6,.5,'#A9B7B0','#8C9C94','.8'));a(ridge($,138,5,1.9,'#8FA088','#6E8266','.9'));
+/* 먼 협곡 벽 */
+a(P('M120 300 L132 150 L146 142 L160 152 L172 300Z',G('#9A9AA4','#5E5E6A'),'opacity=".7"')+P('M280 300 L268 150 L254 142 L240 152 L228 300Z',G('#9A9AA4','#5E5E6A'),'opacity=".7"'));
+/* 강 */
+a(R(150,226,100,74,G('#4FB3A6','#1F6A66')));
+for(i=0;i<16;i++)a(R(f(154+q()*80),f(232+q()*62),f(12+q()*26),1.3,'#D2F6EE','opacity=".45"'));
+a(E(200,230,52,6,'#fff','opacity=".28"'));
+for(i=0;i<5;i++)a(E(f(160+q()*80),f(244+q()*50),f(5+q()*6),f(3+q()*2),'#4A4A52'));
+/* 좌우 주상절리 절벽 */
+function cliff(side){var s=side,X=function(x){return s<0?x:400-x};
+a(P('M'+X(0)+' 300 L'+X(0)+' 128 L'+X(112)+' 126 L'+X(118)+' 150 L'+X(124)+' 160 L'+X(132)+' 200 L'+X(150)+' 232 L'+X(158)+' 300Z',G('#7A767C','#2C2A32')));
+for(j=0;j<22;j++){var x0=q()*118,w=5+q()*8,top=130+q()*26,bt=top+60+q()*140;a(P('M'+X(x0)+' '+f(top)+' L'+X(x0+w)+' '+f(top+3)+' L'+X(x0+w)+' '+f(bt)+' L'+X(x0)+' '+f(bt+4)+'Z',j%2?'#8C888E':'#5A565E','opacity=".42"'))}
+for(j=0;j<26;j++){var x1=q()*112,y1=134+q()*150;a(L('M'+X(x1)+' '+f(y1)+' l'+f((q()-.5)*3)+' '+f(20+q()*34),'#18161C',1.3,'opacity=".5"'))}
+a(P('M'+X(0)+' 300 L'+X(0)+' 128 L'+X(36)+' 128 L'+X(46)+' 300Z','#000','opacity=".12"'));
+a(R(X(side<0?0:112),122,112,8,G('#86A656','#4C6C34'))+R(X(side<0?0:112),122,112,2,'#B8D878','opacity=".6"'))}
+cliff(-1);cliff(1);
+var AC=['#E8802A','#C84A24','#F2B03A','#9AB24E','#D6642A'];
+for(i=0;i<26;i++){a(k.leaf(f(q()*108),f(112+q()*12),f(8+q()*6),AC[i%5]));a(k.leaf(f(292+q()*108),f(112+q()*12),f(8+q()*6),AC[(i+2)%5]))}
+k.trunk&&(a(k.trunk(30,70,56,6,'#5A4030')),a(k.trunk(372,74,52,6,'#5A4030')));
+for(i=0;i<30;i++){a(k.leaf(f(8+q()*50),f(54+q()*40),f(9+q()*6),AC[i%5]));a(k.leaf(f(344+q()*50),f(58+q()*40),f(9+q()*6),AC[(i+1)%5]))}
+/* 하늘다리: 주탑·주케이블·행어·유리 바닥 */
+var by=148;
+a(R(106,by-60,7,64,G('#E6EAF2','#9AA2B4'))+R(287,by-60,7,64,G('#E6EAF2','#9AA2B4')));
+a(L('M109 '+(by-58)+' Q200 '+(by+10)+' 291 '+(by-58),'#F2F4FA',2.4)+L('M109 '+(by-52)+' Q200 '+(by+16)+' 291 '+(by-52),'#9AA2B4',1,'opacity=".7"'));
+for(i=1;i<24;i++){var x=109+i*(182/24),t=(x-109)/182,yy=(by-58)+(1-Math.pow(2*t-1,2))*0+ (4*t*(1-t))*68*(1-0)-0;var cy=(by-58)*(1-t)*(1-t)*1+2*(by+10)*t*(1-t)+(by-58)*t*t;a(L('M'+f(x)+' '+f(cy)+' V'+(by-2),'#D8DCE6',.9))}
+a(R(106,by-2,188,6,G('#D0D4DE','#7E8294'))+R(106,by+4,188,3,'#000','opacity=".25"'));
+for(i=0;i<46;i++)a(R(f(108+i*4),by-1,2.2,4,i%2?'#B8BCC8':'#9CA0B0','opacity=".8"'));
+a(L('M106 '+(by-14)+' H294','#E8ECF4',1.4));
+/* 다리 위 사람들 */
+a(k.man(150,by-1,.62,'#E65A3A','#2B2B3A')+k.man(166,by-1,.6,'#3A78D0','#333')+k.man(236,by-1,.62,'#F2C030','#2B2B3A')+k.man(251,by-1,.56,'#F08AAE','#3A3A4A'));
+/* 전망대 데크 */
+a(P('M0 300 L0 262 Q120 248 200 250 Q300 248 400 262 L400 300Z',G('#9A6E48','#5A3E28')));
+for(i=0;i<10;i++)a(L('M'+(i*44-6)+' 300 Q'+(i*44+8)+' 272 '+(i*44+22)+' 252','#3E2A1A',1.2,'opacity=".5"'));
+a(R(0,246,400,3.4,'#E4E7EE')+R(0,249,400,1.4,'#000','opacity=".25"'));
+for(i=0;i<14;i++)a(R(i*30+6,246,2.4,20,'#C4C8D2'));
+a(k.man(150,292,1.25,'#E8573A','#2B2B3A')+k.man(184,296,1.15,'#F4F4F6','#33384A'));
+$.fall('leaf',['#E8802A','#C84A24','#F2B03A'],10);
+});
+
+/* ── 용인 에버랜드 튤립정원 ── */
+def('용인 에버랜드 튤립정원',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i,j;
+$.sky('#69AEEA','#C8E4F8','#FFF4DC');$.cloud(90,40,1.2,.7);$.cloud(310,56,1,.6);$.cloud(200,26,.7,.5);
+a(ridge($,150,10,.4,'#9CC4A0','#6FA27C','.9'));a(ridge($,166,7,2.2,'#7FB488','#58926A'));
+/* 롤러코스터 */
+a(L('M0 152 Q50 70 100 140 T200 150 T300 130 T400 150','#D8483A',3.4));
+for(i=0;i<=20;i++){var x=i*20,y0=i%2?150:140;a(L('M'+x+' '+f(y0+6)+' V166','#B8BCC8',1.2,'opacity=".8"'))}
+a(L('M0 158 Q50 78 100 148 T200 158 T300 138 T400 158','#8A8E9C',1.2,'opacity=".7"'));
+a(R(52,86,16,7,'#F2C030')+R(70,90,14,7,'#E8573A'));
+/* 성 */
+var cx=200;
+function tw(x,y,w,h,roof,rc){a(R(x,y,w,h,G('#F6EAD8','#D2BE9E'))+R(x+w*.72,y,w*.28,h,'#000','opacity=".1"'));a(P('M'+(x-3)+' '+y+' L'+f(x+w/2)+' '+(y-roof)+' L'+(x+w+3)+' '+y+'Z',G(rc,$.tint(rc,-.3))));a(P('M'+f(x+w/2)+' '+(y-roof)+' L'+(x+w+3)+' '+y+' H'+f(x+w/2)+'Z','#000','opacity=".18"'));a(L('M'+f(x+w/2)+' '+(y-roof)+' V'+(y-roof-10),'#6A5A48',1)+P('M'+f(x+w/2)+' '+(y-roof-10)+' l9 3 l-9 3Z','#E8573A'))}
+a(R(150,138,100,52,G('#F8EEDC','#D6C2A2')));
+for(i=0;i<9;i++)a(R(152+i*11.4,132,7,8,'#F2E6D2'));
+tw(142,112,22,80,34,'#C8402F');tw(236,112,22,80,34,'#2F63C0');tw(176,84,48,106,52,'#7A3FB4');
+for(i=0;i<3;i++){a(R(f(185+i*14),104,7,14,'#6A8CC0')+P('M'+f(185+i*14)+' 104 a3.5 3.5 0 0 1 7 0Z','#6A8CC0'));a(R(f(185+i*14+2),106,3,10,'#FFE9A8','opacity=".8"'))}
+a(R(147,128,10,16,'#6A8CC0')+R(243,128,10,16,'#6A8CC0')+R(190,150,20,16,'#6A8CC0'));
+a(P('M184 190 V160 a16 16 0 0 1 32 0 V190Z','#6B4A32')+L('M200 146 V190','#3E2A1A',1)+C(207,172,1.2,'#F2C030'));
+a(R(120,170,40,22,G('#F2E6D2','#CDB896'))+R(240,170,40,22,G('#F2E6D2','#CDB896')));
+/* 풍선 */
+var BC=['#E8573A','#F2C030','#3A78D0','#F08AAE'];for(i=0;i<4;i++){var bx=[56,100,306,350][i],by=[96,70,84,112][i];a(L('M'+bx+' '+(by+14)+' q-3 24 3 44','#6A6A72',.8)+E(bx,by,9,11,G($.tint(BC[i],.1),$.tint(BC[i],-.25)))+E(bx-3,by-3,2.6,4,'#fff','opacity=".5"'))}
+/* 튤립 화단: 원근 */
+a(R(0,190,400,110,G('#7DBA62','#3F8A44')));
+var TC=['#E8353F','#F2C030','#F08AAE','#8A4FC8','#FFFFFF','#F28A2A','#E85A9A'];
+for(j=0;j<14;j++){var yy=194+Math.pow(j/13,1.55)*104,sc=.35+j*.16;for(i=-2;i<22;i++){var xx=i*(400/20)*(1)+((j%2)*10)+(q()*3);var onP=Math.abs(xx-(200+(yy-190)*.0))<(8+ (yy-190)*.52);if(onP)continue;var band=Math.floor((i+j*0.6)/4)%TC.length,c=TC[(band+TC.length)%TC.length];
+a(L('M'+f(xx)+' '+f(yy+6*sc)+' V'+f(yy+14*sc),'#3C8A3A',f(1*sc))+P('M'+f(xx-4*sc)+' '+f(yy)+' Q'+f(xx-5*sc)+' '+f(yy+7*sc)+' '+f(xx)+' '+f(yy+8*sc)+' Q'+f(xx+5*sc)+' '+f(yy+7*sc)+' '+f(xx+4*sc)+' '+f(yy)+' L'+f(xx+2*sc)+' '+f(yy+3*sc)+' L'+f(xx)+' '+f(yy-1*sc)+' L'+f(xx-2*sc)+' '+f(yy+3*sc)+'Z',c)+P('M'+f(xx+1*sc)+' '+f(yy+1*sc)+' L'+f(xx+4*sc)+' '+f(yy)+' Q'+f(xx+5*sc)+' '+f(yy+7*sc)+' '+f(xx+1*sc)+' '+f(yy+8*sc)+'Z','#000','opacity=".14"'))}}
+/* 길 */
+a(P('M188 190 L212 190 L262 300 L138 300Z',G('#F0DCB4','#C8A878')));
+for(i=0;i<7;i++)a(L('M'+(190+i*3.4)+' 192 L'+(150+i*16)+' 300','#B8946A',.8,'opacity=".35"'));
+a(k.man(176,290,1.2,'#F08AAE','#F4F4F6')+k.man(214,296,1.12,'#3A78D0','#2B2B3A'));
+$.fall('petal',['#FFB6CC','#FFFFFF','#FFD0DC'],8);
+});
+
+/* ── 양평 두물머리: 새벽 물안개, 나룻배, 느티나무 ── */
+def('양평 두물머리',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i,j;
+$.sky('#8A94C8','#F0B8A0','#FFE8C0');
+a(C(262,128,54,$.RD('#FFE0A8',.9))+C(262,128,20,'#FFF0CC'));
+a(ridge($,118,8,.8,'#8A8FB8','#9AA0C4','.75'));a(ridge($,132,6,2.4,'#7A82A8','#9AA0C0','.85'));
+/* 물 */
+a(R(0,140,400,160,G('#C8CCE0','#6F86A8')));
+a(P('M215 140 H300 L340 300 H160Z','#FFD9A8','opacity=".16"'));
+for(i=0;i<22;i++){var yy=146+Math.pow(q(),1.4)*140;a(L('M'+f(q()*360)+' '+f(yy)+' q'+f(10+q()*20)+' -2 '+f(24+q()*30)+' 0','#FFFFFF',1.1,'opacity=".5"'))}
+/* 물안개 겹 */
+for(i=0;i<5;i++){a(E(f(60+q()*280),f(150+i*16+q()*8),f(110+q()*70),f(7+q()*5),'#FFFFFF','opacity="'+f(.2+q()*.14)+'"'))}
+/* 나룻배(평저선) + 사공 */
+function boat(x,y,s,w){a(E(x,y+3*s,f(30*s),f(3*s),'#000','opacity=".16"'));
+a(P('M'+f(x-30*s)+' '+y+' L'+f(x+30*s)+' '+y+' L'+f(x+24*s)+' '+f(y+8*s)+' L'+f(x-24*s)+' '+f(y+8*s)+'Z',G('#8A6044','#4A3022'))+P('M'+f(x-30*s)+' '+y+' Q'+f(x-36*s)+' '+f(y-5*s)+' '+f(x-33*s)+' '+f(y-6*s)+' L'+f(x-26*s)+' '+y+'Z','#8A6044')+P('M'+f(x+30*s)+' '+y+' Q'+f(x+36*s)+' '+f(y-5*s)+' '+f(x+33*s)+' '+f(y-6*s)+' L'+f(x+26*s)+' '+y+'Z','#8A6044'));
+a(R(f(x-24*s),f(y+3*s),f(48*s),1.2,'#D8B890','opacity=".5"'));
+if(w){a(k.man(x-6*s,y+2*s,.62*s*1.25,'#C8B898','#6A5A48','#2B1B1B'));a(L('M'+f(x+8*s)+' '+f(y-26*s)+' L'+f(x+34*s)+' '+f(y+14*s),'#5A4030',1.6))}
+a(P('M'+f(x-26*s)+' '+f(y+8*s)+' Q'+x+' '+f(y+12*s)+' '+f(x+26*s)+' '+f(y+8*s)+' L'+f(x+22*s)+' '+f(y+14*s)+' Q'+x+' '+f(y+16*s)+' '+f(x-22*s)+' '+f(y+14*s)+'Z','#3A2A22','opacity=".35"'))}
+boat(190,176,1.1,1);boat(290,160,.7,0);
+/* 둔치 */
+a(P('M0 300 L0 238 Q70 226 140 244 Q200 258 232 300Z',G('#7E9A58','#42622E')));
+a(P('M0 300 L0 262 Q60 252 110 270 L130 300Z',G('#648048','#2E4A22')));
+for(i=0;i<40;i++){var gx=q()*190,gy=240+q()*58;a(L('M'+f(gx)+' '+f(gy+10)+' q2 -8 '+f(3+q()*4)+' -'+f(12+q()*10),i%3?'#9AB468':'#B8CC82',1.3,'opacity=".8"'))}
+/* 느티나무: 굵은 줄기와 풍성한 수관 */
+a(k.trunk(60,130,126,18,'#5E4636'));
+a(P('M60 190 Q40 172 24 176 Q42 168 56 176Z','#5E4636')+P('M64 168 Q92 150 112 154 Q90 148 62 160Z','#5E4636'));
+var CC=['#5E8C3C','#7AA848','#9ABB50','#C8A838','#4A7A34'];
+for(i=0;i<95;i++){var ang=q()*6.283,rr=Math.sqrt(q());var lx=62+Math.cos(ang)*rr*92,ly=96+Math.sin(ang)*rr*54;if(ly>150)continue;a(k.leaf(f(lx),f(ly),f(7+q()*6),CC[(q()*5)|0]))}
+/* 연잎·갈대 */
+for(i=0;i<5;i++)a(E(f(240+q()*100),f(262+q()*28),f(14+q()*10),f(3+q()*2),'#4E7A48','opacity=".9"'));
+a(k.man(104,288,1.25,'#F4F4F6','#33384A')+k.man(138,292,1.15,'#E8618A','#3A3A4A'));
+$.birds&&$.birds(2);
+});
+
+/* ── 화담숲: 단풍 숲을 가로지르는 모노레일 ── */
+def('화담숲',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,i,j;
+$.sky('#9CC6EA','#E2EEF4','#FFF2D8');$.cloud(300,34,1,.5);
+a(ridge($,104,12,.6,'#B8A092','#8C7A70','.8'));a(ridge($,122,10,2,'#A06A48','#7A4A34','.9'));
+var AC=['#D8442A','#E8802A','#F2B03A','#C83A2A','#9A5A2A','#8AA84A'];
+for(j=0;j<3;j++)for(i=0;i<34;i++){var X=q()*400,Y=112+j*18+q()*14;a(k.leaf(f(X),f(Y),f(8+q()*7+j*2),AC[(q()*6)|0]))}
+/* 숲 바닥 */
+a(R(0,162,400,138,G('#6A4A30','#2E2018')));
+a(P('M0 300 L0 176 Q90 168 200 172 T400 170 V300Z',G('#8A6A44','#3E2C1E')));
+for(i=0;i<60;i++){a(k.leaf(f(q()*400),f(176+q()*118),f(2.4+q()*3),AC[(q()*6)|0]),'')}
+/* 모노레일: 교각 + 궤도 + 열차 */
+var ty=150;
+for(i=0;i<9;i++){var px=20+i*48;a(R(px,ty+4,6,30,G('#B8B8C0','#6E6E78'))+R(px-3,ty+2,12,4,'#9A9AA6'))}
+a(R(0,ty,400,6,G('#E4E6EC','#8E92A0'))+R(0,ty+6,400,2,'#000','opacity=".25"'));
+a(R(0,ty-1,400,1.6,'#FFFFFF','opacity=".6"'));
+function car(x,w){a(R(x,ty-20,w,18,G('#F26A3A','#B8381E'))+P('M'+x+' '+(ty-20)+' h'+w+' l-3 -5 h'+(5-w+(w-5)-0)+'Z','#D8502A'))}
+for(i=0;i<3;i++){var x0=138+i*50;a(R(x0,ty-22,46,20,G('#F5F6F8','#C8CAD2'))+R(x0,ty-12,46,5,'#E8573A')+R(x0,ty-22,46,2.4,'#E8573A'));for(j=0;j<4;j++)a(R(x0+4+j*11,ty-19,8,6,G('#8EC0E0','#4A7898')));a(R(x0+2,ty-2,42,2,'#3A3A44'))}
+a(P('M138 '+(ty-22)+' L128 '+(ty-12)+' V'+(ty-2)+' H138Z','#F5F6F8')+R(130,ty-10,5,4,'#8EC0E0'));
+/* 앞 단풍 나무 */
+function tr(x,y,h,r){a(k.trunk(x,y,h,8,'#5A4030'));for(i=0;i<70;i++){var ang=q()*6.283,rr=Math.sqrt(q());a(k.leaf(f(x+Math.cos(ang)*rr*r),f(y+8+Math.sin(ang)*rr*r*.72),f(7+q()*6),AC[(q()*5)|0]))}}
+tr(36,70,230,64);tr(372,60,240,66);tr(300,126,120,40);
+/* 계곡 물길 */
+a(P('M232 300 Q250 250 218 222 Q196 200 214 182 L228 184 Q214 204 236 224 Q270 252 276 300Z',G('#BCDCE8','#5E8CA6')));
+a(L('M222 198 q4 6 -2 12','#FFFFFF',1,'opacity=".6"'));
+/* 나무 데크 길 */
+a(P('M0 300 L0 252 Q90 236 170 244 Q250 252 330 300Z',G('#B88A5A','#6A4A2E')));
+for(i=0;i<12;i++)a(L('M'+(i*30-8)+' 300 L'+(i*24+6)+' 248','#4A321E',1.1,'opacity=".5"'));
+a(P('M0 252 Q90 236 170 244 Q250 252 330 300','none','stroke="#E2C89C" stroke-width="2"'));
+a(k.man(86,292,1.25,'#F08AAE','#2B2B3A')+k.man(120,296,1.15,'#3A78D0','#33384A'));
+$.fall('leaf',['#E8573A','#F2B03A','#C83A2A'],14);
+});
+})();
+
+/* 퀄리티 5차: 임진각 바람의언덕·제부도 모세길·나리공원 재작업 */
+(function(){var def=window.__defScene;function f(v){return +(+v).toFixed(1)}
+function rg($,y,amp,ph,c1,c2,op){var d='M0 300 L0 '+f(y+Math.sin(ph)*amp);for(var x=0;x<=400;x+=12)d+=' L'+x+' '+f(y+Math.sin(x/80+ph)*amp+Math.sin(x/31+ph*2)*amp*.35);d+=' L400 300Z';return $.P(d,$.G(c1,c2),op?'opacity="'+op+'"':'')}
+
+/* ── 파주 임진각 바람의언덕: 일몰 역광 속 대형 바람개비 ── */
+def('파주 임진각 바람의언덕',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,T=$.tint,i,j;
+$.sky('#4E5AA8','#EE8F86','#FFD9A0');
+a(C(112,150,110,$.RD('#FFD08A',.75))+C(112,150,36,$.RD('#FFE6B0',1))+C(112,150,15,'#FFF4D6'));
+for(i=0;i<5;i++)a(E(f(40+q()*320),f(40+q()*70),f(36+q()*30),f(4+q()*3),i%2?'#FFC2A8':'#C89AC8','opacity=".5"'));
+$.cloud(300,44,1.1,.35);
+a(rg($,150,8,.7,'#7A6A98','#9A7A98','.85'));a(rg($,162,7,2.1,'#8A6A7C','#A8806E','.95'));
+/* 곤돌라 케이블 */
+a(L('M0 70 Q200 112 400 62','#3A3048',1.1)+R(204,98,10,9,'#E8573A')+L('M209 90 V98','#3A3048',.9));
+/* 억새 언덕 */
+a(P('M0 300 L0 178 Q100 160 220 172 T400 164 V300Z',G('#C8A25A','#6E5A30')));
+a(P('M0 300 L0 214 Q120 190 260 206 T400 196 V300Z',G('#A88A46','#4E4028')));
+/* 길 */
+a(P('M206 176 Q214 176 236 206 Q290 250 330 300 H178 Q210 250 190 210 Q184 190 206 176Z',G('#E8CE98','#A88A5A')));
+/* 바람개비 */
+function pw(x,y,r,cols,rot,pole){a(L('M'+f(x)+' '+f(y)+' V'+f(y+pole),'#E8E4D8',f(Math.max(.6,r*.1))));
+for(var n=0;n<4;n++){var an=rot+n*Math.PI/2,c=cols[n%cols.length],p1=[x+Math.cos(an)*r,y+Math.sin(an)*r],p2=[x+Math.cos(an+.78)*r*.78,y+Math.sin(an+.78)*r*.78],p3=[x+Math.cos(an-.9)*r*.5,y+Math.sin(an-.9)*r*.5];
+a(P('M'+f(x)+' '+f(y)+' L'+f(p1[0])+' '+f(p1[1])+' L'+f(p2[0])+' '+f(p2[1])+'Z',c)+P('M'+f(x)+' '+f(y)+' L'+f(p1[0])+' '+f(p1[1])+' L'+f(p3[0])+' '+f(p3[1])+'Z',T(c,-.28)))}
+a(C(f(x),f(y),f(Math.max(.8,r*.13)),'#F4F0E4')+C(f(x),f(y),f(r*1.06),$.RD('#FFD8A0',.25)))}
+var PC=[['#E8353F','#F2C030'],['#2F78D8','#FFFFFF'],['#F08AAE','#F2C030'],['#3BA860','#F2C030'],['#8A4FC8','#FFFFFF'],['#F28A2A','#2F78D8']];
+/* 원경 바람개비 줄 */
+for(j=0;j<7;j++){var yy=176+j*7+j*j*.9,sc=.18+j*.06,n=8+j*3;for(i=0;i<n;i++){var xx=((i+.5+q()*.3)/n)*420-10;pw(xx,yy,f(4*sc*3.2),PC[(i+j)%6],q()*6.28,f(10*sc*3.2))}}
+/* 근경 대형 바람개비 */
+pw(70,196,24,PC[0],.4,104);pw(318,188,28,PC[1],1.2,112);pw(126,232,19,PC[2],.9,66);pw(260,246,22,PC[3],.1,56);pw(30,250,20,PC[4],.7,52);pw(364,240,22,PC[5],.5,60);
+/* 억새 */
+for(i=0;i<70;i++){var gx=q()*400,gy=300,hh=30+q()*40;if(gx>150&&gx<290&&q()<.8)continue;a(L('M'+f(gx)+' 300 Q'+f(gx+4)+' '+f(300-hh*.6)+' '+f(gx+8+q()*8)+' '+f(300-hh),i%3?'#E8C878':'#FFF0C0',1.3,'opacity=".8"'))}
+a(k.man(196,296,1.3,'#2A2434','#1E1A28','#1A1420')+k.man(226,300,1.2,'#3A3040','#241E2C','#1A1420'));
+a(E(210,300,160,18,'#FFD8A0','opacity=".12"'));
+$.birds&&$.birds(2);
+});
+
+/* ── 화성 제부도 모세길: 썰물로 드러난 길과 노을 ── */
+def('화성 제부도 모세길',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,T=$.tint,i,j,hy=146;
+$.sky('#5A5AA6','#E8847C','#FFD29A');
+a(C(268,hy-8,90,$.RD('#FFC27A',.8))+C(268,hy-8,28,$.RD('#FFE0A8',1))+C(268,hy-8,13,'#FFF2CC'));
+for(i=0;i<4;i++)a(E(f(60+q()*280),f(34+q()*54),f(40+q()*30),f(4+q()*3),i%2?'#FFB8A0':'#B890C0','opacity=".5"'));
+/* 바다 띠 */
+a(R(0,hy,400,18,G('#7A7CB8','#C898A8')));
+for(i=0;i<14;i++)a(R(f(q()*380),f(hy+2+q()*14),f(8+q()*22),1.2,'#FFE0C0','opacity=".55"'));
+/* 제부도 섬 */
+a(P('M150 '+hy+' Q190 '+(hy-22)+' 240 '+(hy-26)+' Q300 '+(hy-32)+' 340 '+(hy-18)+' Q380 '+(hy-14)+' 400 '+hy+' V'+(hy+2)+' H150Z',G('#4E5A6A','#2E3446')));
+a(P('M240 '+(hy-26)+' Q300 '+(hy-32)+' 340 '+(hy-18)+' L340 '+hy+' H240Z','#000','opacity=".1"'));
+for(i=0;i<14;i++)a($.tint?C(f(176+q()*196),f(hy-4-q()*18),f(2+q()*2.6),T('#3A5A48',q()*.2)):'');
+a(R(321,hy-48,5,22,'#F4F0EA')+P('M319 '+(hy-48)+' h9 l-4.5 -7Z','#D8483A')+R(320,hy-40,7,3,'#D8483A')+C(323.5,hy-30,2.4,'#FFE08A'));
+a(R(214,hy-14,6,6,'#E8D8C0')+P('M212 '+(hy-14)+' L217 '+(hy-19)+' L222 '+(hy-14)+'Z','#B8584A')+R(232,hy-12,6,5,'#E8D8C0')+P('M230 '+(hy-12)+' L235 '+(hy-16)+' L240 '+(hy-12)+'Z','#4A5A78'));
+/* 갯벌 */
+a(R(0,hy+16,400,300-hy-16,G('#C9A89A','#4E4458')));
+/* 하늘 반영 */
+a(P('M246 '+(hy+16)+' H300 L360 300 H150Z',G('#FFC98A','#8A6A78'),'opacity=".28"'));
+for(i=0;i<26;i++){var yy=hy+22+Math.pow(q(),1.3)*130,sc=.4+(yy-hy)/150;a(E(f(110+q()*250),f(yy),f(10*sc+q()*14*sc),f(1.4*sc),i%3?'#FFD7A8':'#FFFFFF','opacity=".5"'))}
+/* 갯벌 물길 */
+a(P('M60 '+(hy+22)+' Q110 '+(hy+34)+' 80 '+(hy+56)+' Q50 '+(hy+86)+' 20 '+(hy+120)+' L0 '+(hy+128)+' V'+(hy+110)+' Q30 '+(hy+80)+' 52 '+(hy+60)+' Q74 '+(hy+38)+' 56 '+(hy+24)+'Z',G('#F0B890','#8A6A88'),'opacity=".8"'));
+a(P('M400 '+(hy+30)+' Q330 '+(hy+44)+' 350 '+(hy+80)+' Q372 '+(hy+120)+' 400 '+(hy+138)+'Z',G('#F6C49A','#8A6A88'),'opacity=".8"'));
+/* 모래 물결무늬 */
+for(i=0;i<46;i++){var y2=hy+26+Math.pow(q(),1.2)*128,s2=.35+(y2-hy)/160;a(L('M'+f(q()*400)+' '+f(y2)+' q'+f(10*s2)+' '+f(-2.4*s2)+' '+f(22*s2)+' 0','#5A4A5E',f(.9*s2),'opacity=".28"'))}
+/* 길: 소실점 → 섬 */
+function cx(u){return 236-u*48}function wd(u){return 3+u*98}function ry(u){return hy+18+u*136}
+var N=30,pl='',pr='';for(i=0;i<=N;i++){var u=i/N;pl+=(i?' L':'M')+f(cx(u)-wd(u))+' '+f(ry(u));}for(i=N;i>=0;i--){var u2=i/N;pl+=' L'+f(cx(u2)+wd(u2))+' '+f(ry(u2))}
+a(P(pl+'Z',G('#5C5A6C','#2A2A36')));
+a(P('M'+f(cx(0)-wd(0))+' '+f(ry(0))+' L'+f(cx(1)-wd(1))+' '+f(ry(1))+' L'+f(cx(1)-wd(1)+7)+' '+f(ry(1))+' L'+f(cx(0)-wd(0)+.8)+' '+f(ry(0))+'Z','#E8E4DA','opacity=".8"'));
+a(P('M'+f(cx(0)+wd(0))+' '+f(ry(0))+' L'+f(cx(1)+wd(1))+' '+f(ry(1))+' L'+f(cx(1)+wd(1)-7)+' '+f(ry(1))+' L'+f(cx(0)+wd(0)-.8)+' '+f(ry(0))+'Z','#E8E4DA','opacity=".8"'));
+for(i=0;i<12;i++){var u0=Math.pow(i/12,1.5),u1=Math.pow((i+.5)/12,1.5);a(P('M'+f(cx(u0)-.3-u0*1.6)+' '+f(ry(u0))+' L'+f(cx(u1)-.3-u1*1.6)+' '+f(ry(u1))+' L'+f(cx(u1)+.3+u1*1.6)+' '+f(ry(u1))+' L'+f(cx(u0)+.3+u0*1.6)+' '+f(ry(u0))+'Z','#F2C230','opacity=".9"'))}
+/* 가로등·표지 기둥 */
+for(i=1;i<9;i++){var u=Math.pow(i/9,1.45),h=4+u*40,pxl=cx(u)-wd(u)-3-u*6,pxr=cx(u)+wd(u)+3+u*6;[pxl,pxr].forEach(function(px,si){a(R(f(px-.7-u*.8),f(ry(u)-h),f(1.4+u*1.6),f(h),'#4A4658')+C(f(px),f(ry(u)-h),f(1.4+u*2.4),si?'#FFE6A8':'#FFD08A')+C(f(px),f(ry(u)-h),f(3+u*7),$.RD('#FFD08A',.5)))})}
+/* 사람 */
+a(E(196,292,40,6,'#000','opacity=".25"'));
+a(k.man(176,292,1.3,'#F8F0E8','#32384A')+k.man(212,296,1.2,'#E8618A','#32384A'));
+/* 갈매기 */
+a('<g fill="none" stroke="#3A3048" stroke-width="1.4" stroke-linecap="round"><path d="M70 60 q5 -6 10 0 q5 -6 10 0"/><path d="M100 78 q4 -5 8 0 q4 -5 8 0"/><path d="M320 50 q4 -5 8 0 q4 -5 8 0"/></g>');
+});
+
+/* ── 양주 나리공원: 역광 속 핑크뮬리와 천일홍 ── */
+def('양주 나리공원',function($,k){var q=$.q,a=$.add,P=$.P,R=$.R,C=$.C,E=$.E,L=$.L,G=$.G,T=$.tint,i,j;
+$.sky('#7C78C0','#F4A8B0','#FFE2B8');
+a(C(300,120,120,$.RD('#FFD6A0',.8))+C(300,120,40,$.RD('#FFEBC4',1))+C(300,120,16,'#FFF6DC'));
+$.cloud(80,46,1.2,.45);$.cloud(180,78,.8,.35);
+a(rg($,132,8,.9,'#9A88B8','#B898B8','.8'));a(rg($,146,6,2.6,'#8A7AA8','#A888A8','.9'));
+/* 원경 나무 */
+for(i=0;i<9;i++){var tx=20+i*46+q()*12;a(R(f(tx-1),150,2,12,'#5A4A5A')+C(f(tx),146,f(9+q()*5),G('#7A6A98','#5A4A78')))}
+/* 바닥 */
+a(R(0,156,400,144,G('#E8B8C0','#9A6A84')));
+/* 천일홍 띠 */
+for(j=0;j<5;j++){var y0=160+j*7,n=34-j*2;for(i=0;i<n;i++){var xx=(i+q())*(400/n)-6,s=.5+j*.16;a(L('M'+f(xx)+' '+f(y0+12*s)+' V'+f(y0+3*s),'#5A8A44',f(.8*s))+C(f(xx),f(y0),f(2.8*s),['#C8287E','#E8509A','#9A2A8A'][(i+j)%3])+C(f(xx-.8*s),f(y0-.8*s),f(1*s),'#FFB0D0','opacity=".7"'))}}
+/* 핑크뮬리 덤불: 원근 */
+for(j=0;j<12;j++){var yb=186+Math.pow(j/11,1.5)*124,sc=.5+j*.2,n=7+Math.floor(j*.7);for(i=0;i<n;i++){var bx=(i+.5)*(440/n)-20+q()*14;if(Math.abs(bx-(205+(yb-186)*.22))<(6+(yb-186)*.46))continue;
+for(var m=0;m<9;m++){var ox=(m-4)*2.6*sc+q()*2,hh=(26+q()*14)*sc,sw=(q()-.5)*7*sc;a(L('M'+f(bx+ox*.5)+' '+f(yb)+' Q'+f(bx+ox)+' '+f(yb-hh*.55)+' '+f(bx+ox+sw)+' '+f(yb-hh),'#C45A8A',f(.9*sc),'opacity=".55"'));
+a(E(f(bx+ox+sw),f(yb-hh),f(2.8*sc),f(7*sc),['#FF9CC4','#FFB6D4','#F07AAE'][m%3],'opacity=".72"')+E(f(bx+ox+sw-.5*sc),f(yb-hh-1.5*sc),f(1.2*sc),f(4*sc),'#FFE8F0','opacity=".7"'))}}}
+/* 길 */
+a(P('M200 168 Q206 168 222 200 Q268 246 318 300 H160 Q196 250 184 206 Q180 180 200 168Z',G('#F0D8B0','#B8946A'),'opacity=".95"'));
+/* 역광 림 라이트 */
+a(R(0,156,400,144,$.RD('#FFD8A0',.0)));
+a(E(300,170,170,22,'#FFD6A0','opacity=".18"'));
+/* 사람 */
+a(k.man(180,298,1.3,'#F4EEE8','#32384A')+k.man(214,300,1.22,'#3A78D0','#2B2B3A'));
+$.fall('petal',['#FFC0D8','#FFFFFF','#FFD6A8'],10);
+});
+})();
+
 </script>
 <script>
 (function(){
-var P=[{"r":"서울","n":"서울숲","d":"성동구","s":[0,2],"y":false,"st":"11월 초(은행나무·단풍), 4월(벚꽃·신록)","pk":"","t":"오후 늦게","pt":"나무길 역광, 성수동 카페거리와 연계","ps":"은행나무길에서 노란 터널 소실점, 오후 역광","m":"분당선 서울숲역"},{"r":"서울","n":"익선동 한옥골목","d":"종로구","s":[3],"y":false,"st":"12월~1월(눈 오는 날, 연말 조명)","pk":"","t":"저녁~밤","pt":"한옥 지붕과 골목 조명","ps":"골목 입구에서 한옥 지붕선을 따라 낮은 각도, 저녁 조명","m":"3호선 종로3가역"},{"r":"부산","n":"흰여울문화마을","d":"영도구","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"낮~해 질 녘","pt":"바다 옆 하얀 골목","ps":"흰여울길 난간 따라 바다 방향으로 하얀 골목과 바다 함께 담기","m":"대중교통+도보"},{"r":"부산","n":"청사포 다릿돌전망대","d":"해운대구","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"일출·일몰","pt":"바다 위 전망대 구도","ps":"전망대 끝에서 쌍둥이 등대와 일출 구도","m":"대중교통+도보"},{"r":"대구","n":"수성못","d":"수성구","s":[0,2],"y":false,"st":"봄(벚꽃)·가을","pk":"","t":"해 질 녘","pt":"호수 야경과 오리배","ps":"상화동산 쪽에서 호수와 오리배 야경 / 둑길에서 벚꽃과 물 반영","m":"대중교통"},{"r":"대구","n":"김광석다시그리기길","d":"중구","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"낮~저녁","pt":"벽화 골목","ps":"벽화 앞과 골목 소실점 구도","m":"대중교통"},{"r":"인천","n":"개항장(개항로)","d":"중구","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"낮","pt":"근대 건축과 레트로 거리","ps":"근대 건축물 앞 거리, 골목 모서리에서 레트로 건물 정면","m":"대중교통(1호선)"},{"r":"인천","n":"송월동 동화마을","d":"중구","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"낮","pt":"동화 테마 벽화","ps":"입구 동화마을 조형물과 벽화 앞","m":"대중교통+도보"},{"r":"광주","n":"양림동 역사문화마을","d":"남구","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"낮","pt":"근대 건축과 골목 감성","ps":"근대 건축물 앞 골목, 펭귄마을 벽화 주변","m":"대중교통+도보"},{"r":"광주","n":"1913 송정역시장","d":"광산구","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"낮","pt":"레트로 시장 분위기","ps":"시장 입구 간판 앞, 정면 레트로 구도","m":"대중교통(송정역)"},{"r":"대전","n":"소제동 카페거리","d":"동구","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"낮~저녁","pt":"철도 관사촌 골목","ps":"옛 철도 관사 골목, 카페 외벽과 골목 소실점","m":"대중교통"},{"r":"대전","n":"장태산 자연휴양림","d":"서구","s":[2],"y":false,"st":"가을(메타세쿼이아)","pk":"","t":"오전","pt":"메타세쿼이아 숲길","ps":"메타세쿼이아 숲길 중앙 소실점, 출렁다리·스카이타워 전망","m":"차량 권장"},{"r":"울산","n":"간절곶","d":"울주군","s":[0,1,2,3],"y":true,"st":"연중(일출)","pk":"","t":"일출","pt":"동해 일출, 등대","ps":"등대 앞 잔디밭과 소망우체통 쪽에서 일출 구도","m":"차량 권장"},{"r":"울산","n":"태화강 국가정원","d":"중구","s":[0,1,2],"y":false,"st":"봄(꽃)·여름·가을","pk":"","t":"낮~저녁","pt":"십리대숲, 꽃밭","ps":"십리대숲 대나무길 중앙, 꽃밭 구간 낮은 각도","m":"대중교통"},{"r":"세종","n":"세종호수공원","d":"세종시","s":[0,2],"y":false,"st":"봄·가을","pk":"","t":"해 질 녘","pt":"호수와 도시 야경","ps":"호수 둘레길에서 도시 야경 물 반영","m":"차량/버스"},{"r":"세종","n":"국립세종수목원","d":"세종시","s":[0,2],"y":false,"st":"봄·가을","pk":"","t":"오전","pt":"온실과 정원","ps":"사계절전시온실 앞 정원과 건물 함께 담기","m":"차량/버스"},{"r":"경기","n":"양평 두물머리","d":"양평군","s":[1,2],"y":false,"st":"여름(연꽃)·가을","pk":"","t":"일출·물안개","pt":"느티나무와 물안개","ps":"느티나무 아래 나룻배와 물안개, 해 뜨기 전후","m":"대중교통+도보"},{"r":"경기","n":"수원 행궁동(행리단길)","d":"수원시","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"낮~저녁","pt":"화성 성곽과 감성 카페","ps":"방화수류정과 용연 연못 반영, 성곽길에서 행궁동 조망","m":"대중교통"},{"r":"강원","n":"강릉 안목해변 커피거리","d":"강릉시","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"낮~일출","pt":"바다 앞 카페와 해변","ps":"방파제에서 카페 거리와 바다 함께, 카페 테라스 바다 전망","m":"대중교통(KTX)"},{"r":"강원","n":"태백산","d":"태백","s":[3],"y":false,"st":"겨울(설경)","pk":"개화 12월 초 / 절정 1월~2월 초 / 낙화 2월 하순","t":"","pt":"맑은 날 아침, 눈 반사 노출 보정","ps":"유일사 코스 능선의 눈꽃길, 정상 천제단 주변","m":"확인 필요"},{"r":"충북","n":"단양 만천하스카이워크","d":"단양군","s":[0,1,2],"y":false,"st":"봄~가을","pk":"","t":"낮","pt":"남한강 위 전망","ps":"스카이워크 끝 전망대에서 남한강 굽이 조망","m":"차량 권장"},{"r":"충북","n":"괴산 산막이옛길","d":"괴산군","s":[2],"y":false,"st":"가을(단풍)","pk":"","t":"오전","pt":"호수 둘레길","ps":"출렁다리 위에서 괴산호와 단풍 조망","m":"차량 권장"},{"r":"충남","n":"안면도 꽃지해수욕장","d":"태안군","s":[0,1,2,3],"y":true,"st":"연중(노을)","pk":"","t":"일몰","pt":"할미·할아비 바위 노을","ps":"해변에서 할미·할아비 바위 사이로 지는 해 실루엣","m":"차량 권장"},{"r":"충남","n":"아산 곡교천 은행나무길","d":"아산시","s":[2],"y":false,"st":"가을(11월 초)","pk":"","t":"오전~오후","pt":"노란 은행나무 터널","ps":"길 중앙에서 은행나무 터널 소실점, 오전 부드러운 빛","m":"대중교통+도보"},{"r":"전북","n":"전주 한옥마을","d":"전주시","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"낮~저녁","pt":"한옥 골목과 한복 사진","ps":"오목대 전망대에서 한옥 지붕 물결 조망, 경기전 돌담길","m":"대중교통"},{"r":"전북","n":"내장산","d":"정읍","s":[2],"y":false,"st":"가을(단풍)","pk":"개화 10월 하순 / 절정 11월 상순 / 낙화 11월 중순","t":"","pt":"역광으로 단풍 투과광 담기","ps":"일주문~내장사 단풍터널 길 / 우화정 앞에서 정자와 단풍 물 반영","m":"확인 필요"},{"r":"전남","n":"담양 메타세쿼이아길","d":"담양군","s":[1,2],"y":false,"st":"가을·여름(초록)","pk":"","t":"오전","pt":"직선 가로수길","ps":"보행로 입구에서 직선 소실점, 오전 부드러운 빛","m":"차량 권장"},{"r":"전남","n":"순천만 국가정원","d":"순천시","s":[0,1,2],"y":false,"st":"봄~가을","pk":"","t":"낮~일몰","pt":"정원과 습지 풍경","ps":"정원 호수 쪽 수변 / 순천만 습지 용산전망대에서 일몰 S자 갯골","m":"대중교통(KTX)"},{"r":"경북","n":"경주 황리단길·대릉원","d":"경주시","s":[0,1,2,3],"y":true,"st":"봄(벚꽃)·연중","pk":"","t":"낮~저녁","pt":"고분과 한옥 카페거리","ps":"대릉원 돌담길 앞에서 고분 곡선과 하늘 함께 담기","m":"대중교통(KTX)"},{"r":"경북","n":"안동 월영교","d":"안동시","s":[0,1,2,3],"y":true,"st":"연중(야경)","pk":"","t":"저녁","pt":"다리 야경과 물 반영","ps":"월영교 중앙과 건너편 월영정, 둑에서 다리 전체와 물 반영 야경","m":"차량/버스"},{"r":"경남","n":"통영 동피랑 벽화마을","d":"통영시","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"낮","pt":"벽화 골목과 항구 전경","ps":"동피랑 정상 전망대에서 강구안 항구 조망","m":"대중교통+도보"},{"r":"경남","n":"진해 경화역·여좌천","d":"창원","s":[0],"y":false,"st":"봄(벚꽃)","pk":"개화 3월 하순 / 절정 3월 말~4월 초 / 낙화 4월 초~중순","t":"","pt":"이른 아침, 철길 구도","ps":"경화역 철길 중앙에서 소실점 구도(안전·출입 규정 확인) / 여좌천 로망스다리 위에서 벚꽃 터널 내려다보기","m":"확인 필요"},{"r":"제주","n":"월정리 해변","d":"제주시","s":[1],"y":false,"st":"여름","pk":"","t":"낮","pt":"에메랄드빛 바다와 카페","ps":"해변 모래사장에서 에메랄드빛 바다와 카페 외관","m":"차량/버스"},{"r":"제주","n":"새별오름","d":"제주시","s":[2],"y":false,"st":"가을(억새)","pk":"","t":"일몰","pt":"억새 능선 역광","ps":"정상 능선에서 억새 물결과 일몰 역광","m":"차량 권장"},{"r":"서울","n":"하늘공원","d":"마포","s":[2],"y":false,"st":"가을(억새)","pk":"개화 9월 하순 / 절정 10월 중순 / 낙화 11월 초","t":"","pt":"일몰 무렵 황금빛 역광","ps":"억새밭 데크길에서 낮은 각도로 억새 사이 역광, 일몰 시간대","m":"확인 필요"},{"r":"서울","n":"화랑대 철도공원(경춘선숲길)","d":"노원구","s":[0],"y":false,"st":"4월 초(벚꽃)","pk":"","t":"오전","pt":"옛 철길 위 벚꽃 구도","ps":"옛 철길 중앙에서 벚꽃 터널과 전시 객차를 함께 담기","m":"6호선 화랑대역"},{"r":"서울","n":"부암동","d":"종로구","s":[0,2],"y":false,"st":"11월 초(단풍), 4월","pk":"","t":"오후","pt":"고즈넉한 골목과 성곽 풍경","ps":"윤동주 시인의 언덕에서 성곽과 도심 조망, 창의문 일대 골목","m":"지하철 후 버스 이동"},{"r":"서울","n":"이화여대 ECC 계단","d":"서대문구","s":[0],"y":false,"st":"4월~5월(신록)","pk":"","t":"주말 오전(한적함)","pt":"대칭 계단 구도","ps":"계단 중앙에서 양쪽 건물 소실점, 위/아래 대칭 구도","m":"2호선 이대역"},{"r":"서울","n":"문래창작촌","d":"영등포구","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"해 질 녘","pt":"철공소 골목의 아날로그 감성","ps":"철공소 골목 안에서 간판·벽화와 골목 소실점, 해 질 녘","m":"2호선 문래역"},{"r":"서울","n":"서울로 7017","d":"중구","s":[0,1,2,3],"y":true,"st":"봄(식재 꽃), 연중 야경","pk":"","t":"해 질 녘~밤","pt":"도심 위 보행길과 야경","ps":"보행길 중앙에서 서울역 방향 직선 구도, 밤 도심 야경","m":"1·4호선 서울역"},{"r":"서울","n":"성수동 골목","d":"성동구","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"낮","pt":"붉은 벽돌 공장 건물, 팝업스토어","ps":"붉은 벽돌 공장 외벽 앞 골목 코너, 낮 자연광","m":"2호선 성수역"},{"r":"부산","n":"감천문화마을","d":"사하구","s":[0,1,2,3],"y":true,"st":"연중(봄·가을 쾌적)","pk":"","t":"오전","pt":"알록달록 집들의 전경","ps":"하늘마루 전망대에서 마을 전경, 어린왕자 포토존","m":"대중교통+도보"},{"r":"경기","n":"양평 세미원","d":"양평","s":[1],"y":false,"st":"여름(연꽃)","pk":"개화 6월 말 / 절정 7월 중순~8월 초 / 낙화 8월 중순","t":"","pt":"오전 일찍, 꽃이 활짝 열린 시간","ps":"장독대 분수 정원 앞, 연못 징검다리 주변에서 연꽃과 정자 함께 담기","m":"확인 필요"},{"r":"경기","n":"가평 아침고요수목원","d":"가평군","s":[0,3],"y":false,"st":"봄·겨울(별빛정원전)","pk":"","t":"저녁","pt":"정원과 겨울 조명","ps":"한국정원·별빛정원 조명 터널 앞, 저녁 시간대","m":"차량 권장"},{"r":"강원","n":"양양 서피비치","d":"양양군","s":[1],"y":false,"st":"여름","pk":"","t":"낮","pt":"서핑 감성의 해변","ps":"해변 입구 서핑 감성 포토존, 해변 쪽에서 서핑 보드와 바다","m":"차량 권장"},{"r":"전북","n":"덕유산 향적봉","d":"무주","s":[3],"y":false,"st":"겨울(상고대)","pk":"개화 12월 초 / 절정 1월 / 낙화 2월","t":"","pt":"기온이 낮고 안개 낀 날 일출 전후","ps":"설천봉에서 향적봉 오르는 능선의 상고대 구간","m":"확인 필요"},{"r":"전북","n":"군산 경암동 철길마을","d":"군산시","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"낮","pt":"옛 철길 레트로 감성","ps":"철길 중앙에서 소실점 구도(안전 유의)","m":"대중교통"},{"r":"전남","n":"여수 돌산공원·해상케이블카","d":"여수시","s":[0,1,2,3],"y":true,"st":"연중(야경)","pk":"","t":"저녁","pt":"바다 야경","ps":"돌산공원에서 돌산대교 야경 조망","m":"대중교통(KTX)"},{"r":"경남","n":"거제 바람의언덕","d":"거제시","s":[0,1,2],"y":false,"st":"봄~가을","pk":"","t":"낮~일몰","pt":"언덕 위 풍차와 바다","ps":"풍차 앞 언덕 아래에서 낮은 각도로 풍차와 바다","m":"차량 권장"},{"r":"제주","n":"녹산로 유채꽃길","d":"서귀포","s":[0],"y":false,"st":"봄(유채꽃)","pk":"개화 3월 하순 / 절정 4월 초~중순 / 낙화 4월 하순","t":"","pt":"벚꽃과 함께 담는 도로 구도","ps":"유채밭 옆 안전한 진입로에서 벚꽃 가로수와 유채꽃을 함께 담기 (도로 위·갓길 촬영 금지)","m":"확인 필요"},{"r":"제주","n":"휴애리 자연생활공원","d":"서귀포","s":[1,2],"y":false,"st":"여름(수국)·가을(핑크뮬리)","pk":"개화 6월 초 / 절정 6월 중순~하순 / 낙화 7월 초","t":"","pt":"흐린 날 색감이 선명","ps":"수국길 중앙에서 낮은 각도로 꽃길 소실점, 흐린 날 색감 좋음","m":"확인 필요"},{"r":"경북","n":"독도","d":"울릉군","s":[0,1,2],"y":false,"st":"5~10월(뱃길 양호), 맑은 날 일출","pk":"","t":"오전 맑은 날","pt":"동도·서도와 독립문바위, 푸른 동해","ps":"동도 선착장 쪽에서 서도와 바위섬 전체, 괭이갈매기","m":"울릉도 도동항 출발 여객선(기상에 따라 결항, 접안 시 약 20분)"},{"r":"강원","n":"설악산 울산바위","d":"속초시","s":[2],"y":false,"st":"10월 중순(단풍)","pk":"","t":"오전","pt":"병풍 같은 암벽과 단풍 능선","ps":"설악동 소공원 쪽 탐방로에서 울산바위 암벽과 붉은 단풍 산자락","m":"속초 시외버스 후 시내버스(성수기 혼잡)"},{"r":"제주","n":"한라산 1100고지","d":"서귀포시","s":[3],"y":false,"st":"12월~2월(설경·상고대)","pk":"","t":"오전","pt":"눈 덮인 숲과 상고대","ps":"1100고지 탐방로 입구 데크에서 눈 덮인 침엽수림","m":"차량 권장(눈 오면 체인 필요, 도로 통제 확인)"},{"r":"전남","n":"보성 대한다원","d":"보성군","s":[1],"y":false,"st":"5월~8월(푸른 차밭)","pk":"","t":"오전, 안개 낀 날","pt":"물결치는 차밭 이랑과 삼나무길","ps":"차밭 전망 데크에서 이랑이 이어지는 곡선과 삼나무 숲","m":"차량 권장"},{"r":"강원","n":"대관령 양떼목장","d":"평창군","s":[3],"y":false,"st":"12월~2월(눈 덮인 초원)","pk":"","t":"오전","pt":"눈 쌓인 초원과 양떼","ps":"울타리 길에서 초원과 양, 멀리 능선까지 한 화면에","m":"차량 또는 진부역 버스"},{"r":"경남","n":"하동 십리벚꽃길","d":"하동군","s":[0],"y":false,"st":"4월 초(벚꽃)","pk":"","t":"오전","pt":"곧게 뻗은 길과 벚꽃 터널","ps":"화개에서 쌍계사 가는 길 한가운데에서 소실점 구도(보행 안전 확인)","m":"차량 권장(개화철 정체)"},{"r":"경북","n":"포항 호미곶","d":"포항시","s":[0,1,2,3],"y":true,"st":"연중(새해 일출)","pk":"","t":"일출","pt":"바다 위 일출과 상생의 손","ps":"해맞이광장에서 상생의 손과 수평선 위로 떠오르는 해","m":"포항역에서 버스 또는 차량"},{"r":"경북","n":"울릉도 촛대바위","d":"울릉군","s":[0,1,2,3],"y":true,"st":"연중(맑은 날 일출)","pk":"","t":"일출","pt":"저동항 앞바다의 바위 기둥과 일출","ps":"저동항 방파제 산책로에서 촛대바위와 수평선 위로 떠오르는 해","m":"포항·강릉·묵호 출발 여객선(기상에 따라 결항), 저동항 도보"},{"r":"경기","n":"화담숲","d":"광주시","s":[0,2],"y":false,"st":"10월 말~11월 초(단풍), 4월~5월(봄꽃)","pk":"","t":"오전","pt":"단풍 계곡과 나무 데크길, 모노레일","ps":"계곡 옆 데크길에서 단풍 산자락과 물길, 모노레일을 함께","m":"곤지암 일대 셔틀버스·차량(입장 예약 필수)"}];
+var P=[{"r":"경기","n":"양평 두물머리","d":"양평군","s":[1,2],"y":false,"st":"여름(연꽃)·가을","pk":"","t":"일출·물안개","pt":"느티나무와 물안개","ps":"느티나무 아래 나룻배와 물안개, 해 뜨기 전후","m":"대중교통+도보","a":"동부"},{"r":"경기","n":"수원 행궁동(행리단길)","d":"수원시","s":[0,1,2,3],"y":true,"st":"연중","pk":"","t":"낮~저녁","pt":"화성 성곽과 감성 카페","ps":"방화수류정과 용연 연못 반영, 성곽길에서 행궁동 조망","m":"대중교통","a":"남부"},{"r":"경기","n":"양평 세미원","d":"양평군","s":[1],"y":false,"st":"여름(연꽃)","pk":"개화 6월 말 / 절정 7월 중순~8월 초 / 낙화 8월 중순","t":"","pt":"오전 일찍, 꽃이 활짝 열린 시간","ps":"장독대 분수 정원 앞, 연못 징검다리 주변에서 연꽃과 정자 함께 담기","m":"확인 필요","a":"동부"},{"r":"경기","n":"가평 아침고요수목원","d":"가평군","s":[0,3],"y":false,"st":"봄·겨울(별빛정원전)","pk":"","t":"저녁","pt":"정원과 겨울 조명","ps":"한국정원·별빛정원 조명 터널 앞, 저녁 시간대","m":"차량 권장","a":"동부"},{"r":"경기","n":"화담숲","d":"광주시","s":[0,2],"y":false,"st":"10월 말~11월 초(단풍), 4월~5월(봄꽃)","pk":"","t":"오전","pt":"단풍 계곡과 나무 데크길, 모노레일","ps":"계곡 옆 데크길에서 단풍 산자락과 물길, 모노레일을 함께","m":"곤지암 일대 셔틀버스·차량(입장 예약 필수)","a":"동부"},{"r":"경기","n":"파주 마장호수 출렁다리","d":"파주시","a":"북부","s":[0,1,2,3],"y":true,"st":"연중(가을 단풍 · 이른 아침 물안개)","pk":"","t":"오전·일몰","pt":"호수 위를 가로지르는 출렁다리","ps":"다리 입구에서 호수와 산 능선을, 다리 위에서 호수 전체를","m":"차량(주말 주차 혼잡) · 지하철+버스 환승"},{"r":"경기","n":"포천 산정호수","d":"포천시","a":"북부","s":[2,3],"y":false,"st":"10월 중순~11월 초(단풍·억새), 겨울 물안개","pk":"","t":"일출·오전","pt":"산에 둘러싸인 호수와 억새 둘레길","ps":"수변 데크에서 산 그림자가 비친 호수를, 억새 사이 둘레길 한 컷","m":"차량 · 포천 버스(도보 긴 편)"},{"r":"경기","n":"가평 남이섬 눈길","d":"가평군","a":"동부","s":[2,3],"y":false,"st":"12월~2월(눈 덮인 나무 길)","pk":"","t":"오전","pt":"눈 덮인 침엽수 길과 겨울 포토존","ps":"눈 쌓인 길 한가운데서 소실점, 눈 쌓인 나무가 터널처럼","m":"가평역·청평역에서 버스/택시 후 배(약 5분)"},{"r":"경기","n":"양주 나리공원","d":"양주시","a":"북부","s":[0,1,2],"y":false,"st":"9~10월(천일홍·핑크뮬리)","pk":"","t":"오후 늦게(역광)","pt":"분홍빛 핑크뮬리 물결","ps":"핑크뮬리 사이 길에서 낮은 각도로, 해 질 무렵 사선 역광","m":"차량 · 양주역 버스+택시"},{"r":"경기","n":"시흥 갯골생태공원","d":"시흥시","a":"서부","s":[2],"y":false,"st":"10월 말~11월(칠면초 붉은 갯벌), 일몰","pk":"","t":"일몰","pt":"붉게 물든 갯벌과 소금 창고","ps":"칠면초 군락과 흔들다리, 소금창고 실루엣과 노을","m":"수인분당선 월곶역·소래포구 인근 버스 / 차량"},{"r":"경기","n":"화성 제부도 모세길","d":"화성시","a":"서부","s":[0,1,2,3],"y":true,"st":"연중(물때 확인 필수)","pk":"","t":"일몰·썰물","pt":"바다가 갈라지는 길과 노을","ps":"썰물에 드러난 길 위에서 노을, 갯벌에 비치는 반영","m":"차량(물때표 확인) · 수원/오산 버스"},{"r":"경기","n":"여주 강천섬 은행나무길","d":"여주시","a":"동부","s":[2],"y":false,"st":"11월 초~중순(은행나무 단풍)","pk":"","t":"오전·낮","pt":"강변 노란 은행나무 터널","ps":"길 가운데 소실점, 은행 터널과 떨어진 잎 카펫","m":"차량(주차 안내 따름) · 여주역 버스"},{"r":"경기","n":"이천 백사 산수유마을","d":"이천시","a":"남부","s":[0],"y":false,"st":"3월 말~4월 초(산수유 꽃)","pk":"","t":"오전","pt":"노란 산수유 꽃 돌담길","ps":"돌담과 산수유 꽃을 겹쳐 한 컷, 마을길에서 노란 터널","m":"차량 위주 · 이천역 버스 환승"},{"r":"경기","n":"구리 한강시민공원","d":"구리시","a":"동부","s":[0,2],"y":false,"st":"4~5월(유채), 9~10월(코스모스)","pk":"","t":"오전·일몰","pt":"한강변 유채와 코스모스 꽃밭","ps":"꽃밭 낮은 각도에서 한강과 다리를 배경으로","m":"지하철 8호선 구리역 일대 + 버스"},{"r":"경기","n":"포천 한탄강 하늘다리","d":"포천시","a":"북부","s":[1,2,3],"y":false,"st":"10~11월(단풍 협곡), 겨울(주상절리 빙벽)","pk":"","t":"오전","pt":"현무암 협곡 위를 가로지르는 하늘다리","ps":"다리 위에서 협곡과 한탄강을 내려다보는 구도","m":"차량 · 포천 시내 버스+택시"},{"r":"경기","n":"용인 에버랜드 튤립정원","d":"용인시","a":"남부","s":[0],"y":false,"st":"4월 초~5월 초(튤립)","pk":"","t":"오전","pt":"다채로운 튤립 정원","ps":"튤립 군락 가운데 낮은 각도, 색 띠 구도","m":"에버랜드 셔틀·버스 / 차량(입장권 필요)"},{"r":"경기","n":"파주 임진각 바람의언덕","d":"파주시","a":"북부","s":[2],"y":false,"st":"9~10월(바람개비·억새 언덕)","pk":"","t":"일몰","pt":"수천 개 바람개비가 도는 언덕","ps":"바람개비 사이에서 해 질 무렵, 곤돌라와 함께","m":"경의중앙선 임진강역 도보/셔틀 · 차량"},{"r":"경기","n":"포천 허브아일랜드 빛축제","d":"포천시","a":"북부","s":[3],"y":false,"st":"12월~2월(빛 축제 · 야간)","pk":"","t":"일몰 후","pt":"겨울 밤을 밝히는 빛의 정원","ps":"빛 터널 안 가운데 서서 소실점, 조명 반영","m":"차량 · 신북면 버스(운행 적음)"},{"r":"경기","n":"안성 팜랜드 호밀밭","d":"안성시","a":"남부","s":[0],"y":false,"st":"5월~6월 초(호밀 초록 물결)","pk":"","t":"오전·오후 늦게","pt":"초록 호밀밭과 목장","ps":"호밀밭 물결 사이 길, 낮은 각도로 바람 결 담기","m":"차량 위주 · 안성터미널 버스+택시"},{"r":"경기","n":"광명동굴","d":"광명시","a":"서부","s":[0,1,2,3],"y":true,"st":"연중(실내, 여름 시원 · 겨울 따뜻)","pk":"","t":"낮","pt":"황금빛 동굴과 조명 터널","ps":"동굴 안 조명 터널 가운데 소실점, 물웅덩이 반사","m":"7호선 철산역 버스 / 차량"},{"r":"경기","n":"포천 아트밸리","d":"포천시","a":"북부","s":[1,2],"y":false,"st":"여름~가을(청록빛 천주호)","pk":"","t":"낮","pt":"채석장이 호수가 된 천주호","ps":"호숫가 데크에서 에메랄드빛 물과 화강암 절벽, 모노레일","m":"차량 · 포천 시내 버스 후 택시"}];
 var $=function(i){return document.getElementById(i)};
 var SN=['봄','여름','가을','겨울'],MS=[[3,4,5],[6,7,8],[9,10,11],[12,1,2]];
-var OV={'화담숲':[10,11],'설악산 울산바위':[10],'한라산 1100고지':[1,2],'대관령 양떼목장':[1,2],'하동 십리벚꽃길':[4],'진해 경화역·여좌천':[3,4],'녹산로 유채꽃길':[3,4],'휴애리 자연생활공원':[6,7,10,11],'양평 세미원':[7,8],'하늘공원':[10],'내장산':[11],'태백산':[1,2],'덕유산 향적봉':[1],'서울숲':[4,11],'아산 곡교천 은행나무길':[11],'화랑대 철도공원(경춘선숲길)':[4],'부암동':[4,11],'익선동 한옥골목':[12,1],'이화여대 ECC 계단':[4,5],'새별오름':[10],'장태산 자연휴양림':[10,11],'괴산 산막이옛길':[10,11],'수성못':[4],'가평 아침고요수목원':[12,1]};
-var G=[{"p":"은행나무길 입구, 길 한가운데","d":"길 끝 소실점을 화면 가운데로","e":"눈높이","z":"2x","h":45,"f":[50,46],"k":"해가 낮은 늦은 오후에 역광이나 옆빛으로 찍으면 노란 터널이 빛나요. 2x로 찍으면 나무 간격이 모여 더 빽빽해 보여요."},{"p":"골목 입구 모서리","d":"한옥 지붕선을 따라 골목 안쪽으로 비스듬히","e":"무릎~허리 높이로 낮게","z":"1x","h":62,"f":[34,42],"k":"조명이 켜지는 해 질 무렵이 가장 좋아요. 사람이 적은 평일 저녁이나 눈 오는 날을 노려 보세요."},{"p":"흰여울길 난간 옆, 골목이 시작되는 곳","d":"바다 쪽으로 골목을 따라","e":"눈높이","z":"1x","h":52,"f":[62,50],"k":"하얀 벽은 쉽게 하얗게 날아가요. 화면을 길게 눌러 밝기 슬라이더를 조금 내려 보세요."},{"p":"전망대 끝에 가까운 난간 앞","d":"바다 쪽, 등대를 화면 옆에 두고","e":"눈높이","z":"1x","h":66,"f":[70,50],"k":"해 뜨기 20분 전부터 하늘이 물들어요. 수평선을 아래 3분의 1에 두면 하늘이 넓게 담겨요."},{"p":"상화동산 쪽 호숫가","d":"호수 건너 불빛 방향, 물 반영까지","e":"눈높이","z":"1x","h":55,"f":[50,50],"k":"해가 진 뒤 푸른 시간대에 수면 반영이 가장 예뻐요. 난간에 팔꿈치를 대면 흔들림이 줄어요."},{"p":"벽화 앞 골목 한가운데","d":"골목 끝 소실점 방향","e":"눈높이","z":"1x","h":null,"f":[50,50],"k":"벽화가 길어서 폰을 세로로 들면 잘 어울려요. 지나가는 사람은 3분의 1 지점에 두세요."},{"p":"근대 건축물 맞은편 인도, 골목 모서리","d":"건물 정면을 똑바로","e":"눈높이","z":"1x","h":50,"f":[50,45],"k":"건물 선이 기울지 않게 폰을 수직으로 들고 격자선을 켜 두세요."},{"p":"입구 조형물에서 한 걸음 뒤","d":"조형물과 벽화를 한 화면에","e":"눈높이","z":"0.5x","h":null,"f":[40,55],"k":"벽화가 크니 초광각으로 사람과 함께 담아 보세요. 가장자리 왜곡은 사람을 중앙에 두면 덜 보여요."},{"p":"골목 중간, 건물 앞","d":"골목을 따라 비스듬히","e":"눈높이","z":"0.5x","h":null,"f":[45,50],"k":"골목 폭이 좁아서 0.5x를 쓰면 한 컷에 다 들어가요."},{"p":"시장 입구 간판 정면","d":"간판과 골목을 좌우 대칭으로","e":"눈높이","z":"1x","h":null,"f":[50,40],"k":"간판 글자가 잘 보이도록 낮 시간대에 정면에서 찍어 보세요."},{"p":"옛 관사 골목 한가운데","d":"골목 끝 소실점 방향","e":"눈높이","z":"1x","h":55,"f":[50,48],"k":"카페 외벽 질감이 살도록 한낮 옆빛이 좋아요. 2x로 당겨 담으면 골목이 압축돼요."},{"p":"메타세쿼이아 숲길 한가운데","d":"숲길 끝 소실점을 가운데로","e":"눈높이","z":"2x","h":null,"f":[50,50],"k":"아침 빛이 나무 사이로 들어올 때가 좋아요. 2x로 찍으면 나무 간격이 모여 숲이 더 빽빽하게 보여요."},{"p":"등대 앞 잔디밭","d":"동쪽 수평선, 등대를 한쪽에","e":"눈높이","z":"1x","h":66,"f":[68,50],"k":"해 뜨기 30분 전에 도착해 하늘색이 변하는 걸 연속으로 담아 보세요."},{"p":"십리대숲 길 한가운데","d":"대나무 길 끝, 살짝 올려다보며","e":"낮은 각도","z":"1x","h":null,"f":[50,45],"k":"위를 올려다보면 대나무가 하늘로 모여 보여요. 꽃밭 구간은 꽃을 앞에 크게 두세요."},{"p":"호수 둘레길, 물가 가까이","d":"도시 불빛 쪽, 물 반영까지","e":"눈높이","z":"1x","h":50,"f":[50,50],"k":"해 진 직후 20분이 좋아요. 수평선을 화면 가운데 두면 반영이 대칭으로 나와요."},{"p":"사계절전시온실 앞 정원","d":"온실을 정면으로","e":"낮은 각도","z":"1x","h":null,"f":[55,45],"k":"앞쪽에 꽃을 크게 두고 건물을 뒤에 두면 깊이가 생겨요."},{"p":"느티나무 아래 강가","d":"나룻배와 물안개가 있는 강 쪽","e":"눈높이","z":"1x","h":62,"f":[35,50],"k":"해 뜨기 전후에 물안개가 가장 짙어요. 나무를 한쪽 3분의 1에 두세요."},{"p":"방화수류정 앞 연못가","d":"정자와 연못 반영","e":"눈높이","z":"1x","h":50,"f":[50,40],"k":"바람이 없는 이른 아침이나 해 질 무렵에 반영이 선명해요."},{"p":"방파제 위","d":"카페 거리와 바다를 함께","e":"눈높이","z":"0.5x","h":58,"f":[40,45],"k":"방파제 끝에서 돌아서서 찍으면 카페 거리가 한 줄로 들어와요."},{"p":"능선 눈꽃길 중간","d":"능선을 따라 정면","e":"눈높이","z":"1x","h":null,"f":[50,50],"k":"눈이 많은 날은 밝기 슬라이더를 올려 주세요. 안 올리면 눈이 회색으로 나와요."},{"p":"스카이워크 끝 전망대","d":"남한강 굽이를 내려다보며","e":"눈높이","z":"0.5x","h":38,"f":[50,60],"k":"강이 굽이치는 모양이 한눈에 들어오게 초광각으로 담아 보세요."},{"p":"출렁다리 위","d":"호수와 단풍 방향","e":"눈높이","z":"1x","h":50,"f":[45,50],"k":"난간이 흔들리면 사진도 흔들려요. 사람이 지나간 뒤 잠깐 멈췄을 때 누르세요."},{"p":"해변, 할미·할아비 바위 정면","d":"바위 사이로 지는 해","e":"낮은 각도","z":"2x","h":70,"f":[50,52],"k":"해가 바위 사이에 걸릴 때 실루엣으로 담으세요. 화면을 눌러 밝기를 내리면 하늘색이 진해져요."},{"p":"길 한가운데","d":"은행나무 터널 끝","e":"눈높이","z":"2x","h":null,"f":[50,50],"k":"오전의 부드러운 빛이 좋아요. 2x로 당기면 노란 터널이 더 깊어 보여요."},{"p":"오목대 전망대","d":"한옥 지붕 물결을 내려다보며","e":"눈높이","z":"1x","h":60,"f":[50,50],"k":"지붕선이 겹쳐 보이도록 2x로 당겨 담는 것도 좋아요."},{"p":"일주문에서 내장사 가는 단풍터널 길","d":"정면, 잎을 살짝 올려다보며","e":"낮은 각도","z":"1x","h":null,"f":[50,40],"k":"단풍잎을 역광으로 찍으면 잎이 빛을 투과해 반짝여요."},{"p":"보행로 입구 한가운데","d":"직선 소실점 방향","e":"눈높이","z":"2x","h":null,"f":[50,50],"k":"오전 부드러운 빛이 좋아요. 사람은 길 한쪽에 작게 두면 길이 감이 살아요."},{"p":"정원 수변 또는 용산전망대","d":"갯골 S자와 갈대밭","e":"높은 곳에서 내려다보며","z":"2x","h":null,"f":[45,55],"k":"일몰 때 갈대와 갯골이 금빛으로 물들어요. 2x나 5x로 당겨 S자를 크게 담으세요."},{"p":"대릉원 돌담길 앞","d":"고분 곡선과 하늘을 함께","e":"낮은 각도","z":"0.5x","h":65,"f":[50,55],"k":"고분의 둥근 곡선이 하늘과 겹치게, 낮은 자세에서 초광각으로 담아 보세요."},{"p":"둑 위, 다리 정면","d":"월영교 전체와 물 반영","e":"눈높이","z":"1x","h":55,"f":[50,50],"k":"다리 조명이 켜진 직후가 좋아요. 난간에 폰을 기대 흔들림을 줄이세요."},{"p":"동피랑 정상 전망대","d":"강구안 항구를 내려다보며","e":"눈높이","z":"1x","h":50,"f":[50,55],"k":"항구의 배와 지붕이 층층이 보이도록 가로로 담아 보세요."},{"p":"여좌천 로망스다리 위","d":"벚꽃 터널을 내려다보며","e":"다리 위, 높은 시점","z":"1x","h":null,"f":[50,50],"k":"철길 구도는 출입 규정을 먼저 확인하세요. 안전한 구역에서만 촬영하세요."},{"p":"모래사장","d":"에메랄드빛 바다와 카페 외관","e":"낮은 각도","z":"0.5x","h":50,"f":[50,50],"k":"물색은 한낮 해가 높을 때가 가장 투명해요. 수평선은 가운데 두세요."},{"p":"정상 능선","d":"억새 물결과 해가 지는 쪽","e":"낮은 각도","z":"1x","h":60,"f":[50,55],"k":"해가 낮은 일몰 무렵 역광이면 억새 끝이 금빛으로 빛나요."},{"p":"억새밭 데크길","d":"억새 사이로 낮게, 해를 마주 보며","e":"무릎 높이","z":"2x","h":null,"f":[50,50],"k":"일몰 무렵 황금빛 역광이 가장 좋아요. 억새 앞부분이 흐려지도록 낮게 대세요."},{"p":"옛 철길 한가운데","d":"벚꽃 터널과 전시 객차","e":"눈높이","z":"2x","h":null,"f":[50,50],"k":"오전 한적한 시간에 터널 소실점을 가운데에 두세요. 철길 안전 구역을 지켜 주세요."},{"p":"윤동주 시인의 언덕","d":"성곽과 도심 방향","e":"눈높이","z":"1x","h":58,"f":[60,50],"k":"오후 빛이 성곽 질감을 살려요. 2x로 당기면 성곽선이 강조돼요."},{"p":"계단 한가운데","d":"계단과 양쪽 건물 소실점","e":"눈높이","z":"0.5x","h":null,"f":[50,50],"k":"폰을 정확히 수직으로 들고 좌우 대칭을 맞추세요. 인물은 계단 위쪽에 두세요."},{"p":"철공소 골목 안","d":"골목 소실점 방향","e":"눈높이","z":"1x","h":null,"f":[50,50],"k":"해 질 녘 간판과 벽화 색이 짙어져요. 사람 한 명을 소실점 근처에 세워 보세요."},{"p":"보행길 한가운데","d":"서울역 방향으로 직선","e":"눈높이","z":"1x","h":null,"f":[50,50],"k":"밤에는 야간 모드가 자동으로 켜져요. 난간에 기대고 2~3초 정지하세요."},{"p":"붉은 벽돌 공장 외벽 앞 골목 코너","d":"외벽을 정면으로","e":"눈높이","z":"1x","h":null,"f":[50,50],"k":"한낮 자연광에서 벽돌 질감이 잘 살아요. 팝업 간판은 눈높이에 맞춰 담으세요."},{"p":"하늘마루 전망대","d":"마을 전경을 가로로","e":"눈높이","z":"1x","h":null,"f":[50,55],"k":"오전 빛에서 집 색깔이 가장 선명해요. 2x로 당기면 지붕이 층층이 겹쳐 보여요."},{"p":"연못 징검다리 근처, 수면 가까이","d":"연꽃과 정자를 함께","e":"무릎 높이","z":"2x","h":55,"f":[45,50],"k":"꽃이 활짝 열린 이른 아침이 좋아요. 수면에 가깝게 낮추면 연꽃이 커 보여요."},{"p":"조명 터널 앞","d":"터널 소실점을 가운데로","e":"눈높이","z":"1x","h":null,"f":[50,50],"k":"저녁 조명 시간대는 야간 모드가 켜져요. 난간에 기대고 흔들림을 줄이세요."},{"p":"해변 입구 포토존","d":"서핑보드와 바다를 함께","e":"눈높이","z":"1x","h":55,"f":[40,52],"k":"낮 햇빛이 바다색을 살려요. 수평선을 화면 가운데에 가깝게 맞추세요."},{"p":"설천봉에서 향적봉 오르는 능선","d":"상고대가 핀 구간을 따라","e":"눈높이","z":"1x","h":null,"f":[50,50],"k":"안개 낀 이른 아침에 상고대가 가장 선명해요. 눈이 하얗게 날아가면 밝기 슬라이더를 내리세요."},{"p":"철길 한가운데(안전 확인 후)","d":"철길 소실점 방향","e":"낮은 각도","z":"1x","h":null,"f":[50,50],"k":"차량 통행이 없는지 확인하고 안전을 먼저 챙기세요. 낮은 자세에서 철길이 더 길어 보여요."},{"p":"돌산공원 전망대","d":"돌산대교 야경 방향","e":"눈높이","z":"1x","h":60,"f":[60,52],"k":"해 진 뒤 푸른 시간대가 좋아요. 난간에 기대고 2~3초 정지하세요."},{"p":"풍차가 보이는 언덕 아래","d":"풍차와 바다를 올려다보며","e":"무릎 높이","z":"0.5x","h":70,"f":[50,50],"k":"풍차를 하늘 높이 크게 담고 싶다면 낮게 대고 초광각으로 찍어 보세요."},{"p":"유채밭 옆 안전한 진입로","d":"벚꽃 가로수와 유채꽃을 함께","e":"눈높이","z":"2x","h":null,"f":[50,50],"k":"도로 위나 갓길에서는 찍지 마세요. 2x로 당기면 가로수와 유채가 압축돼 겹겹이 보여요."},{"p":"수국길 한가운데","d":"꽃길 소실점 방향","e":"낮은 각도","z":"1x","h":null,"f":[50,50],"k":"흐린 날 색이 가장 선명해요. 꽃이 아래에서 올려다보이는 각도로 담으세요."},{"p":"동도 선착장 앞","d":"서도와 독립문바위 방향, 바다를 넉넉히","e":"눈높이","z":"0.5x","h":58,"f":[34,44],"k":"배에서 내려 머무는 시간이 20분 안팎이라 촬영 순서를 미리 정해 두세요. 바위섬이 작게 보이니 0.5x로 하늘과 바다를 함께 담고, 갈매기는 2x로 따로 찍어 보세요. 안전선과 보호구역 안내를 꼭 지켜 주세요."},{"p":"설악동 소공원에서 울산바위 쪽 탐방로","d":"암벽 정면, 단풍 산자락을 아래에 넣어","e":"눈높이","z":"1x","h":62,"f":[50,34],"k":"오전 햇빛이 암벽에 비칠 때 질감이 선명해요. 2x로 당기면 단풍과 바위의 색 대비가 더 크게 보여요."},{"p":"1100고지 탐방로 입구 데크","d":"눈 덮인 숲 사이로 길을 따라","e":"눈높이","z":"1x","h":55,"f":[48,52],"k":"눈이 하얗게 날아가요. 화면을 길게 눌러 밝기 슬라이더를 조금 내려 주세요. 추워서 배터리가 빨리 줄어드니 보온에 신경 쓰세요."},{"p":"차밭 전망 데크","d":"이랑의 곡선을 따라 삼나무 숲 방향으로","e":"눈높이보다 약간 높게","z":"1x","h":55,"f":[55,60],"k":"곡선이 이어지는 구도가 핵심이에요. 안개 낀 이른 아침이 가장 몽환적이에요. 사람이 들어오면 크기 비교가 돼서 더 좋아요."},{"p":"울타리 바깥 안전한 길","d":"양과 능선이 함께 보이도록 낮게","e":"무릎~허리 높이","z":"2x","h":50,"f":[50,60],"k":"양에게 너무 다가가지 마세요. 2x로 당겨 찍으면 양이 모여 보여요. 눈이 하얗게 날아가면 밝기를 내려 주세요."},{"p":"길 한가운데(보행 안전 확인 후)","d":"길 끝 소실점을 화면 가운데로","e":"낮은 각도","z":"1x","h":null,"f":[50,50],"k":"차량 통행을 먼저 확인하세요. 꽃잎이 날리는 순간에 연속 촬영하면 한 장이 걸려요."},{"p":"해맞이광장 끝, 상생의 손 앞","d":"손과 수평선 위의 해를 같이","e":"눈높이","z":"0.5x","h":55,"f":[38,60],"k":"해 뜨기 20분 전부터 하늘색이 변해요. 0.5x로 손과 해를 함께 담고, 일출 직후에는 역광 실루엣을 노려 보세요."},{"p":"저동항 방파제 산책로","d":"촛대바위와 수평선의 해를 같이","e":"눈높이","z":"1x","h":58,"f":[62,50],"k":"해 뜨기 20분 전부터 하늘색이 변해요. 바위 기둥이 역광 실루엣이 되도록 해가 바위 옆에 올 때를 노려 보세요. 방파제에서는 파도와 난간에 주의하세요."},{"p":"계곡 옆 나무 데크길","d":"데크 곡선을 따라 단풍 산자락 방향으로","e":"눈높이","z":"1x","h":58,"f":[40,60],"k":"화담숲은 입장 예약이 필요해요. 오전 햇빛이 단풍에 비칠 때 색이 선명하고, 모노레일이 지나갈 때 연속으로 찍으면 한 장이 걸려요. 데크 위에서는 뒤따르는 사람에게 길을 열어 주세요."}];
-var LL=[[127.040,37.545],[126.990,37.574],[129.045,35.078],[129.190,35.160],[128.617,35.828],[128.607,35.860],[126.617,37.473],[126.625,37.480],[126.915,35.139],[126.790,35.138],[127.440,36.333],[127.310,36.200],[129.360,35.360],[129.300,35.550],[127.260,36.500],[127.345,36.515],[127.308,37.542],[127.010,37.282],[128.950,37.770],[128.920,37.100],[128.370,36.985],[127.820,36.800],[126.350,36.500],[126.980,36.780],[127.150,35.815],[126.890,35.490],[126.990,35.340],[127.500,34.930],[129.210,35.840],[128.740,36.570],[128.430,34.845],[128.680,35.145],[126.800,33.556],[126.360,33.360],[126.885,37.570],[127.080,37.620],[126.965,37.595],[126.946,37.562],[126.895,37.517],[126.972,37.556],[127.056,37.544],[129.010,35.098],[127.318,37.548],[127.350,37.740],[128.756,37.970],[127.750,35.870],[126.730,35.980],[127.740,34.730],[128.650,34.740],[126.740,33.385],[126.620,33.310],[131.867,37.2417],[128.489,38.17],[126.463,33.36],[127.0875,34.7245],[128.7388,37.6897],[127.64,35.2],[129.57,36.077],[130.9150,37.4915],[127.2937,37.2096]];
+var OV={"화담숲":[10,11],"양평 세미원":[7,8],"가평 아침고요수목원":[12,1],"파주 마장호수 출렁다리":[10,11],"포천 산정호수":[10],"가평 남이섬 눈길":[12,1,2],"양주 나리공원":[9,10],"시흥 갯골생태공원":[10,11],"여주 강천섬 은행나무길":[11],"이천 백사 산수유마을":[3,4],"구리 한강시민공원":[5,10],"포천 한탄강 하늘다리":[10,11],"용인 에버랜드 튤립정원":[4,5],"파주 임진각 바람의언덕":[10],"포천 허브아일랜드 빛축제":[12,1],"안성 팜랜드 호밀밭":[5,6],"포천 아트밸리":[8,9]};
+var G=[{"p":"느티나무 아래 강가","d":"나룻배와 물안개가 있는 강 쪽","e":"눈높이","z":"1x","h":62,"f":[35,50],"k":"해 뜨기 전후에 물안개가 가장 짙어요. 나무를 한쪽 3분의 1에 두세요."},{"p":"방화수류정 앞 연못가","d":"정자와 연못 반영","e":"눈높이","z":"1x","h":50,"f":[50,40],"k":"바람이 없는 이른 아침이나 해 질 무렵에 반영이 선명해요."},{"p":"연못 징검다리 근처, 수면 가까이","d":"연꽃과 정자를 함께","e":"무릎 높이","z":"2x","h":55,"f":[45,50],"k":"꽃이 활짝 열린 이른 아침이 좋아요. 수면에 가깝게 낮추면 연꽃이 커 보여요."},{"p":"조명 터널 앞","d":"터널 소실점을 가운데로","e":"눈높이","z":"1x","h":null,"f":[50,50],"k":"저녁 조명 시간대는 야간 모드가 켜져요. 난간에 기대고 흔들림을 줄이세요."},{"p":"계곡 옆 나무 데크길","d":"데크 곡선을 따라 단풍 산자락 방향으로","e":"눈높이","z":"1x","h":58,"f":[40,60],"k":"화담숲은 입장 예약이 필요해요. 오전 햇빛이 단풍에 비칠 때 색이 선명하고, 모노레일이 지나갈 때 연속으로 찍으면 한 장이 걸려요. 데크 위에서는 뒤따르는 사람에게 길을 열어 주세요."},{"p":"호수 데크길, 출렁다리 입구 앞","d":"다리를 따라 호수 건너편 산을 향해","e":"눈높이","z":"1x","h":55,"f":[50,58],"k":"출렁다리는 흔들려서 사진이 흐려지기 쉬워요. 발을 멈추고 난간에 팔꿈치를 대면 선명해요."},{"p":"호수 수변 데크, 억새밭 가장자리","d":"호수 건너 산 능선, 억새를 앞쪽에","e":"무릎 높이(억새를 앞에)","z":"1x","h":45,"f":[30,70],"k":"아침 햇빛이 억새 뒤에서 비칠 때(역광) 은빛이 번져요. 억새는 한쪽 3분의 1을 채우세요."},{"p":"눈길 한가운데, 발자국 없는 쪽","d":"길 끝 소실점","e":"눈높이","z":"1x","h":48,"f":[50,55],"k":"눈 사진은 노출을 한 칸 올리면 하얗게 죽지 않고 밝게 나와요. 이른 시간 발자국 없는 눈길이 가장 예뻐요."},{"p":"핑크뮬리 밭 가장자리 길","d":"해를 비스듬히 두고(사선 역광)","e":"무릎 높이","z":"1x","h":40,"f":[55,60],"k":"핑크뮬리는 사선 역광일 때 솜털이 빛나요. 한낮 직광은 색이 날아가니 늦은 오후를 노려요."},{"p":"갯골 산책로 흔들다리 옆","d":"붉은 군락과 노을 방향","e":"눈높이","z":"1x","h":55,"f":[50,62],"k":"칠면초는 10월 말~11월 초가 가장 붉어요. 물이 찼을 때 가면 반영도 담겨요."},{"p":"바닷길 중간 갓길","d":"수평선에 걸린 해, 길을 소실선으로","e":"눈높이","z":"0.5x","h":50,"f":[50,58],"k":"물때를 꼭 확인하세요. 길이 열릴 때만 들어갈 수 있고, 닫히기 전에 나와야 해요."},{"p":"은행나무길 중앙, 나무가 가장 모인 구간","d":"길 끝","e":"눈높이","z":"1x","h":45,"f":[50,50],"k":"바닥에 쌓인 노란 잎이 반사광을 만들어 얼굴이 환해져요. 사람이 적은 이른 오전을 추천해요."},{"p":"돌담길 모퉁이, 꽃가지 아래","d":"꽃가지 사이로 돌담길 방향","e":"눈높이","z":"2x","h":52,"f":[40,45],"k":"산수유는 작은 꽃이 모여 있어 맑은 하늘이 배경일 때 선명해요. 가지 아래서 올려다보면 풍성해요."},{"p":"꽃밭 가장자리, 낮게","d":"꽃 너머 한강","e":"무릎 높이","z":"1x","h":45,"f":[40,65],"k":"꽃을 앞쪽에 크게 넣고 한강을 흐리게 두면 입체감이 살아요."},{"p":"하늘다리 중간 난간 쪽","d":"협곡 아래쪽 대각선","e":"눈높이","z":"0.5x","h":40,"f":[50,50],"k":"협곡 깊이를 담으려면 광각(0.5x)이 좋아요. 다리가 흔들릴 땐 숨을 멈추고 촬영하세요."},{"p":"튤립 군락 앞 데크 가장자리","d":"색이 겹치는 가로 띠 방향","e":"무릎 높이","z":"1x","h":50,"f":[50,60],"k":"입장 후 오전이 가장 사람이 적어요. 색이 겹치는 곳을 골라 낮게 찍으세요."},{"p":"바람개비 언덕 가운데 길","d":"바람개비 뒤로 노을","e":"눈높이","z":"1x","h":45,"f":[50,55],"k":"바람개비가 돌아가는 순간을 연속 촬영하면 한 장이 걸려요. 노을 때 색이 더 풍성해요."},{"p":"빛 터널 입구 안쪽","d":"터널 끝을 향해 정면","e":"눈높이","z":"1x","h":55,"f":[50,55],"k":"야경은 난간에 팔을 고정하고 야간 모드로 찍으세요. 인물은 잠깐 움직이지 않게 멈추면 선명해요."},{"p":"호밀밭 가장자리 길","d":"바람 부는 방향으로","e":"무릎 높이","z":"1x","h":50,"f":[50,62],"k":"바람 부는 날 물결 모양이 더 예쁘게 나와요. 사람은 허리 아래가 풀에 가리게 서면 좋아요."},{"p":"조명 터널 입구","d":"터널 끝","e":"눈높이","z":"1x","h":55,"f":[50,50],"k":"인공 조명이 많아요. 화면이 노랗게 쏠리면 노출을 한 칸 낮춰 보세요."},{"p":"천주호 호숫가 데크","d":"호수 건너 절벽과 모노레일","e":"눈높이","z":"0.5x","h":55,"f":[50,60],"k":"물 색은 맑은 날 정오 무렵 에메랄드로 가장 선명해요. 광각으로 절벽 높이까지 담아 보세요."}];
+var LL=[[127.308,37.542],[127.01,37.282],[127.318,37.548],[127.35,37.74],[127.2937,37.2096],[126.9032,37.7889],[127.3175,38.0644],[127.5254,37.7914],[126.9985,37.8044],[126.7899,37.3836],[126.6275,37.1632],[127.7316,37.2967],[127.405,37.246],[127.148,37.586],[127.22,38.014],[127.202,37.294],[126.7425,37.8896],[127.193,37.921],[127.186,37.012],[126.866,37.433],[127.206,37.953]];
 P.forEach(function(p,i){p.i=i;p.ll=LL[i];var m=OV[p.n];p.hot=!!m;if(!m){m=[];p.s.forEach(function(k){m=m.concat(MS[k])})}p.mo=m;p.chk=(p.t||'').indexOf('확인')>=0});
 function seasonOf(m){return m>=3&&m<=5?0:m>=6&&m<=8?1:m>=9&&m<=11?2:3}
 function tier(p,m){if(p.hot&&p.mo.indexOf(m)>=0)return 2;if(p.s.indexOf(seasonOf(m))>=0)return 1;return 0}
 function tlabel(p,t){return t==2?'지금 절정':t==1?(p.y?'연중':'제철'):'비시즌'}
-var GR={'수도권':['서울','인천','경기'],'강원':['강원'],'충청':['대전','세종','충북','충남'],'전라':['광주','전북','전남'],'경상':['부산','대구','울산','경북','경남'],'제주':['제주']};
-var GB={'전국':null,'수도권':[126.3,36.85,127.7,38.0],'강원':[127.8,37.0,129.1,38.65],'충청':[125.95,35.95,128.5,37.15],'전라':[126.1,34.2,127.9,36.05],'경상':[127.9,34.6,131.95,37.3],'제주':[126.1,33.15,127.0,33.6]};
-var now=new Date(),REAL=now.getMonth()+1,curM=REAL,sel=-1,reg='전국',view='map';
+var GR0={'수도권':['서울','인천','경기'],'강원':['강원'],'충청':['대전','세종','충북','충남'],'전라':['광주','전북','전남'],'경상':['부산','대구','울산','경북','경남'],'제주':['제주']};
+var GB={'경기 전체':[126.35,36.9,127.9,38.25],'북부':[126.6,37.75,127.5,38.2],'동부':[127.05,37.0,127.9,37.95],'서부':[126.45,37.05,126.95,37.55],'남부':[126.9,36.9,127.6,37.5]};
+var now=new Date(),REAL=now.getMonth()+1,curM=REAL,sel=-1,reg='경기 전체',view='map';
 
 /* 저장소 */
-var KEY='chalna-app-v1',ST={saved:[34,33,25],visited:[0,2],demo:true};
+var KEY='chalna-app-v2',ST={saved:[2,3],visited:[0],demo:true};
 try{var raw=localStorage.getItem(KEY);if(raw){var o=JSON.parse(raw);if(o&&o.saved&&o.visited)ST=o}}catch(e){}
-function persist(){try{localStorage.setItem(KEY,JSON.stringify(ST))}catch(e){}}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(ST))}catch(e){}if(typeof pushUser=='function')pushUser()}
 function has(a,i){return a.indexOf(i)>=0}
 function toggle(a,i){var k=a.indexOf(i);if(k>=0)a.splice(k,1);else a.push(i)}
 function toast(t){var e=$('toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(function(){e.classList.remove('on')},1800)}
@@ -2757,7 +3622,7 @@ function fly(t,ms){var tok=++flyTok;dims();var f={cx:vb.cx,cy:vb.cy,w:vb.w},t0=p
 (function st(n){if(tok!=flyTok)return;var k=Math.min(1,(n-t0)/ms),e=k<.5?4*k*k*k:1-Math.pow(-2*k+2,3)/2;
 vb.cx=f.cx+(t.cx-f.cx)*e;vb.cy=f.cy+(t.cy-f.cy)*e;vb.w=Math.exp(Math.log(f.w)+(Math.log(t.w)-Math.log(f.w))*e);render();if(k<1)requestAnimationFrame(st)})(t0)}
 function boxTarget(b,pad){dims();var x0=X(b[0]),x1=X(b[2]),y0=Y(b[3]),y1=Y(b[1]),chu=Math.max(160,D.ch-200);var w=Math.max((x1-x0)*pad,(y1-y0)*pad*D.cw/chu);return{cx:(x0+x1)/2,cy:(y0+y1)/2+96*(Math.max(10,w)/D.cw),w:Math.max(10,w)}}
-function fitAll(){dims();var U=Math.max(200,D.ch-54-200),sc=Math.max((MW+20)/D.cw,(660-46)/U),top=46-54*sc;return{cx:MW/2+60,cy:top+D.ch*sc/2,w:sc*D.cw}}
+function fitAll(){return boxTarget(GB['경기 전체'],1.12)}
 function pinchTo(pm,m,f){var b=bounds(),s=vb.w/D.cw,ax=b.x+pm.x*s,ay=b.y+pm.y*s,nw=Math.max(10,Math.min(fitW()*1.1,vb.w*f)),ns=nw/D.cw;vb.w=nw;vb.cx=ax-(m.x-D.cw/2)*ns;vb.cy=ay-(m.y-D.ch/2)*ns;rr()}
 function zoomAt(px,py,f){pinchTo({x:px,y:py},{x:px,y:py},f)}
 $('zin').onclick=function(){fly({cx:vb.cx,cy:vb.cy,w:Math.max(10,vb.w/1.8)},300)};
@@ -2786,11 +3651,11 @@ function tap(h){if(h.c){var lo=1e9,hi=-1e9,la=1e9,lb=-1e9;h.c.m.forEach(function
 else{sel=h.p.i;[].forEach.call($('car').children,function(c){c.classList.toggle('sel',+c.dataset.i==sel)});openDetail(h.p.i)}}
 
 /* 캐러셀 */
-function inReg(p){return reg=='전국'||GR[reg].indexOf(p.r)>=0}
+function inReg(p){return reg=='경기 전체'||p.a==reg}
 function carList(){return P.filter(function(p){return tier(p,curM)>=1&&inReg(p)}).sort(function(a,b){return tier(b,curM)-tier(a,curM)||(a.y?1:0)-(b.y?1:0)||a.i-b.i})}
 function cardHTML(p){var t=tier(p,curM);return '<button class="pc'+(p.i==sel?' sel':'')+'" data-i="'+p.i+'"><div class="im"><img src="'+thumb(p.i)+'" alt="" loading="lazy" decoding="async"><span class="bd'+(t==2?'':' soft')+'">'+tlabel(p,t)+'</span></div><div class="tx"><b>'+p.n+'</b><small>'+p.r+' '+p.d+'</small></div></button>'}
 function renderCar(){var L=carList(),pk=L.filter(function(p){return tier(p,curM)==2}).length;
-$('carT').textContent=(reg=='전국'?'':reg+' ')+(pk?'지금 절정 '+pk+'곳':curM+'월에 가기 좋은 곳');$('carS').textContent=L.length?'제철 포함 '+L.length+'곳':'';
+$('carT').textContent=(reg=='경기 전체'?'':'경기 '+reg+' ')+(pk?'지금 절정 '+pk+'곳':curM+'월에 가기 좋은 곳');$('carS').textContent=L.length?'제철 포함 '+L.length+'곳':'';
 $('car').innerHTML=L.length?L.map(cardHTML).join(''):'<div class="empty" style="width:100%">이 지역은 '+curM+'월에 소개할 곳이 아직 없어요. 다른 달을 골라 보세요.</div>'}
 $('car').addEventListener('click',function(e){var b=e.target.closest('.pc');if(b)openDetail(+b.dataset.i)});
 function select(i,scroll){sel=i;render();[].forEach.call($('car').children,function(c){c.classList.toggle('sel',+c.dataset.i==i)});
@@ -2824,7 +3689,7 @@ var TIMES=[['일출','일출|새벽|아침'],['오전','오전|아침|낮'],['�
 function fText(p){return p.n+' '+p.st+' '+p.pt+' '+p.ps}
 function fMatch(p){if(FL.hot&&tier(p,curM)<2)return false;
 if(FL.vis&&has(ST.visited,p.i))return false;
-if(FL.rg&&GR[FL.rg].indexOf(p.r)<0)return false;
+if(FL.rg&&p.a!=FL.rg)return false;
 if(FL.th.length){var tx=fText(p),ok=FL.th.some(function(t){var d=THEMES.filter(function(x){return x[0]==t})[0];return d&&(new RegExp(d[1])).test(tx)||(t=='설경'&&has(p.s,3))});if(!ok)return false}
 if(FL.tm){var d=TIMES.filter(function(x){return x[0]==FL.tm})[0];if(!(p.t&&(new RegExp(d[1])).test(p.t)))return false}
 if(FL.mv){var d2=MOVES.filter(function(x){return x[0]==FL.mv})[0];if(!(p.m&&(new RegExp(d2[1])).test(p.m)))return false}
@@ -2838,7 +3703,7 @@ $('fBody').innerHTML='<h5>시기</h5><div class="fc"><button type="button" data-
 '<h5>시간대</h5><div class="fc">'+fChips(TIMES,FL.tm,false,'tm')+'</div>'+
 '<h5>이동 수단</h5><div class="fc">'+fChips(MOVES,FL.mv,false,'mv')+'</div>'+
 '<h5>내 위치에서 거리</h5><div class="fc">'+fChips(DISTS,FL.dist,false,'dist')+'</div><div class="fnote">'+(ME?'내 위치 기준 직선거리예요':'거리를 고르면 내 위치를 물어봐요')+'</div>'+
-'<h5>지역</h5><div class="fc">'+fChips(['수도권','강원','충청','전라','경상','제주'],FL.rg,false,'rg')+'</div>';
+'<h5>지역</h5><div class="fc">'+fChips(['북부','동부','서부','남부'],FL.rg,false,'rg')+'</div>';
 $('fApply').textContent=n+'곳 보기';var c=fCount();$('fCnt').textContent=c;$('fBtn').classList.toggle('has',c>0)}
 $('fBtn').addEventListener('click',function(){fRender();$('fpanel').classList.add('on')});
 $('fClose').addEventListener('click',function(){$('fpanel').classList.remove('on')});
@@ -2931,17 +3796,16 @@ return h}
 $('listBody').addEventListener('click',function(e){var b=e.target.closest('.row');if(b)openDetail(+b.dataset.i)});
 
 /* 스탬프 / 저장 */
-function renderStamps(){var rs=[];P.forEach(function(p){if(rs.indexOf(p.r)<0)rs.push(p.r)});var vr={};ST.visited.forEach(function(i){var r=P[i].r;(vr[r]=vr[r]||[]).push(i)});
+function renderStamps(){var rs=[];P.forEach(function(p){if(rs.indexOf(p.d)<0)rs.push(p.d)});var vr={};ST.visited.forEach(function(i){var r=P[i].d;(vr[r]=vr[r]||[]).push(i)});
 var done=Object.keys(vr).length;
-var h='<div class="grp" style="margin-top:4px">스탬프북<small><span style="font-variant-numeric:tabular-nums">'+done+' / '+rs.length+'</span>개 시·도</small></div><div class="book">';
+var h=authBar()+missionTop()+'<div class="grp" style="margin-top:4px">스탬프북<small><span style="font-variant-numeric:tabular-nums">'+done+' / '+rs.length+'</span>개 시·군</small></div><div class="book">';
 rs.forEach(function(r,k){var v=vr[r];h+=v?'<div class="seal on" style="--r:'+(((k*37)%13)-6)+'deg"><b>'+r+'</b><small>'+v.length+'곳</small></div>':'<div class="seal">'+r+'</div>'});h+='</div>';
 h+='<div class="grp">다녀온 곳<small>'+ST.visited.length+'곳</small></div>';
 h+=ST.visited.length?ST.visited.map(function(i){return rowHTML(P[i])}).join(''):'<div class="empty">장소 상세에서 “다녀왔어요”를 누르면 그 지역 도장이 찍혀요.</div>';
 if(ST.demo)h+='<div class="hint"><span>일부는 시연용 예시 기록이에요.</span><button id="rst">비우기</button></div>';
-$('stampScr').innerHTML=h;var r=$('rst');if(r)r.onclick=function(){ST={saved:[],visited:[],demo:false};persist();renderStamps();renderSaved();toast('예시 기록을 비웠어요')}}
-function renderSaved(){var h='<div class="grp" style="margin-top:4px">저장한 곳<small>'+ST.saved.length+'곳</small></div>';
-h+=ST.saved.length>=2?courseHTML():ST.saved.length?ST.saved.map(function(i){return rowHTML(P[i])}).join('')+'<p class="cnote">2곳 이상 저장하면 나만의 코스를 만들어 드려요.</p>':'<div class="empty">마음에 드는 장소에서 하트를 누르면 여기에 모여요.</div>';$('savedScr').innerHTML=h}
-$('stampScr').addEventListener('click',function(e){var b=e.target.closest('.row');if(b)openDetail(+b.dataset.i)});
+$('stampScr').innerHTML=h;var r=$('rst');if(r)r.onclick=function(){ST.saved=[];ST.visited=[];ST.demo=false;persist();renderStamps();renderSaved();toast('예시 기록을 비웠어요')}}
+function renderSaved(){var L=ST.saved.slice();if(nearOn&&ME)L.sort(function(x,y){return kmBetween(ME,P[x].ll)-kmBetween(ME,P[y].ll)});var h='<div class="grp" style="margin-top:4px">저장한 곳<small>'+L.length+'곳</small></div>';h+=L.length?L.map(function(i){return rowHTML(P[i])}).join(''):'<div class="empty">마음에 드는 장소에서 하트를 누르면 여기에 모여요.</div>';$('savedScr').innerHTML=h}
+$('stampScr').addEventListener('click',function(e){var fb=e.target.closest('#fbIn,#fbOut');if(fb){fb.id=='fbIn'?fbLogin():fbLogout();return}var t=e.target.closest('.tdm');if(t){openDetail(+t.dataset.i);return}var b=e.target.closest('.row');if(b)openDetail(+b.dataset.i)});
 $('savedScr').addEventListener('click',function(e){
 var mv=e.target.closest('[data-mv]');if(mv){syncCourse();var i=+mv.dataset.i,k=ST.course.indexOf(i),j=k+(+mv.dataset.mv);if(k>=0&&j>=0&&j<ST.course.length){ST.course.splice(k,1);ST.course.splice(j,0,i);persist();renderSaved()}return}
 if(e.target.closest('#cAuto')){autoCourse(false);renderSaved();toast('가까운 순으로 정렬했어요');return}
@@ -2949,15 +3813,133 @@ if(e.target.closest('#cMe')){var bt=e.target.closest('#cMe');bt.textContent='위
 var b=e.target.closest('.row');if(b)openDetail(+b.dataset.i)});
 
 /* 탭 */
-function setView(v){view=v;if(v=='map')setTimeout(function(){setSheet(SHS)},0);['map','list','stamp','saved'].forEach(function(k){$('v-'+k).classList.toggle('on',k==v)});
+function setView(v){view=v;if(v=='map')setTimeout(function(){setSheet(SHS)},0);['map','list','stamp','talk','saved'].forEach(function(k){$('v-'+k).classList.toggle('on',k==v)});
 [].forEach.call($('tabs').children,function(b){b.setAttribute('aria-selected',b.dataset.v==v)});
-$('hd').classList.toggle('nostrip',v=='stamp'||v=='saved');
-if(v=='stamp')renderStamps();if(v=='saved')renderSaved();if(v=='map'){dims();render()}}
+$('hd').classList.toggle('nostrip',v=='stamp'||v=='saved'||v=='talk');
+if(v=='stamp')renderStamps();if(v=='talk')renderTalk();if(v=='saved')renderSaved();if(v=='map'){dims();render()}}
 $('tabs').addEventListener('click',function(e){var b=e.target.closest('button');if(b)setView(b.dataset.v)});
+
+/* ===== 미션 · 후기 · 소통 ===== */
+var MIS={'양평 두물머리':['🛶','나룻배와 느티나무를 한 프레임에!'],'수원 행궁동(행리단길)':['☕','카페 간판 앞에서 오늘의 한 잔 인증샷!'],'양평 세미원':['🪷','연꽃 한 송이만 크게, 배경은 흐리게'],'가평 아침고요수목원':['✨','불빛이 켜진 순간을 한 장에'],'화담숲':['🚠','모노레일이 지나가는 순간을 찍어요'],'파주 마장호수 출렁다리':['🌉','출렁다리 위에서 안 흔들린 한 컷 도전!'],'포천 산정호수':['🌾','억새 사이로 호수가 보이게 찍어요'],'가평 남이섬 눈길':['⛄','발자국 없는 눈길에 내 발자국 한 컷'],'양주 나리공원':['💗','핑크뮬리 속에서 분홍색 인증샷'],'시흥 갯골생태공원':['🌅','붉은 갯벌 위로 노을이 걸린 순간'],'화성 제부도 모세길':['🌊','바닷길 한가운데서 수평선 맞춰 찍기'],'여주 강천섬 은행나무길':['🍂','은행잎 던지며 점프샷'],'이천 백사 산수유마을':['🌼','노란 꽃가지 아래서 올려다본 하늘'],'구리 한강시민공원':['🌸','꽃 위로 한강이 보이는 낮은 앵글'],'포천 한탄강 하늘다리':['🕊️','다리 위에서 협곡 전체가 보이게'],'용인 에버랜드 튤립정원':['🌷','튤립 색 세 가지를 한 장에 담기'],'파주 임진각 바람의언덕':['🎡','바람개비 도는 모습 3초 영상'],'포천 허브아일랜드 빛축제':['🌟','빛 터널 끝으로 걷는 뒷모습'],'안성 팜랜드 호밀밭':['🐑','호밀밭 물결과 함께 점프 한 컷'],'광명동굴':['💎','황금빛 조명 터널에서 실루엣 사진'],'포천 아트밸리':['🩵','에메랄드 호수와 같은 색 옷으로 찍기']};
+var TAGS=['사진 잘 나와요','사람 많아요','주차 편해요','주차 불편','아이와 함께','데이트','혼자 가도 좋아요'];
+var SEED={'양평 두물머리':[['새벽산책',5,'해 뜨기 전 6시에 갔는데 물안개가 정말 깔려 있었어요. 느티나무를 왼쪽에 두니 구도가 딱 잡혀요!',['사진 잘 나와요','혼자 가도 좋아요'],2,14],['주말포토',4,'9시만 돼도 사진 찍는 분들이 많아서 일찍 가는 걸 추천해요.',['사람 많아요'],9,6]],
+'수원 행궁동(행리단길)':[['성곽따라',5,'화성 성곽길 걷다가 내려오면 카페가 바로 있어서 코스로 좋아요. 해 질 때 전구 불빛이 예뻐요.',['데이트','사진 잘 나와요'],1,11],['카페투어',4,'공영주차장을 이용했어요. 골목 안은 사람이 많으니 평일을 추천해요!',['주차 불편'],6,4]],
+'양평 세미원':[['연꽃러버',5,'연꽃 피는 7월 오전이 제일 예뻐요. 꽃 한 송이만 크게 찍으니 느낌 있어요.',['사진 잘 나와요'],4,9],['물의정원',4,'아이랑 가도 좋고 그늘이 많아서 덥지 않았어요.',['아이와 함께'],12,3]],
+'가평 아침고요수목원':[['겨울불빛',5,'오색별빛정원전 때 갔어요! 야간 모드로 찍으니 진짜 잘 나왔어요.',['사진 잘 나와요','데이트'],3,13],['가평사랑',4,'입장료는 있지만 산책 코스가 길어서 만족했어요. 편한 신발 필수!',['혼자 가도 좋아요'],10,5]],
+'화담숲':[['단풍헌터',5,'예약 필수예요. 모노레일 타고 올라가서 걸어 내려오면 단풍이 끝없어요.',['사진 잘 나와요'],2,18],['숲속산책',4,'주말엔 대기가 길어요. 오전 일찍 가면 훨씬 여유로워요.',['사람 많아요'],7,7]],
+'파주 마장호수 출렁다리':[['출렁출렁',5,'다리가 흔들려서 무서웠는데 사진은 진짜 잘 나와요. 난간에 팔 고정하고 찍었어요.',['사진 잘 나와요'],3,10],['호수산책',4,'둘레길 따라 걷기 좋고 노을 질 때 분위기가 최고였어요.',['데이트'],11,5]],
+'포천 산정호수':[['억새바람',5,'10월 말에 갔더니 억새가 은빛으로 반짝여요. 아침 역광일 때 진짜 예뻐요.',['사진 잘 나와요'],5,12],['포천나들이',4,'둘레길이 길어서 다 돌려면 2시간쯤 걸려요. 오리배도 탔어요.',['아이와 함께'],13,3]],
+'가평 남이섬 눈길':[['눈길산책',5,'눈 온 다음 날 아침에 갔더니 발자국이 하나도 없었어요. 진짜 겨울연가 같았어요!',['사진 잘 나와요','데이트'],2,16],['섬여행',4,'배 타는 시간 포함해서 반나절 잡으세요. 겨울엔 손난로 필수예요.',['혼자 가도 좋아요'],8,4]],
+'양주 나리공원':[['핑크러버',5,'핑크뮬리는 해 질 무렵에 제일 예뻐요. 분홍색 옷 입고 가면 잘 어울려요.',['사진 잘 나와요','데이트'],4,15],['양주사람',4,'평일 오후엔 사람이 적어서 좋았어요. 주차도 편해요.',['주차 편해요'],9,6]],
+'시흥 갯골생태공원':[['노을사냥꾼',5,'칠면초가 이렇게 빨간 줄 몰랐어요. 흔들다리에서 보는 노을이 장관이에요.',['사진 잘 나와요'],3,9],['시흥주민',4,'가을에 가면 붉은 갯벌이 정말 좋아요. 모기가 있을 수 있으니 긴팔 추천해요.',[],14,3]],
+'화성 제부도 모세길':[['바닷길',5,'물때 맞춰 갔더니 바닷길이 열려 있었어요. 노을과 반영이 한 장에 담겨요.',['사진 잘 나와요'],2,12],['서해바다',4,'물때표 꼭 확인하세요! 닫히기 전에 나오느라 서둘렀어요.',[],10,5]],
+'여주 강천섬 은행나무길':[['은행잎',5,'11월 초에 갔더니 노란 터널이 끝이 없었어요. 바닥의 잎 카펫이 진짜 예뻐요.',['사진 잘 나와요','데이트'],1,14],['여주여행',4,'주말 오후엔 차가 많아서 주차가 힘들어요. 오전 일찍을 추천해요.',['주차 불편'],6,4]],
+'이천 백사 산수유마을':[['노랑봄',5,'돌담이랑 산수유가 잘 어울려요. 올려다보며 찍으니 하늘색과 노랑이 확 살아요.',['사진 잘 나와요'],5,10],['이천산책',4,'마을이라서 조용히 구경해 주세요. 주차는 마을 입구에 해요.',[],12,3]],
+'구리 한강시민공원':[['한강러너',5,'유채꽃밭에서 한강 보며 자전거 타기 최고예요. 낮게 찍으면 입체감이 나요.',['사진 잘 나와요','혼자 가도 좋아요'],3,8],['코스모스',4,'가을 코스모스 철엔 사람이 많아요. 해 질 때 가면 한적하고 예뻐요.',['사람 많아요'],9,5]],
+'포천 한탄강 하늘다리':[['협곡탐험',5,'다리 위에서 내려다보는 협곡이 정말 웅장해요. 0.5x로 찍으니 깊이가 담겼어요.',['사진 잘 나와요'],4,11],['포천드라이브',4,'단풍철에 가면 좋지만 바람이 세서 모자 조심하세요!',[],11,3]],
+'용인 에버랜드 튤립정원':[['튤립정원',5,'튤립이 색깔별로 줄지어 있어서 낮게 찍으면 색 띠가 너무 예뻐요.',['사진 잘 나와요','데이트'],2,13],['용인주민',4,'주말엔 사람이 너무 많아서 오전 일찍 입장했어요.',['사람 많아요'],8,6]],
+'파주 임진각 바람의언덕':[['바람개비',5,'바람개비 수천 개가 돌아가는 게 장관이에요. 노을 때 색이 정말 풍성해요.',['사진 잘 나와요'],3,12],['파주여행',4,'바람 많이 부는 날은 더 예뻐요. 겉옷 챙기세요!',[],10,4]],
+'포천 허브아일랜드 빛축제':[['빛터널',5,'빛 터널에서 야간 모드로 찍으니 사진이 몽환적으로 나왔어요. 데이트 코스로 추천해요!',['사진 잘 나와요','데이트'],2,15],['겨울여행',4,'버스가 적어서 차로 가는 걸 추천해요. 겨울엔 엄청 추워요.',['주차 편해요'],9,5]],
+'안성 팜랜드 호밀밭':[['호밀밭',5,'5월 초에 갔더니 초록 물결이 끝이 없었어요. 점프샷 찍으면 풀이 같이 날려요.',['사진 잘 나와요','아이와 함께'],4,10],['안성나들이',4,'양 먹이주기 체험도 있어서 아이랑 가기 좋아요.',['아이와 함께'],11,4]],
+'광명동굴':[['동굴탐험',5,'여름에 갔더니 동굴 안이 시원해요. 조명 터널 사진이 황금빛으로 나왔어요.',['사진 잘 나와요'],3,9],['철산주민',4,'비 오는 날에도 좋은 코스예요. 계단이 많으니 편한 신발을 신으세요.',[],12,3]],
+'포천 아트밸리':[['에메랄드',5,'천주호 물 색이 사진보다 실제가 더 예뻐요. 정오 무렵에 가니 에메랄드빛이 선명했어요.',['사진 잘 나와요'],3,12],['포천여행',4,'모노레일 타면 위에서 호수가 한눈에 보여요. 주말엔 대기가 있어요.',['사람 많아요'],10,5]]};
+ST.md=ST.md||[];ST.rv=ST.rv||{};ST.lk=ST.lk||{};ST.rp=ST.rp||{};ST.nick=ST.nick||'';
+var T0=Date.now();
+function esc(t){return String(t).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function ago(ts){var m=Math.max(0,Math.round((Date.now()-ts)/6e4));return m<1?'방금':m<60?m+'분 전':m<1440?Math.floor(m/60)+'시간 전':Math.floor(m/1440)+'일 전'}
+function reviewsOf(name){var out=[];(SEED[name]||[]).forEach(function(r,k){out.push({id:'s'+name+k,n:r[0],st:r[1],tx:r[2],tg:r[3],ts:T0-r[4]*864e5,lk:r[5],seed:true,name:name})});
+(ST.rv[name]||[]).forEach(function(r){r.name=name;out.push(r)});FB.cr.forEach(function(r){if(r.place==name)out.push(r)});return out.sort(function(a,b){return b.ts-a.ts})}
+function allRev(){var o=[];P.forEach(function(p){o=o.concat(reviewsOf(p.n))});return o.sort(function(a,b){return b.ts-a.ts})}
+function myCount(){var n=0;for(var k in ST.rv)n+=ST.rv[k].length;FB.cr.forEach(function(r){if(r.mine)n++});return n}
+function stars(n){var s='';for(var i=1;i<=5;i++)s+='<span class="'+(i<=n?'on':'')+'">★</span>';return s}
+var RC={st:5,tg:[],pi:-1};
+function rvItem(r,showPlace){var liked=r.cloud?!!(FB.user&&r.lkBy.indexOf(FB.user.uid)>=0):!!ST.lk[r.id],rps=r.cloud?r.rp:(ST.rp[r.id]||[]),pi=-1,lkn=r.cloud?r.lkBy.length:((r.lk||0)+(liked?1:0));
+if(showPlace)P.forEach(function(p){if(p.n==r.name)pi=p.i});
+return '<div class="rv" data-id="'+esc(r.id)+'"><div class="rvh"><span class="av">'+esc(r.n.charAt(0))+'</span><b>'+esc(r.n)+'</b>'+(r.seed?'<em class="ex">예시</em>':'')+(r.cloud?'<em class="cl2">☁️</em>':'')+(r.mine?'<em class="mn">내 후기</em>':'')+'<span class="stars">'+stars(r.st)+'</span><small>'+ago(r.ts)+'</small></div>'+
+(showPlace&&pi>=0?'<button type="button" class="pl" data-open="'+pi+'">'+esc(r.name)+'</button>':'')+
+'<p>'+esc(r.tx)+'</p>'+(r.tg&&r.tg.length?'<div class="tg">'+r.tg.map(function(t){return '<span>'+esc(t)+'</span>'}).join('')+'</div>':'')+
+'<div class="ra"><button type="button" data-act="like" data-id="'+esc(r.id)+'" aria-pressed="'+liked+'">'+(liked?'💗':'🤍')+' 공감 '+lkn+'</button><button type="button" data-act="cm" data-id="'+esc(r.id)+'">💬 댓글 '+rps.length+'</button>'+(r.mine?'<button type="button" data-act="del" data-id="'+esc(r.id)+'" data-name="'+esc(r.name)+'">삭제</button>':'')+'</div>'+
+'<div class="cmb" id="cm_'+esc(r.id)+'" hidden>'+rps.map(function(c){return '<div class="cmi"><b>'+esc(c.n)+'</b> '+esc(c.tx)+' <small>'+ago(c.ts)+'</small></div>'}).join('')+'<form class="cmf" data-id="'+esc(r.id)+'"><input maxlength="80" placeholder="따뜻한 댓글을 남겨 보세요" aria-label="댓글"><button type="submit">등록</button></form></div></div>'}
+function pickHTML(q){q=(q||'').trim();var L=P.filter(function(p){return !q||(p.n+' '+p.d+' '+p.a).indexOf(q)>=0}).sort(function(a,b){return (has(ST.visited,b.i)?1:0)-(has(ST.visited,a.i)?1:0)});return '<div class="pkh">'+(q?'검색 결과 '+L.length+'곳':'전체 명소 '+L.length+'곳 · 눌러서 선택')+(RC.pi>=0?' · <b>'+esc(P[RC.pi].n)+'</b> 선택됨':'')+'</div>'+(L.length?L.map(function(p){return '<button type="button" class="pk" data-pick="'+p.i+'" aria-pressed="'+(RC.pi==p.i)+'"><i class="rd"></i><span>'+esc(p.n)+'</span><small>'+esc(p.d)+(has(ST.visited,p.i)?' · 다녀온 곳':'')+'</small></button>'}).join(''):'<div class="empty" style="padding:12px">검색 결과가 없어요</div>')}
+function composeHTML(pi){var sel='';if(pi<0)sel='<div class="fl">어디 다녀오셨어요?<div class="srchb"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><input id="rcQ" type="search" placeholder="명소 이름이나 시·군을 검색" autocomplete="off"></div><div class="rcres" id="rcRes">'+pickHTML('')+'</div></div>';
+return '<form class="rcf" id="rcForm" data-pi="'+pi+'">'+sel+'<label class="fl">닉네임<input id="rcNick" maxlength="10" value="'+esc(ST.nick)+'" placeholder="예: 찰나러"></label><div class="fl">별점<div class="stp" id="rcSt">'+[1,2,3,4,5].map(function(n){return '<button type="button" data-st="'+n+'" class="'+(n<=RC.st?'on':'')+'" aria-label="'+n+'점">★</button>'}).join('')+'</div></div>'+
+'<div class="fl">태그<div class="fc" id="rcTg">'+TAGS.map(function(t){return '<button type="button" data-tg="'+t+'" aria-pressed="'+(RC.tg.indexOf(t)>=0)+'">'+t+'</button>'}).join('')+'</div></div>'+
+'<label class="fl">후기<textarea id="rcTx" maxlength="120" rows="3" placeholder="사진 잘 나오는 자리, 가는 시간, 팁을 알려 주세요 (120자)"></textarea></label><div class="rcb"><button type="button" id="rcCancel">취소</button><button type="submit" class="pri">남기기</button></div></form>'}
+function reviewSection(i){var p=P[i],L=reviewsOf(p.n),avg=L.length?(L.reduce(function(a,r){return a+r.st},0)/L.length).toFixed(1):'-';
+return '<div class="rvs" id="rvBox" data-pi="'+i+'"><div class="rvt"><h4 style="margin:0">다녀온 사람들의 이야기</h4><small>★ '+avg+' · '+L.length+'개</small></div>'+
+'<button type="button" class="rvw" id="rvOpen">✍️ 후기 남기기</button><div id="rcHold"></div><div class="rvl">'+L.map(function(r){return rvItem(r,false)}).join('')+'</div><p class="cnote">로그인하면 후기가 서버에 저장돼 다른 사람과 나눠요. 로그인 전 후기는 이 기기에만 저장돼요. 예시 표시는 시연용 샘플이에요.</p></div>'}
+function missionHTML(i){var p=P[i],m=MIS[p.n]||['📸','나만의 시선으로 한 컷!'],done=has(ST.md,p.n);return '<div class="msn'+(done?' done':'')+'" id="msBox"><span class="me">'+m[0]+'</span><div><small>미션 · 현장 인증(명소 500m 안)</small><b>'+esc(m[1])+'</b></div><button type="button" id="msBtn">'+(done?'성공 ✓':'현장 인증')+'</button></div>'+(done?'':'<button type="button" class="msd" id="msDemo">시연용으로 바로 인증하기</button>')}
+function extraDetail(i){$('dBody').insertAdjacentHTML('beforeend',missionHTML(i)+reviewSection(i))}
+function refreshReviews(i){var b=$('rvBox');if(b)b.outerHTML=reviewSection(i)}
+function addReview(name,nick,st,tg,tx){nick=(nick||'').trim()||'찰나러';tx=tx.trim();if(!tx)return false;ST.nick=nick;if(FB.user&&FB.ok){FB.db.collection('reviews').add({place:name,nick:nick,st:st,tx:tx,tg:tg.slice(),ts:Date.now(),uid:FB.user.uid,lkBy:[],rp:[]}).catch(function(){toast('후기를 올리지 못했어요')});persist();return true}if(FB_CONFIG)toast('로그인하면 다른 사람과 후기를 나눌 수 있어요');(ST.rv[name]=ST.rv[name]||[]).push({id:'m'+Date.now(),n:nick,st:st,tx:tx,tg:tg.slice(),ts:Date.now(),lk:0,mine:true});persist();return true}
+function bindRev(root,onChange){root.addEventListener('click',function(e){var t=e.target;var b=t.closest('button');if(!b)return;
+if(b.id=='fbIn'){fbLogin();return}if(b.id=='fbOut'){fbLogout();return}
+if(b.id=='rvOpen'){var h=$('rcHold');if(h.innerHTML){h.innerHTML='';return}RC={st:5,tg:[],pi:-1};h.innerHTML=composeHTML(+$('rvBox').dataset.pi);return}
+if(b.id=='rcCancel'){var hh=$('rcHold');if(hh)hh.innerHTML='';var tf=$('tkForm');if(tf)tf.innerHTML='';return}
+if(b.dataset.pick){RC.pi=+b.dataset.pick;$('rcRes').innerHTML=pickHTML($('rcQ').value);return}
+if(b.dataset.st){RC.st=+b.dataset.st;[].forEach.call($('rcSt').children,function(c){c.classList.toggle('on',+c.dataset.st<=RC.st)});return}
+if(b.dataset.tg){var k=RC.tg.indexOf(b.dataset.tg);if(k>=0)RC.tg.splice(k,1);else RC.tg.push(b.dataset.tg);b.setAttribute('aria-pressed',k<0);return}
+if(b.dataset.open){openDetail(+b.dataset.open);return}
+var act=b.dataset.act,id=b.dataset.id;
+if(act=='like'){var cr=FB.cr.filter(function(x){return x.id==id})[0];if(cr){if(!FB.user){toast('공감하려면 로그인이 필요해요');return}var ref=FB.db.collection('reviews').doc(id),has0=cr.lkBy.indexOf(FB.user.uid)>=0;ref.update({lkBy:has0?firebase.firestore.FieldValue.arrayRemove(FB.user.uid):firebase.firestore.FieldValue.arrayUnion(FB.user.uid)}).catch(function(){toast('처리하지 못했어요')});return}if(ST.lk[id])delete ST.lk[id];else ST.lk[id]=1;persist();onChange();return}
+if(act=='cm'){var c=document.getElementById('cm_'+id);if(c)c.hidden=!c.hidden;return}
+if(act=='del'){var cr2=FB.cr.filter(function(x){return x.id==id})[0];if(cr2){FB.db.collection('reviews').doc(id).delete().then(function(){toast('후기를 삭제했어요')}).catch(function(){toast('삭제하지 못했어요')});return}var nm=b.dataset.name;ST.rv[nm]=(ST.rv[nm]||[]).filter(function(r){return r.id!=id});persist();onChange();toast('후기를 삭제했어요');return}
+if(b.id=='msBtn'||b.id=='msDemo'){var nm2=P[dtOpen].n,was=has(ST.md,nm2),pl=P[dtOpen];function okM(){toggle(ST.md,nm2);persist();var bx=$('msBox');if(bx){bx.classList.toggle('done',!was);$('msBtn').textContent=was?'현장 인증':'성공 ✓'}var dm=$('msDemo');if(dm&&!was)dm.remove();toast(was?'미션을 취소했어요':'미션 성공! 🎉 +2점')}
+if(was){okM();return}if(b.id=='msDemo'){okM();return}$('msBtn').textContent='위치 확인 중…';getMe(function(){var km=kmBetween(ME,pl.ll);if(km<=.5)okM();else{$('msBtn').textContent='현장 인증';toast('아직 '+fmtKm(km)+' 떨어져 있어요 · 명소 500m 안에서 인증할 수 있어요')}},function(m){$('msBtn').textContent='현장 인증';toast(m)});return}});
+root.addEventListener('input',function(e){if(e.target.id=='rcQ')$('rcRes').innerHTML=pickHTML(e.target.value)});
+root.addEventListener('submit',function(e){e.preventDefault();var f=e.target;
+if(f.id=='rcForm'){var pi=+f.dataset.pi;if(pi<0)pi=RC.pi;if(pi<0){toast('후기를 남길 명소를 먼저 골라 주세요');return}var ok=addReview(P[pi].n,$('rcNick').value,RC.st,RC.tg,$('rcTx').value);if(!ok){toast('후기 내용을 적어 주세요');return}toast('후기를 남겼어요 ✍️');RC={st:5,tg:[],pi:-1};onChange();return}
+if(f.classList.contains('cmf')){var inp=f.querySelector('input'),tx=inp.value.trim();if(!tx)return;var id=f.dataset.id,cr3=FB.cr.filter(function(x){return x.id==id})[0];if(cr3){if(!FB.user){toast('댓글을 달려면 로그인이 필요해요');return}FB.db.collection('reviews').doc(id).update({rp:firebase.firestore.FieldValue.arrayUnion({n:ST.nick||FB.user.displayName||'찰나러',tx:tx,ts:Date.now(),uid:FB.user.uid})}).catch(function(){toast('댓글을 달지 못했어요')});inp.value='';return}(ST.rp[id]=ST.rp[id]||[]).push({n:ST.nick||'찰나러',tx:tx,ts:Date.now()});persist();onChange(id)}})}
+bindRev($('dBody'),function(id){refreshReviews(dtOpen);if(id){var c=document.getElementById('cm_'+id);if(c)c.hidden=false}});
+/* 소통 탭 */
+var TK={f:'all'};
+function renderTalk(){var L=allRev();if(TK.f=='mine')L=L.filter(function(r){return r.mine});
+var h=authBar()+'<div class="grp" style="margin-top:4px">소통<small>경기 포토 스팟 이야기</small></div><p class="tkn">다녀온 곳의 후기를 남기고, 공감과 댓글로 이야기를 나눠 보세요.</p>'+
+'<button type="button" class="rvw" id="tkOpen">✍️ 후기 남기기</button><div id="tkForm"></div>'+
+'<div class="fc tkf"><button type="button" data-tf="all" aria-pressed="'+(TK.f=='all')+'">전체 '+allRev().length+'</button><button type="button" data-tf="mine" aria-pressed="'+(TK.f=='mine')+'">내 후기 '+myCount()+'</button></div>'+
+'<div class="rvl">'+(L.length?L.map(function(r){return rvItem(r,true)}).join(''):'<div class="empty">아직 후기가 없어요.<br>첫 후기를 남겨 보세요!</div>')+'</div><p class="cnote">로그인하면 후기가 서버에 저장돼 다른 사람과 나눠요. 로그인 전 후기는 이 기기에만 저장돼요. 예시 표시는 시연용 샘플이에요.</p>';
+var sc=$('talkScr'),st=sc.scrollTop;sc.innerHTML=h;sc.scrollTop=st}
+$('talkScr').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+if(b.id=='tkOpen'){var f=$('tkForm');if(f.innerHTML){f.innerHTML='';return}RC={st:5,tg:[],pi:-1};f.innerHTML=composeHTML(-1);e.stopPropagation();return}
+if(b.dataset.tf){TK.f=b.dataset.tf;renderTalk();e.stopPropagation()}},true);
+bindRev($('talkScr'),function(id){renderTalk();if(id){var c=document.getElementById('cm_'+id);if(c)c.hidden=false}});
+/* ===== 로그인 · 동기화 (Firebase) ===== */
+var FB_CONFIG={apiKey:"AIzaSyAcpC7LJQBtUi6YUsX0sfAU6pfIRdCycXk",authDomain:"chalna-app-29242.firebaseapp.com",projectId:"chalna-app-29242",storageBucket:"chalna-app-29242.firebasestorage.app",messagingSenderId:"478473318746",appId:"1:478473318746:web:3b62fb5bbda601be320363"}; /* Firebase 웹 앱 설정(apiKey, authDomain, projectId, appId)을 여기에 붙여 넣으면 로그인과 후기 공유가 켜져요 */
+var FB={ok:false,user:null,db:null,auth:null,cr:[],busy:false,pt:0};
+function loadJs(u,cb){var s=document.createElement('script');s.src=u;s.onload=cb;s.onerror=function(){toast('서버 연결에 실패했어요')};document.head.appendChild(s)}
+function fbInit(){if(!FB_CONFIG||FB.ok)return;var B='https://www.gstatic.com/firebasejs/10.12.2/';
+loadJs(B+'firebase-app-compat.js',function(){loadJs(B+'firebase-auth-compat.js',function(){loadJs(B+'firebase-firestore-compat.js',function(){
+try{firebase.initializeApp(FB_CONFIG);FB.auth=firebase.auth();FB.db=firebase.firestore();FB.ok=true}catch(e){toast('서버 설정을 확인해 주세요');return}
+FB.db.collection('reviews').orderBy('ts','desc').limit(300).onSnapshot(function(sn){FB.cr=sn.docs.map(function(d){var x=d.data();x.id=d.id;x.cloud=true;x.n=x.nick||'찰나러';x.name=x.place;x.lkBy=x.lkBy||[];x.rp=x.rp||[];x.mine=!!(FB.user&&x.uid==FB.user.uid);return x});fbRefresh()},function(){});
+FB.auth.onAuthStateChanged(function(u){FB.user=u;FB.cr.forEach(function(x){x.mine=!!(u&&x.uid==u.uid)});if(u){if(!ST.nick&&u.displayName)ST.nick=u.displayName.slice(0,10);pullUser()}fbRefresh()})})})})}
+function fbRefresh(){try{if(view=='stamp')renderStamps();if(view=='talk')renderTalk();if(dtOpen>=0&&$('rvBox'))refreshReviews(dtOpen)}catch(e){}}
+function fbLogin(){if(!FB_CONFIG){toast('아직 서버가 연결되지 않았어요 (Firebase 설정 필요)');return}if(!FB.ok){toast('서버에 연결하는 중이에요. 잠시 후 다시 눌러 주세요');return}
+FB.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()).then(function(){toast('로그인했어요 · 기록을 동기화해요')}).catch(function(e){if(e&&e.code=='auth/popup-blocked'){FB.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}else if(!e||e.code!='auth/popup-closed-by-user')toast('로그인에 실패했어요')})}
+function fbLogout(){if(FB.auth)FB.auth.signOut().then(function(){toast('로그아웃했어요')})}
+function nm2i(a){var o=[];(a||[]).forEach(function(n){P.forEach(function(p){if(p.n==n&&o.indexOf(p.i)<0)o.push(p.i)})});return o}
+function pullUser(){FB.db.collection('users').doc(FB.user.uid).get().then(function(d){var r=d.exists?d.data():{};
+function un(a,b){b.forEach(function(x){if(a.indexOf(x)<0)a.push(x)})}
+un(ST.saved,nm2i(r.saved));un(ST.visited,nm2i(r.visited));(r.md||[]).forEach(function(n){if(ST.md.indexOf(n)<0)ST.md.push(n)});if(r.nick&&!ST.nick)ST.nick=r.nick;ST.demo=false;
+try{localStorage.setItem(KEY,JSON.stringify(ST))}catch(e){}pushUser();fbRefresh();setMonth(curM,true)}).catch(function(){toast('동기화에 실패했어요')})}
+function pushUser(){if(!FB.user||!FB.ok)return;clearTimeout(FB.pt);FB.pt=setTimeout(function(){FB.db.collection('users').doc(FB.user.uid).set({saved:ST.saved.map(function(i){return P[i].n}),visited:ST.visited.map(function(i){return P[i].n}),md:ST.md,nick:ST.nick||'',ts:Date.now()}).catch(function(){})},700)}
+function authBar(){if(FB.user){var u=FB.user;return '<div class="fbb on"><span class="av">'+esc((ST.nick||u.displayName||'찰').charAt(0))+'</span><div><b>'+esc(ST.nick||u.displayName||'찰나러')+'</b><small>☁️ 기록·후기가 동기화돼요</small></div><button type="button" id="fbOut">로그아웃</button></div>'}
+return '<div class="fbb"><span class="cl">☁️</span><div><b>로그인하고 동기화</b><small>기록과 후기를 어디서든 이어서 보고, 다른 사람과 후기를 나눠요</small></div><button type="button" id="fbIn">Google 로그인</button></div>'}
+
+/* 레벨 · 뱃지 · 오늘의 미션 */
+function pts(){return ST.visited.length+2*ST.md.length+myCount()}
+var LV=[[0,'🌱','새싹 포토러'],[3,'🌼','꽃길 산책가'],[8,'📸','셔터 수집가'],[15,'🦊','경기 탐험대장'],[25,'👑','찰나 마스터']];
+function level(){var k=0;LV.forEach(function(l,j){if(pts()>=l[0])k=j});return k}
+function cntBy(re){var n=0;ST.visited.forEach(function(i){if(re.test(fText(P[i])))n++});return n}
+var BDG=[['🐣','첫 도장','첫 번째 스탬프',function(){return ST.visited.length>=1}],['🎒','5곳 다녀오기','5곳 방문',function(){return ST.visited.length>=5}],['🌸','꽃길 탐험가','꽃 명소 2곳',function(){return cntBy(/꽃|벚|유채|튤립|핑크뮬리|코스모스|산수유|연꽃/)>=2}],['🍁','단풍 헌터','단풍·억새 2곳',function(){return cntBy(/단풍|은행|억새/)>=2}],['⛄','겨울 요정','겨울 명소 1곳',function(){return cntBy(/눈|겨울|빛 축제|빙벽/)>=1}],['🌙','야경 수집가','빛·야경 1곳',function(){return cntBy(/야간|야경|빛/)>=1}],['🌅','노을 사냥꾼','노을 명소 1곳',function(){return cntBy(/일몰|노을/)>=1}],['⭐','미션 3개','미션 3개 성공',function(){return ST.md.length>=3}],['✍️','후기 작가','후기 1개 작성',function(){return myCount()>=1}],['💬','소통왕','공감·댓글 3회',function(){return Object.keys(ST.lk).length+Object.keys(ST.rp).reduce(function(a,k){return a+ST.rp[k].filter(function(c){return c.n==(ST.nick||'찰나러')}).length},0)>=3}],['👑','경기 정복','모든 명소 방문',function(){return ST.visited.length>=P.length}]];
+function todayMission(){var L=P.filter(function(p){return tier(p,REAL)>=1});if(!L.length)L=P;var d=Math.floor((now-new Date(now.getFullYear(),0,0))/864e5);return L[d%L.length]}
+function missionTop(){var k=level(),l=LV[k],nx=LV[k+1],p=pts(),pct=nx?Math.round((p-l[0])/(nx[0]-l[0])*100):100,tm=todayMission(),m=MIS[tm.n]||['📸','나만의 시선으로 한 컷!'],done=has(ST.md,tm.n);
+var h='<div class="lvc"><span class="lv">'+l[1]+'</span><div><small>내 등급</small><b>'+l[2]+'</b><div class="pbar"><i style="width:'+pct+'%"></i></div><small>'+p+'점'+(nx?' · 다음 등급까지 '+(nx[0]-p)+'점':' · 최고 등급!')+'</small></div></div>'+
+'<button type="button" class="tdm'+(done?' done':'')+'" data-i="'+tm.i+'"><span class="me">'+m[0]+'</span><div><small>오늘의 미션 · '+esc(tm.n)+'</small><b>'+esc(m[1])+'</b></div><em>'+(done?'성공 ✓':'가기 ›')+'</em></button>'+
+'<div class="grp">뱃지<small>'+BDG.filter(function(b){return b[3]()}).length+' / '+BDG.length+'</small></div><div class="bdg">'+BDG.map(function(b){var on=b[3]();return '<div class="bd1'+(on?' on':'')+'"><span>'+b[0]+'</span><b>'+b[1]+'</b><small>'+b[2]+'</small></div>'}).join('')+'</div>';return h}
 
 /* 지역 칩 */
 $('chips').innerHTML=Object.keys(GB).map(function(k,i){return '<button data-r="'+k+'" aria-pressed="'+(i==0)+'">'+k+'</button>'}).join('');
-$('chips').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;reg=b.dataset.r;[].forEach.call($('chips').children,function(c){c.setAttribute('aria-pressed',c==b)});sel=-1;renderCar();$('car').scrollLeft=0;fly(reg=='전국'?fitAll():boxTarget(GB[reg],1.5),650)});
+$('chips').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;reg=b.dataset.r;[].forEach.call($('chips').children,function(c){c.setAttribute('aria-pressed',c==b)});sel=-1;renderCar();$('car').scrollLeft=0;fly(reg=='경기 전체'?fitAll():boxTarget(GB[reg],1.25),650)});
 
 /* 상세 */
 var dtOpen=-1;
@@ -2971,10 +3953,10 @@ $('dBody').innerHTML='<div><div class="meta"><span>'+p.r+' '+p.d+'</span><span c
 '<dl><dt>절정</dt><dd>'+p.st+'</dd><dt>시간대</dt><dd>'+(p.chk?'<span style="color:var(--muted)">정보 확인 중</span>':p.t)+'</dd>'+meRow(p)+sunRows(p)+'<dt>가는 법</dt><dd>'+(p.m&&p.m.indexOf('확인')<0?p.m:'<span style="color:var(--muted)">정보 확인 중</span>')+'</dd></dl>'+
 '<div><h4>언제 예쁠까 · '+(p.hot?'절정 달':'제철 달')+'</h4><div class="mgrid">'+mo+'</div></div>'+
 '<div class="shoot"><h4 style="margin:0">촬영 가이드 · 아이폰 기준</h4><div class="gd"><div><small>서는 곳</small><b>'+g.p+'</b></div><div><small>카메라 방향</small><b>'+g.d+'</b></div><div><small>카메라 높이</small><b>'+g.e+'</b></div><div><small>추천 시간</small><b>'+(p.chk?'확인 중':p.t)+'</b></div><div class="zb"><strong>'+lz+'</strong><span><small>추천 배율</small><b>'+lm+'</b></span></div></div><div class="tip"><b>꿀팁</b><span>'+g.k+'</span></div><p class="gnote">현장 상황과 안전 규정에 따라 달라질 수 있어요. 위의 “구도 가이드”를 켜면 수평선과 주인공 위치를 사진 위에서 볼 수 있어요.</p></div>';
-$('dHeart').setAttribute('aria-pressed',has(ST.saved,i));
+$('dHeart').setAttribute('aria-pressed',has(ST.saved,i));extraDetail(i);
 var vis=has(ST.visited,i);$('dStamp').textContent=vis?'다녀온 곳 ✓':'다녀왔어요';$('dStamp').classList.toggle('done',vis);
 $('dGo').href='https://map.naver.com/p/search/'+encodeURIComponent(p.n);
-$('sfxT').textContent=p.r;
+$('sfxT').textContent=p.d;
 $('phone').classList.add('dopen');$('dsc').scrollTop=0;$('dt').classList.add('on');$('dt').setAttribute('aria-hidden','false');$('dBack').focus({preventScroll:true})}
 function closeDetail(){render();$('phone').classList.remove('dopen');$('dt').classList.remove('on');$('dt').setAttribute('aria-hidden','true');$('dArt').innerHTML='';dtOpen=-1;
 if(view=='stamp')renderStamps();if(view=='saved')renderSaved()}
@@ -2983,7 +3965,7 @@ $('dGrid').onclick=function(){var on=!$('hero').classList.contains('g');$('hero'
 $('dHeart').onclick=function(){if(dtOpen<0)return;toggle(ST.saved,dtOpen);ST.demo=ST.demo;persist();var on=has(ST.saved,dtOpen);this.setAttribute('aria-pressed',on);toast(on?'저장했어요':'저장을 취소했어요')};
 $('dStamp').onclick=function(){if(dtOpen<0)return;var i=dtOpen,was=has(ST.visited,i);toggle(ST.visited,i);persist();
 if(!was){var s=$('sfx');s.classList.remove('go');void s.offsetWidth;s.classList.add('go')}
-this.textContent=was?'다녀왔어요':'다녀온 곳 ✓';this.classList.toggle('done',!was);toast(was?'다녀온 기록을 지웠어요':P[i].r+' 도장을 찍었어요')};
+this.textContent=was?'다녀왔어요':'다녀온 곳 ✓';this.classList.toggle('done',!was);toast(was?'다녀온 기록을 지웠어요':P[i].d+' 도장을 찍었어요')};
 document.addEventListener('keydown',function(e){if(e.key=='Escape'&&dtOpen>=0)closeDetail()});
 
 /* 바텀시트: 숨김 · 한 줄 · 전체 보기 3단계 */
@@ -3010,7 +3992,7 @@ function fin(){if(spDone)return;spDone=true;sp.classList.add('out');spTimer=setT
 sp.onclick=fin;var fr=(document.fonts&&document.fonts.ready)?document.fonts.ready:Promise.resolve();
 Promise.all([fr.catch(function(){}),new Promise(function(r){spTimer=setTimeout(r,wait)})]).then(fin)}
 $('replay').onclick=function(){playSplash()};
-buildBase();buildMonths();
+buildBase();buildMonths();fbInit();
 function fitPhone(){var d=$('devw'),ph=$('phone');if(innerWidth<520){d.style.width='';d.style.height='';ph.style.removeProperty('--k');return}var k=Math.min(1,(innerHeight-28)/874,(innerWidth-(innerWidth>=1000?460:24))/402);k=Math.max(.4,k);d.style.width=402*k+'px';d.style.height=874*k+'px';ph.style.setProperty('--k',k)}
 window.addEventListener('resize',function(){fitPhone();setSheet(SHS);render();buildFx()});fitPhone();
 dims();var f0=fitAll();vb.cx=f0.cx;vb.cy=f0.cy;vb.w=f0.w;
