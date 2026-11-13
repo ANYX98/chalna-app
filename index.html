@@ -429,6 +429,13 @@ html[data-ui="ios"] .dt{transition:transform .5s cubic-bezier(.32,.72,0,1),visib
 html[data-ui="ios"] .dt.on{transition:transform .5s cubic-bezier(.32,.72,0,1)}
 html[data-ui="ios"] .pc{border-radius:20px}
 html[data-ui="ios"] .fbb button,html[data-ui="ios"] .msBtn{border-radius:999px}
+
+/* iOS 반투명 유리(프로스티드) — 지도 위에 떠 있는 요소 */
+html[data-ui="ios"] .chips button,html[data-ui="ios"] .zoom,html[data-ui="ios"] .legend{background:color-mix(in srgb,var(--card) 58%,transparent);-webkit-backdrop-filter:saturate(180%) blur(18px);backdrop-filter:saturate(180%) blur(18px);border:.5px solid rgba(255,255,255,.6);box-shadow:0 4px 18px var(--shade),inset 0 .5px 0 rgba(255,255,255,.7)}
+html[data-ui="ios"] .chips button[aria-pressed="true"]{background:color-mix(in srgb,var(--ink) 82%,transparent);color:var(--paper);border-color:transparent}
+html[data-ui="ios"] .zoom button+button,html[data-ui="ios"] .zoom .loc{border-top:.5px solid color-mix(in srgb,var(--ink) 16%,transparent)}
+html[data-ui="ios"] .sheet{background:color-mix(in srgb,var(--paper) 66%,transparent);-webkit-backdrop-filter:saturate(180%) blur(30px);backdrop-filter:saturate(180%) blur(30px);border-top:.5px solid rgba(255,255,255,.7)}
+html[data-ui="ios"] .tabs{background:color-mix(in srgb,var(--paper) 66%,transparent)}
 .uiseg{margin:16px 0 8px;padding:12px 14px;border-radius:16px;background:var(--card);border:1px solid var(--line)}
 .uiseg b{display:block;font-size:13px;margin-bottom:8px}
 .uiseg .sg{display:grid;grid-template-columns:repeat(3,1fr);background:color-mix(in srgb,var(--ink) 8%,transparent);border-radius:10px;padding:2px;gap:2px}
@@ -3763,12 +3770,12 @@ function routeLines(s){var h='',w=(Math.max(1.6,Math.min(3,vb.w/60))*s).toFixed(
 if(trk&&ME&&sel>=0&&P[sel]){h+='<line x1="'+X(ME[0]).toFixed(1)+'" y1="'+Y(ME[1]).toFixed(1)+'" x2="'+X(P[sel].ll[0]).toFixed(1)+'" y2="'+Y(P[sel].ll[1]).toFixed(1)+'" stroke="#2f7cf6" stroke-width="'+w+'" stroke-dasharray="'+d+'" stroke-linecap="round" opacity=".85" pointer-events="none"/>'}
 return h}
 /* 확대하면 실제 지도(OpenStreetMap)로 바뀐다 */
-var TM={},TK=33120;
-function tPos(t,b,s){var n=Math.pow(2,t.z),tw=TK/n,ox=304.9/360*n,oy=n/2*(1-MY(38.85)/Math.PI);
+var TM={},TKW=33120;
+function tPos(t,b,s){var n=Math.pow(2,t.z),tw=TKW/n,ox=304.9/360*n,oy=n/2*(1-MY(38.85)/Math.PI);
 var l=(20+(t.x-ox)*tw-b.x)/s,tp=(20+(t.y-oy)*tw-b.y)/s,sz=tw/s;t.el.style.cssText='left:'+l.toFixed(2)+'px;top:'+tp.toFixed(2)+'px;width:'+(sz+.8).toFixed(2)+'px;height:'+(sz+.8).toFixed(2)+'px;z-index:'+t.z}
 function syncTiles(b,s){var T=$('tiles');if(!T)return;var op=Math.max(0,Math.min(1,(140-vb.w)/50));T.style.opacity=op;$('osm').style.display=op>.5?'block':'none';
 if(op<=0){$('base').style.opacity=1;return}
-var zf=Math.log(TK/(256*s))/Math.LN2+((window.devicePixelRatio||1)>=2?.4:0),z=Math.max(5,Math.min(17,Math.round(zf))),n=Math.pow(2,z),tw=TK/n,ox=304.9/360*n,oy=n/2*(1-MY(38.85)/Math.PI);
+var zf=Math.log(TKW/(256*s))/Math.LN2+((window.devicePixelRatio||1)>=2?.4:0),z=Math.max(5,Math.min(17,Math.round(zf))),n=Math.pow(2,z),tw=TKW/n,ox=304.9/360*n,oy=n/2*(1-MY(38.85)/Math.PI);
 var x0=Math.floor((b.x-20)/tw+ox),x1=Math.floor((b.x+b.w-20)/tw+ox),y0=Math.max(0,Math.floor((b.y-20)/tw+oy)),y1=Math.min(n-1,Math.floor((b.y+b.h-20)/tw+oy));
 if((x1-x0+1)*(y1-y0+1)>90)return;var need={},ok=0,tot=0,x,y,k,t;
 for(x=x0;x<=x1;x++)for(y=y0;y<=y1;y++){if(x<0||x>=n)continue;k=z+'/'+x+'/'+y;need[k]=1;tot++;t=TM[k];
